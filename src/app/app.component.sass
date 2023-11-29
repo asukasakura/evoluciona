@@ -1,0 +1,26 @@
+::ng-deep
+  .title_border
+    &::after
+      content: ''
+      @apply bg-orange
+      bottom: 0
+      height: 2px
+      left: 0
+      position: absolute
+      width: 3rem
+    &_top
+      padding-top: 10px
+      &::before
+        @apply bg-orange
+        top: 0
+        content: ''
+        height: 2px
+        left: 0
+        position: absolute
+        width: 3rem
+
+  .linkedin
+    height: 40px
+    width: 40px
+    display: block
+    filter: brightness(0) invert(1)

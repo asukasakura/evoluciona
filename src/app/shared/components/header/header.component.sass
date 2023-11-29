@@ -1,0 +1,94 @@
+.nav
+    background: white
+    box-shadow: none
+    a
+      @apply text-primary
+nav
+  li
+    @apply mx-2 px-2 py-0 text-primary
+    cursor: pointer
+    font-weight: 500
+    padding-bottom: 10px
+    position: relative
+    max-width: 150px
+    // white-space: nowrap
+    span
+      line-height: 120%
+      display: inline-flex
+    &.router-link-active
+      &::after
+        content: ''
+        background: var(--orange-color)
+        height: 3px
+        display: block
+        position: absolute
+        bottom: 1.5em
+        left: 0
+        width: 100%
+        z-index: 1
+    &:focus-visible
+      outline: none
+  ul.dropdown-content
+    .menu-initials
+      font-weight: 700
+    li 
+      margin-left: 0
+      padding: 0
+      & > a,
+      & > span
+        @apply text-primary
+        &:hover
+          background: transparent
+      &:hover
+        background: var(--orange-color)
+      // & > a.router-link-active
+      //   background: var(--orange-color)
+  .sidenav-trigger
+    padding: 4px 0
+::ng-deep
+  app-header
+    mat-icon.mat-icon
+      font-size: 2rem
+    app-social-media
+      mat-icon.mat-icon
+        fill: rgba(#FFFFFF, 1)
+        height: 2rem
+        width: 2rem
+  .brand img
+    @apply min-h-[100px] md:min-w-[300px]
+  .text-white
+    @media screen and (max-width: 769px)
+      color: white!important
+.dropdown-content
+  overflow: hidden
+  top: 20px
+
+.sidenav
+  @apply p-6
+  .collapsible
+    margin: 0
+    .collapsible-header
+      padding: 0
+
+::ng-deep .select-idioma
+  color: white
+  max-width: 100px
+  .select-wrapper 
+    input.select-dropdown
+      border-bottom: 0
+      margin: 0
+    .caret
+      fill: white
+  .dropdown-content li > a,
+  .dropdown-content li > span
+    @apply text-primary
+
+nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i
+  height: 70px
+  line-height: 70px
+  @media only screen and (min-width: 768px)
+    height: 120px
+    line-height: 120px
+
+#mobile-menu
+  @apply bg-primary

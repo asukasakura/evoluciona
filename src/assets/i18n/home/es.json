@@ -1,0 +1,50 @@
+{
+  "HEADER_TITLE": "DESDE CHILE Y ESPAÑA",
+  "HEADER_TEXT": "Diseñamos y desarrollamos soluciones simples y prácticas, enfocadas en las necesidades reales de nuestros clientes, con una mirada integral y global.",
+  "DESCRIPTION": {
+    "TITLE": "Nosotros",
+    "TEXT": "Evoluciona es una empresa con 20 años de trayectoria, buscamos generar valor a nuestros clientes a través de la ingeniería de negocios, la tecnología, la innovación y la búsqueda de las personas con el conocimiento y la experiencia necesaria para nuestros proyectos. Nos caracterizamos por una actitud de servicio y responsabilidad, en un camino de mejora continua de rigor y calidad, tanto en el mundo privado como público."
+  },
+  "INTRODUCTION_ABOUT_US": "Evoluciona, está conformada por una red de más de 40 profesionales en varios países y de distintas especialidades, como ingenieros industriales, informáticos y comerciales, psicólogos, audiovisuales, periodistas, abogados, técnicos, entre otros; lo que nos permite conformar equipos y células multidisciplinarias para abordar sus necesidades e iniciativas.",
+  "WE_PROVIDE": "<span class='font-medium'>BRINDAMOS</span> asesoría en el diagnóstico y solución de problemáticas de negocios, en el desarrollo de emprendimientos y en el diseño de planes estratégicos.",
+  "WE_PROMOTE": "<span class='font-medium'>IMPULSAMOS</span> la incursión de nuestros clientes en la implementación de plataformas tecnológicas funcionales innovadoras.",
+  "WE_SUPPORT": "<span class='font-medium'>APOYAMOS</span> la expansión de las compañías en términos de estrategias efectivas de negocios que permitan la consecución de metas concretas.",
+  "WE_INVITE_YOU_TO_LEARN_MORE_ABOUT_OUR_SERVICES": "Te invitamos a conocer más sobre nuestros servicios",
+  "OUR_SERVICES": {
+    "CARD1":{
+      "TITLE": "ITS",
+      "TEXT": "Evoluciona es una empresa con más de 15 años de experiencia en Sistemas Inteligentes de Transporte en distintas autopistas de Europa y América.<br> Nuestra especialización se extiende desde la conceptualización y formulación comercial de productos y servicios tecnológicos, hasta el establecimiento de requerimientos, dirección, licitación y adquisición o diseño y construcción, junto al mantenimiento de las soluciones que ayuden a mejorar la operación de las autopistas"
+    },
+    "CARD2":{
+      "TITLE": "SOURCING GLOBAL",
+      "TEXT": "El éxito de una organización depende en gran medida de las capacidades y compromiso de su fuerza laboral. La ejecución de proyectos requiere cada vez más personal con probadas competencias que garanticen la calidad y el compromiso con los resultados.<br> En ocasiones, es necesario potenciar el equipo de trabajo, para ello Evoluciona propone el outsourcing empresarial global, presencial o remoto, como estrategia eficaz para impulsar la consolidación de los proyectos de la organización."
+    },
+    "CARD3":{
+      "TITLE": "DESARROLLO & INNOVACIÓN",
+      "TEXT": "Evaluamos las opciones tecnológicas que permitan impulsar la innovación de nuestros clientes y su presencia en las plataformas digitales.<br> Desarrollamos proyectos de aplicaciones adaptables, prácticas e integrales para empresas y organizaciones innovadoras, que comprenden el ritmo de las nuevas tecnologías y la importancia de la tecnología en su actividad cotidiana y en su crecimiento."
+    }
+  },
+  "OUR_PARTNERS": {
+    "TITLE": "Nuestros socios",
+    "PARTNERS": {
+      "PARTNER1": {
+        "NAME": "Juan Leon Oros",
+        "POSITION": "Business & Development Manager at Evoluciona",
+        "TEXT": "Durante 20 años de experiencia Juan León ha participado en diferentes disciplinas de la ingeniería: Desde la conceptualización y venta hasta el diseño, desarrollo, implementación y mantenimiento relacionados con soluciones tecnológicas. En los últimos 10 años el mayor esfuerzo se ha dedicado al desarrollo de negocio en Soluciones Inteligentes de Transporte (ITS) y Sistemas de Cobro Electrónico de Peaje (ETC)."
+      },
+      "PARTNER2": {
+        "NAME": "Manuel Vergara Trincado",
+        "POSITION": "Dirección Empresarial",
+        "TEXT": "Director General experimentado con un historial demostrado de trabajo en la industria de la consultoría de gestión. Experto en personalidad, planificación empresarial, diseño de procesos empresariales, emprendimiento y cuadro de mando integral. Fuerte profesional en desarrollo de negocios con PDE con enfoque en Administración de ESE Business School."
+      },
+      "PARTNER3": {
+        "NAME": "Jorge Vasquez Araya",
+        "POSITION": "Coordinador e Ingeniero de Proyectos Senior",
+        "TEXT": "Ingeniero en computación e Informática de la Universidad Mayor. Se ha desempeñado principalmente implementando soluciones para la mejora y optimización de los procesos operacionales de las empresas. Recientemente ha ejercido labores de consultor y especialista en soluciones de Gestión de Servicios TI, elaborando definiciones de arquitectura y liderando equipos de trabajo en servicios de desarrollo evolutivo de inventarios y soporte a plataformas CRM."
+      }
+    }
+  },
+  "PREVIEW_VIDEO": "Somos una ventana abierta al futuro. Conoce un poco más de nuestra propuesta para el crecimiento empresarial.",
+  "CONTACT_US": "Contacta con nosotros",
+  "OUR_EXPERIENCE_AND_SUCCESS_STORIES": "Nuestra experiencia y Casos de éxito"
+}

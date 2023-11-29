@@ -1,0 +1,58 @@
+{
+  "HEADER_TEXT": "CLIENTES Y<br> CASOS DE EXITO",
+  "DESCRIPTION": {
+    "TITLE": "Clientes",
+    "TEXT": "Nuestra prioridad en Evoluciona es establecer alianzas estratégicas de largo plazo con nuestros clientes. Nuestro objetivo es aportar a través de nuestros servicios mejoras sustanciales en su operación, que se traduzcan en el funcionamiento óptimo de sus áreas, en una eficiente y efectiva transformación tecnológica y en el crecimiento organizacional y la obtención de sus objetivos organizacionales."
+  },
+  "SEPARATOR_TITLE": "Casos de éxito",
+  "PROJECT_MANAGEMENT":{
+    "TITLE": "GESTIÓN DE PROYECTOS",
+    "CARD1": {
+      "TITLE": "RUTA 68 - CHILE",
+      "TEXT": "Gestión de proyecto para la implementación de seis puntos de cobro de Peaje MLFF para la Ruta 68, en el marco de la iniciativa “Chile Sin Barreras” (Q-Free / Autopista Central)."
+    },
+    "CARD2": {
+      "TITLE": "VESPUCIO NORTE - CHILE",
+      "TEXT": "Renovación de dieciséis peajes electrónicos en fase de “despliegue”."
+    },
+    "CARD3": {
+      "TITLE": "CAPUFE - MÉXICO",
+      "TEXT": "Implantación del sistema de gestión de tráfico ITS en el centro de control nacional."
+    }
+  },
+  "DEVELOPMENTS": 
+  { 
+    "TITLE": "DESARROLLOS",
+    "CARD1": {
+      "TITLE": "RUTA 68 - CHILE",
+      "TEXT": "Sistema de Validación de Imágenes. Como parte del proceso de medición y SLA, Evoluciona desarrolló un sistema de clasificación de imágenes y cálculo de KPI."
+    },
+    "CARD2": {
+      "TITLE": "Q-FREE PORTUGAL",
+      "TEXT": "Sistema de monitoreo “Front End”.<br>Derivado de la App de monitoreo, concentra Alarmas, Transacciones, Dashboard y KPIs en una sola interfaz."
+    },
+    "CARD3": {
+      "TITLE": "VALLES DE BÍO-BÍO",
+      "TEXT": "Firma digital de transacciones según lo exige el estándar ST4 del MOP."
+    },
+    "CARD4": {
+      "TITLE": "TÚNEL SAN CRISTÓBAL",
+      "TEXT": "Sistema de recogida de datos de túneles."
+    }
+  },
+  "COMMERCIAL_SUPPORT": {
+    "TITLE": "SOPORTE COMERCIAL",
+    "CARD1": {
+      "TITLE": "Q-FREE PORTUGAL AUTOPISTA A28",
+      "TEXT": "Elaboración de una propuesta técnica comercial para el servicio de renovación de 8 puntos de recogida MLFF Ruta A28, Vialibre Portugal."
+    },
+    "CARD2": {
+      "TITLE": "Q-FREE CHILE AUTOPISTA NOGALES PUCHUNCAVÍ",
+      "TEXT": "Elaboración de propuesta técnica del Sistema de Gestión de Tráfico."
+    },
+    "CARD3": {
+      "TITLE": "Q-FREE PORTUGAL AUTOPISTA A22 ALGARVE",
+      "TEXT": "Elaboración de propuesta técnica comercial para el servicio de renovación de 20 puntos de recogida MLFF Ruta A22, Vialibre Portugal."
+    }
+  }
+}

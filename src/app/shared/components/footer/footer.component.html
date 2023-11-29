@@ -1,0 +1,26 @@
+<div class="grid grid-cols-1 md:grid-cols-3">
+  <div>
+    <ul class="navbar uppercase text-extra-light-gray text-center md:text-left">
+      <li [routerLink]="item.router"
+        routerLinkActive="router-link-active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        *ngFor="let item of mainMenu.defaultOptions">
+        <span [innerHTML]="item.name | translate"></span>
+      </li>
+    </ul>
+  </div>
+  <div class="brand self-center place-content-center text-center">
+    <img class="max-w-xs lg:max-w-full block mx-auto" src="./assets/images/new_globaltech_logo_bn.svg" alt="" srcset="">
+    <p><small>
+      {{'ALL_RIGHTS_RESERVED' | translate}} © 2022 EVOLUCIONA INTERNACIONAL.
+    </small></p>
+  </div>
+  <div class="self-center mt-8 md:mt-0 md:justify-self-end">
+    <div>
+      <p class="font-bold text-sm mb-5 text-center">
+        {{'FOLLOW_US_ON_NETWORKS' | translate}}
+      </p>
+      <app-social-media></app-social-media>
+    </div>
+  </div>
+</div>

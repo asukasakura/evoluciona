@@ -1,0 +1,77 @@
+{
+  "HEADER_TITLE": "DEVELOPMENT AND INNOVATION",
+  "HEADER_TEXT": "",
+  "DESCRIPTION": {
+    "TITLE": "Development & Innovation",
+    "TEXT": "We evaluate technological options that drive the innovation of our clients and their presence on digital platforms. We develop projects for adaptable, practical, and comprehensive applications for innovative companies and organizations that understand the pace of new technologies and the importance of technology in their daily activities and growth."
+  },
+  "BUSINESS_ENGINEERING": {
+    "TITLE": "Business Engineering",
+    "TEXT": "In a world with constantly evolving markets, companies are compelled to seek advantages that are sustainable over time; these advantages arise from two sources, operational effectiveness and the creation of unique value for customers or users.<br>For these advantages that give competitiveness to the organization to occur, it is necessary to design and redesign, in a combined and systematic way, the structure and activities of the business.",
+    "CARDS": {
+      "CARD1": {
+        "TITLE": "STRATEGIC PLANS",
+        "TEXT": "We define the lines of action to follow to achieve the set objectives."
+      },
+      "CARD2": {
+        "TITLE": "BUSINESS MODELS",
+        "TEXT": "We explore business models that project better development possibilities for the organization."
+      },
+      "CARD3": {
+        "TITLE": "PROCESS ARCHITECTURE",
+        "TEXT": "We model in detail and depth the organization's process map, in coherence with the purpose and values of the business, based on methodologies and tools of industrial engineering."
+      },
+      "CARD4": {
+        "TITLE": "PROCESS DESIGN",
+        "TEXT": "We design and optimize the processes, procedures, and information technology requirements of the company, ensuring that end-users (customers or citizens) have an experience consistent with the purposes and values defined by the organization."
+      },
+      "CARD5": {
+        "TITLE": "APPLICATION DEVELOPMENT",
+        "TEXT": "We advise on the acquisition of technological services, establish requirements, and formulate bidding bases. We configure technological development plans, model, and develop computer systems."
+      },
+      "CARD6": {
+        "TITLE": "TRAINING AND DISSEMINATION",
+        "TEXT": "We maintain ongoing training in the organization to ensure the sustainability of the company's processes using the training and audiovisual development capacity of Evoluciona."
+      }
+    }
+  },
+  "AUDIOVISUAL_DEVELOPMENT": {
+    "TITLE": "Audiovisual Development",
+    "TEXT": "We create pieces tailored to the needs of our clients, both in the training of personnel through e-learning, in the dissemination of projects framed in internal corporate activities, and in the promotion of products and services on social networks and other digital media.",
+    "CARDS": {
+      "CARD1": {
+        "TITLE": "TRAINING VIDEOS",
+        "TEXT": "Train your workers quickly and effectively anytime, anywhere.<br>Convey the knowledge of your experts as many times as necessary through any digital device.<br>Explain to your customers how to use your products through tutorial videos."
+      },
+      "CARD2": {
+        "TITLE": "DISSEMINATION VIDEOS",
+        "TEXT": "Disseminate your initiatives within your company.<br>Promote your products or services to potential customers on social networks."
+      },
+      "CARD3": {
+        "TITLE": "MOTION GRAPHICS",
+        "TEXT": "Promote events, products, or services in a dynamic and attractive way.<br>Create corporate videos and high-impact campaigns.<br>Conduct project exhibitions and interactive presentations."
+      },
+      "CARD4": {
+        "TITLE": "PROMOTIONAL VIDEOS",
+        "TEXT": "Disseminate internal corporate initiatives to your workers.<br>Successfully advertise products or services to potential customers on social networks."
+      }
+    }
+  },
+  "MORE": {
+    "CARDS": {
+      "CARD1": {
+        "TITLE": "POST-PRODUCTION",
+        "TEXT": "We have a specialized team in the management of editing and animation programs for video."
+      },
+      "CARD2": {
+        "TITLE": "PRODUCTION AND POST-PRODUCTION",
+        "TEXT": "We professionally work through all stages of the production and post-production of audiovisual material."
+      },
+      "CARD3": {
+        "TITLE": "PROFESSIONAL VOICEOVERS",
+        "TEXT": "Neutral accent narrations, ideal for videos intended for audiences in any Spanish-speaking country."
+      }
+    }
+  },
+  "CONTACT_US": "Contact us"
+}

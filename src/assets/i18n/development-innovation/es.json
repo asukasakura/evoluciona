@@ -1,0 +1,77 @@
+{
+  "HEADER_TITLE": "DESARROLLO E INNOVACIÓN",
+  "HEADER_TEXT": "",
+  "DESCRIPTION": {
+    "TITLE": "Desarrollo & Innovación",
+    "TEXT": "Evaluamos las opciones tecnológicas que permitan impulsar la innovación de nuestros clientes y su presencia en las plataformas digitales. Desarrollamos proyectos de aplicaciones adaptables, prácticas e integrales para empresas y organizaciones innovadoras, que comprenden el ritmo de las nuevas tecnologías y la importancia de la tecnología en su actividad cotidiana y en su crecimiento."
+  },
+  "BUSINESS_ENGINEERING": {
+    "TITLE": "Ingeniería de Negocios",
+    "TEXT": "Ante un mundo con mercados en constante evolución, las empresas están obligadas a buscar ventajas que sean sustentables en el tiempo; estas ventajas se originan en dos fuentes, la efectividad operacional y la creación de valor único para los clientes o usuarios.<br>Para que ocurran estas ventajas que den competitividad a la organización se deben diseñar y rediseñar, combinada y sistémicamente, la estructura y las actividades del negocio.",
+    "CARDS": {
+      "CARD1":{
+      "TITLE": "PLANES ESTRATÉGICOS",
+      "TEXT": "Definimos las líneas de actuación a seguir para lograr los objetivos planteados."
+      },
+      "CARD2":{
+        "TITLE": "MODELOS DE NEGOCIOS",
+        "TEXT": "Exploramos los modelos de negocio que proyecten mejores posibilidades de desarrollo para la organización."
+      },
+      "CARD3":{
+        "TITLE": "ARQUITECTURA DE PROCESOS",
+        "TEXT": "Modelamos de forma detallada y profunda el mapa de procesos de la organización, en coherencia con el propósito y valores del negocio, basados en metodologías y herramientas de ingeniería industrial."
+      },
+      "CARD4":{
+        "TITLE": "DISEÑO DE PROCESOS",
+        "TEXT": "Diseñamos y optimizamos los procesos, procedimientos y requerimientos de tecnologías de información de la empresa, asegurando que los usuarios finales (clientes o ciudadanos) tengan una experiencia coherente con los propósitos y valores definidos por la organización."
+      },
+      "CARD5":{
+        "TITLE": "CONSTRUCCIÓN DE APLICACIONES",
+        "TEXT": "Asesoramos la adquisición de Servicios Tecnológicos, estableciendo los requerimientos y formulando bases de licitación. Configuramos planes de desarrollo tecnológico, modelamos y desarrollamos sistemas informáticos."
+      },
+      "CARD6":{
+        "TITLE": "CAPACITACIÓN Y DIFUSIÓN",
+        "TEXT": "Mantenemos la formación permanente en la organización, a fin de garantizar la sostenibilidad de los procesos de la empresa utilizando la capacidad formativa y de desarrollo audiovisual de Evoluciona"
+      }
+    }
+  },
+  "AUDIOVISUAL_DEVELOPMENT": {
+    "TITLE": "Desarrollo Audiovisual",
+    "TEXT": "Creamos piezas adaptadas a las necesidades de nuestros clientes, tanto en el ámbito de la capacitación de personal a través del e-learning, en la difusión de proyectos enmarcados en las actividades corporativas internas, como en la promoción de productos y servicios en redes sociales y otros medios digitales.",
+    "CARDS": {
+      "CARD1":{
+      "TITLE": "VIDEOS DE CAPACITACIÓN",
+      "TEXT": "Capacite a sus trabajadores de forma rápida y efectiva a cualquier hora y desde cualquier lugar.<br>Transmita el conocimiento de sus especialistas las veces que sea necesario a través de cualquier dispositivo digital.<br>Explique a sus clientes cómo usar sus productos a través de videos tutoriales."
+      },
+      "CARD2":{
+        "TITLE": "VIDEOS DE DIFUSIÓN",
+        "TEXT": "Difunda al interior de su empresa sus iniciativas.<br>Difunda sus productos o servicios a sus potenciales clientes en redes sociales."
+      },
+      "CARD3":{
+        "TITLE": "MOTION GRAPHICS",
+        "TEXT": "Promocione eventos, productos o servicios de una forma dinámica y atractiva.<br>Cree videos corporativos y campañas de alto impacto.<br>Realice exposiciones de proyectos y presentaciones interactivas."
+      },
+      "CARD4":{
+        "TITLE": "VIDEOS DE PROMOCIÓN",
+        "TEXT": "Difunda iniciativas corporativas internas a sus trabajadores.<br>Publicite exitosamente productos o servicios entre sus potenciales clientes en redes sociales."
+      }
+    }
+  },
+  "MORE": {
+    "CARDS": {
+      "CARD1":{
+      "TITLE": "POST-PRODUCCIÓN",
+      "TEXT": "Contamos con un equipo especializado en el manejo de programas de edición y animación para video."
+      },
+      "CARD2":{
+        "TITLE": "PRODUCCIÓN Y POST-PRUDUCCION",
+        "TEXT": "Trabajamos profesionalmente todas las etapas de la producción y postproducción del material audiovisual."
+      },
+      "CARD3":{
+        "TITLE": "LOCUCIONES PROFESIONALES",
+        "TEXT": "Narraciones en acento neutro (deslocalizado), ideal para videos destinados a público de cualquier país de habla hispana."
+      }
+    }
+  },
+  "CONTACT_US": "Contacta con nosotros"
+}

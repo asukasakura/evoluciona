@@ -1,0 +1,61 @@
+{
+  "HEADER_TEXT": "INTELIGENCIA DE TRANSPORTE",
+  "DESCRIPTION": {
+    "TITLE": "ITS",
+    "TEXT": "Evoluciona es una empresa con más de 18 años de experiencia en Sistemas Inteligentes de Transporte en distintas autopistas de Europa y América. Nuestra especialización se extiende desde la conceptualización, formulación comercial de productos y servicios tecnológicos, hasta el establecimiento de requerimientos, dirección, adquisición/licitación, diseño, construcción y mantenimiento de soluciones que ayuden a mejorar las operaciones y la eficacia de los sistemas. En Evoluciona la experiencia nos permite diseñar soluciones simples, prácticas, pensando siempre en las necesidades reales de nuestros clientes."
+  },
+  "OUR_SPECIALIZATION_IN_ITS": {
+    "TITLE": "Nuestra especialización en ITS",
+    "CARDS": {
+      "CARD1": {
+        "TITLE": "PEAJE ELECTRÓNICO",
+        "TEXT": "Hemos construido un sistema de peaje operacional y un sistema de peaje comercial."
+      },
+      "CARD2": {
+        "TITLE": "SISTEMAS CENTRALES DE PEAJE, MONITOREO, BACK OFFICE",
+        "TEXT": "Diseñamos sistemas centrales de peaje incluyendo monitoreo, Back Office Operativo y Back Office Comercial."
+      },
+      "CARD3": {
+        "TITLE": "ES CONTROL OPERATIVO ITS BACK OFFICE",
+        "TEXT": "Realizamos la especificación, ingeniería y gestión de proyectos de automatización ITS incluyendo, entre los más comunes, gestión de tráfico, SCADA, CCTV, postes SOS y Gestión de Incidentes."
+      },
+      "CARD4": {
+        "TITLE": "ASESORÍA EN PROYECTOS",
+        "TEXT": "Evaluamos diferentes soluciones en proyectos tecnológicos, considerando aspectos técnicos, capacidad de soporte, experiencia y el modelo de servicio que se adapta a cada caso."
+      }
+    }
+  },
+  "OUR_SPECIALIZATION_IN_ITS_2": {
+    "TITLE": "Nuestra especialización en ITS",
+    "DESCRIPTION": "Evoluciona, está conformada por una red de más de 40 profesionales en varios países y de distintas especialidades, como ingenieros industriales, informáticos y comerciales, psicólogos, audiovisuales, periodistas, abogados, técnicos, entre otros; lo que nos permite conformar equipos y células multidisciplinarias para abordar sus necesidades e iniciativas.",
+    "CARDS": {
+      "CARD1": {
+        "TEXT": "DESARROLLO DE COMPONENTES DE SOFTWARE PARA FABRICANTES E INTEGRADORES DE SOLUCIONES."
+      },
+      "CARD2": {
+        "TEXT": "DESARROLLOS Y ASESORÍAS PARA CONCESIONARIAS DE CARRETERAS."
+      },
+      "CARD3": {
+        "TEXT": "ASESORÍA PARA GOBIERNOS Y AUTORIDADES DE TRANSPORTE Y OBRAS PÚBLICAS."
+      }
+    }
+  },
+  "ITS_SOFTWARE_DEVELOPED" : {
+    "TITLE": "Software ITS desarrollados",
+    "CARDS": {
+      "CARD1": {
+        "TITLE": "SOFTWARE TMFE: MONITOREO DE TRÁFICO FRONT-END",
+        "TEXT": "Este sistema proporciona una vista simplificada, permanente y actualizada del estado de operación de un sistema MLFF. Permite conocer permanentemente el estado de operación de los puntos de cobro de una ruta, las alarmas de los equipos viales como cámaras, antenas y las transacciones de peaje que se realizan."
+      },
+      "CARD2": {
+        "TITLE": "SOFTWARE OBO: BACK OFFICE OPERACIONAL",
+        "TEXT": "Este sistema concentra pasos de vehículos como transacciones electrónicas y los monetiza previa validación, generando registros cobrables o infraccionables y derivándolos al CBO."
+      },
+      "CARD3": {
+        "TITLE": "SOFTWARE CBO: BACK OFFICE COMERCIAL",
+        "TEXT": "Es un sistema de gestión comercial que permite: Gestión de contratos, facturación, cobranza, atención al cliente (CRM), Interfaz RNUT, Autoservicio Web, Infractores, Gestión de TAG (Inventario), Interfaz Contable (Contabilidad), Recursos Humanos (Turnos y Caja), Firma Digital e interacción con un sistema interoperable con otras autopistas de peaje."
+      }
+    }
+  },
+  "MORE_ITS_SERVICES_AND_PRODUCTS": "Conoce más de nuestros servicios y productos ITS"
+}

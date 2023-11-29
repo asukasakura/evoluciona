@@ -1,0 +1,61 @@
+{
+  "HEADER_TEXT": "TRANSPORTATION INTELLIGENCE",
+  "DESCRIPTION": {
+    "TITLE": "ITS",
+    "TEXT": "Evoluciona is a company with more than 18 years of experience in Intelligent Transportation Systems on different highways in Europe and America. Our specialization extends from the conceptualization, commercial formulation of technological products and services, to the establishment of requirements, management, acquisition/tendering, design, construction and maintenance of solutions that help improve the operations and effectiveness of the systems. At Evoluciona, experience allows us to design simple, practical solutions, always thinking about the real needs of our clients."
+  },
+  "OUR_SPECIALIZATION_IN_ITS": {
+    "TITLE": "Our specialization in ITS",
+    "CARDS": {
+      "CARD1": {
+        "TITLE": "ELECTRONIC TOLLING",
+        "TEXT": "We have built an operational toll system and a commercial toll system."
+      },
+      "CARD2": {
+        "TITLE": "CENTRAL TOLL SYSTEMS, MONITORING, BACK OFFICE",
+        "TEXT": "We design central toll systems including monitoring, Operational Back Office and Commercial Back Office."
+      },
+      "CARD3": {
+        "TITLE": "ES OPERATIONAL CONTROL ITS BACK OFFICE",
+        "TEXT": "We carry out the specification, engineering and management of ITS automation projects including, among the most common, traffic management, SCADA, CCTV, SOS posts and Incident Management."
+      },
+      "CARD4": {
+        "TITLE": "PROJECT ADVICE",
+        "TEXT": "We evaluate different solutions in technological projects, considering technical aspects, support capacity, experience and the service model that adapts to each case."
+      }
+    }
+  },
+  "OUR_SPECIALIZATION_IN_ITS_2": {
+    "TITLE": "Our specialization in ITS",
+    "DESCRIPTION": "Evoluciona is made up of a network of more than 40 professionals in several countries and from different specialties, such as industrial, computer and commercial engineers, psychologists, audiovisuals, journalists, lawyers, technicians, among others; which allows us to form multidisciplinary teams and cells to address their needs and initiatives.",
+    "CARDS": {
+      "CARD1": {
+        "TEXT": "DEVELOPMENT OF SOFTWARE COMPONENTS FOR SOLUTION MANUFACTURERS AND INTEGRATORS."
+      },
+      "CARD2": {
+        "TEXT": "DEVELOPMENTS AND ADVICE FOR ROAD CONCESSIONARIES."
+      },
+      "CARD3": {
+        "TEXT": "ADVICE FOR GOVERNMENTS AND TRANSPORTATION AND PUBLIC WORKS AUTHORITIES."
+      }
+    }
+  },
+  "ITS_SOFTWARE_DEVELOPED" : {
+    "TITLE": "ITS Software Developed",
+    "CARDS": {
+      "CARD1": {
+        "TITLE": "TMFE SOFTWARE: FRONT-END TRAFFIC MONITORING",
+        "TEXT": "This system provides a simplified, permanent and up-to-date view of the operating status of an MLFF system. It allows you to permanently know the operating status of the toll points on a route, the alarms of road equipment such as cameras, antennas and the toll transactions that are carried out."
+      },
+      "CARD2": {
+        "TITLE": "OBO SOFTWARE: OPERATIONAL BACK OFFICE",
+        "TEXT": "This system concentrates vehicle passages as electronic transactions and monetizes them after validation, generating collectible or infringable records and referring them to the CBO."
+      },
+      "CARD3": {
+        "TITLE": "CBO SOFTWARE: COMMERCIAL BACK OFFICE",
+        "TEXT": "It is a commercial management system that allows: Contract management, billing, collection, customer service (CRM), RNUT Interface, Web Self-Service, Offenders, TAG Management (Inventory), Accounting Interface (Accounting), Human Resources (Shifts and Cash), Digital Signature and interaction with a system interoperable with other toll highways."
+      }
+    }
+  },
+  "MORE_ITS_SERVICES_AND_PRODUCTS": "Learn more about our ITS services and products"
+}

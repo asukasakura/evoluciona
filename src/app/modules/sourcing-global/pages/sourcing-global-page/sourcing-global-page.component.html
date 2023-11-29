@@ -1,0 +1,54 @@
+<app-wrap-hero 
+  [imagebackground]="'./assets/images/sourcing-global-hero.jpg'"
+  [horizontalAlign]="'left'"
+  [minHeight]="' '"
+  [fontSize]="'text-4xl md:text-[4rem]'"
+  [leading]="'md:leading-[4.2rem]'"
+  [headTitle]="'HEADER_TITLE'">
+</app-wrap-hero>
+<app-wrap-description
+  id="about-us"
+  [gridCols]="gridCols"
+  [spanCol1]="spanCol1"
+  [spanCol2]="spanCol2"
+  [startCol2]="startCol2"
+  appScrollSection="one">
+</app-wrap-description>
+
+<div class="container-fluid">
+  <section class="container px-4 lg:px-6 max-w-[96rem] py-28">
+    <div class="flex justify-center mb-12">
+      <h2 class="flex text-gray text-3xl text-center title_border relative pb-3">
+        {{ 'WHAT_IS_GLOBAL_PEOPLE_SOURCING.TITLE' | translate}}
+      </h2>
+    </div>
+    <p class="text-lg">{{ 'WHAT_IS_GLOBAL_PEOPLE_SOURCING.TEXT' | translate}}</p>
+  </section>
+
+  <section class="container px-4 lg:px-10 max-w-[96rem] py-12">
+    <div class="flex justify-center mb-10">
+      <h2 class="flex text-gray text-3xl text-center title_border relative pb-3">
+        {{ 'WHY_DO_GLOBAL_SOURCING_WITH_US.TITLE' | translate}}
+      </h2>
+    </div>
+    <app-wrap-cards 
+      [dataCards]="globalSourcingCards"
+      [nCards]="nCards"
+      [titlePosition]="'top'"
+    ></app-wrap-cards>
+  </section>
+
+  <section class="container px-4 lg:px-6 max-w-[96rem] pb-28">
+    <div class="flex justify-center mb-12">
+      <h2 class="flex text-gray text-3xl text-center title_border relative pb-3">
+        {{ 'ADDITIONALLY.TITLE' | translate}}
+      </h2>
+    </div>
+    <app-wrap-cards 
+      [dataCards]="additionallyCards"
+      [nCards]="nCards"
+      [titlePosition]="'top'"
+      [imageSize]="'w-full'"
+    ></app-wrap-cards>
+  </section>
+</div>

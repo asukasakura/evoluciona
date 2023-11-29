@@ -1,0 +1,17 @@
+{
+  "HEADER_TEXT": "",
+  "DESCRIPTION": {
+    "TITLE": "Traffic Monitoring Front End",
+    "TEXT": "Es un Sistema de Monitoreo, que funciona como una vista en tiempo real del estado de operación de una autopista. Permite conocer permanentemente el estado de operación de la ruta, sus alarmas, el equipamiento de la carretera como cámaras, antenas, switch y las transacciones de peaje que ocurren."
+  },
+  "REDUCED_SIZE_THAT_FACILITATES_ITS_IMPLEMENTATION_IN_ANY_INFRASTRUCTURE": "<b>TAMAÑO REDUCIDO</b> que facilita su implementación en cualquier infraestructura.",
+  "UNIQUE_INTERFACE_FOCUSED_ON_COMMON_FUNCTIONS": "<b>INTERFAZ ÚNICA</b> focalizada en funciones comunes.",
+  "MULTIPLE_LANGUAGES_LIKE_ENGLISH_SPANISH_PORTUGUESE_AND_GERMAN":"<b>MÚLTIPLES IDIOMAS</b> como inglés, español, portugués y alemán.",
+  "BASED_ON_COMMON_PLATFORMS_GOOGLE_MATERIAL_JAVA_TOMCAT_MARIADB_WHICH_DO_NOT_REQUIRE_LICENSING":"<b>BASADO EN PLATAFORMAS COMUNES</b> Google Material, Java, Tomcat, MariaDB, que no requieren licenciamiento.",
+  "USES_OPEN_DATA_ENCODING_SCHEMES_JSON_THAT_FACILITATES_INTERACTION_WITH_OTHER_SYSTEMS_AND_HUMAN_UNDERSTANDING":"<b>USA ESQUEMAS ABIERTOS DE CODIFICACIÓN DE DATOS (JSON)</b> que fácilita la interacción con otros sistemas y la comprensión humana.",
+  "ADAPTABILITY_BASED_ON_CUSTOMER_REQUESTS_REGARDING_COMMON_CHARACTERISTICS":"<b>ADAPTABILIDAD</b> en función a las solicitudes de los clientes en torno a las características comunes.",
+  "KNOW_ITS_CHARACTERISTICS": "Conoce sus características",
+  "TMFE_CONCENTRATES_IN_A_SINGLE_INTERFACE_ELEMENTS_SUCH_AS" : "TMFE concentra en una única interfaz elementos como:",
+  "ALARMS_EG_NETXMS": "<li>Alarmas (v.g. NetXMS).</li> <li>Vista jerárquica del Estado de Objetos (pórticos, cámaras, antenas y switches).</li> <li>Transacciones e imágenes.</li> <li>Indicadores desempeño comunes, como Transacciones, Lecturas de TAG, Confiabilidad OCR y Capturas de imagen.</li> ",
+  "CONTACT_US": "Contact us"
+}

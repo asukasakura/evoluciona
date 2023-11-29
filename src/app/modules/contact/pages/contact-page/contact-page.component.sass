@@ -1,0 +1,25 @@
+::ng-deep
+  .contact-hero
+    header.hero h3
+      @apply text-gray
+h2
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    height: 3px
+    width: 3rem
+    display: block
+    @apply bg-orange
+address
+  font-style: normal
+  p
+    margin: .4rem 0
+  a
+    &:hover
+      color: var(--light-blue-color)
+.address-card
+  @media screen and (max-width: 769px)
+    grid-template-columns: repeat(1, minmax(0, 1fr))

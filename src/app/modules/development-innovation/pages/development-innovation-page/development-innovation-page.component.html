@@ -1,0 +1,57 @@
+<app-wrap-hero 
+  [imagebackground]="'./assets/images/development-hero.jpg'"
+  [horizontalAlign]="'left'"
+  [fontSize]="'text-4xl md:text-[4rem]'"
+  [leading]="'md:leading-[4.2rem]'"
+  [minHeight]="' '"
+  [headTitle]="'HEADER_TITLE'">
+</app-wrap-hero>
+<app-wrap-description
+  id="about-us"
+  [gridCols]="gridCols"
+  [spanCol1]="spanCol1"
+  [spanCol2]="spanCol2"
+  [startCol2]="startCol2"
+  appScrollSection="one">
+</app-wrap-description>
+
+<div class="container-fluid">
+  <section class="container px-4 lg:px-6 max-w-[96rem] py-28">
+    <div class="flex justify-center mb-12">
+      <h2 class="flex text-gray text-3xl text-center title_border relative pb-3">
+        {{ 'BUSINESS_ENGINEERING.TITLE' | translate}}
+      </h2>
+    </div>
+    <p class="text-lg" [innerHTML]="'BUSINESS_ENGINEERING.TEXT' | translate"></p>
+
+    <app-wrap-cards 
+      [dataCards]="businessEngineeringCards"
+      [nCards]="nCards"
+      [titlePosition]="'top'"
+    ></app-wrap-cards>
+  </section>
+
+  <section class="container px-4 lg:px-6 max-w-[96rem]">
+    <div class="flex justify-center mb-12">
+      <h2 class="flex text-gray text-3xl text-center title_border relative pb-3">
+        {{ 'AUDIOVISUAL_DEVELOPMENT.TITLE' | translate}}
+      </h2>
+    </div>
+    <p class="text-lg" [innerHTML]="'AUDIOVISUAL_DEVELOPMENT.TEXT' | translate"></p>
+
+    <app-wrap-cards 
+      [dataCards]="audiovisualDevelopmentCards"
+      [nCards]="nCards"
+      [titlePosition]="'top'"
+    ></app-wrap-cards>
+  </section>
+
+  <section class="container px-4 lg:px-6 max-w-[96rem] pb-28">
+    <app-wrap-cards 
+      [dataCards]="moreCards"
+      [nCards]="nCards"
+      [titlePosition]="'top'"
+      [imageSize]="'w-full'"
+    ></app-wrap-cards>
+  </section>
+</div>

@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap')
+
+@import "tailwindcss/base"
+@import "tailwindcss/components"
+@import "tailwindcss/utilities"
+
+:root
+  --dark-blue-color : #00539f
+  --dark-orange-color : #EE7F00
+  --orange-color : #F4AF00
+  --gray-color : #4D4D4D
+  --white-color : #F0F0F0
+  --light-gray-color : #BBBBBB
+  --light-blue-color : #00a7e3
+
+.video-container_video
+  position: relative
+.fallback-video
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 10
+.show
+  display: block
+.hide
+  display: none
+.separator
+  background-color: var(--dark-orange-color)
+  display: block
+  height: 4px
+  width: 100%

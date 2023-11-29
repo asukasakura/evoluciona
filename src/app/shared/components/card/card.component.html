@@ -1,0 +1,21 @@
+<mat-card class="">
+  <div class="mb-4 lg:mb-10">
+    <img 
+      [src]="cards.image"
+      alt="{{cards.title | translate}}"
+      [ngClass]="[imageSize ? imageSize : 'w-3/4 max-w-[200px] md:max-w-[300px]', 'block mx-auto']"
+    >
+  </div>
+  <mat-card-header>
+    <mat-card-title [innerHTML]="cards.title | translate" [ngClass]="[cards.title == null ? 'hidden' : 'show', titlePosition, 'text-lg', 'font-bold']"></mat-card-title>
+    <!-- <mat-card-title class="text-lg font-bold" [innerHTML]="'HEADER_TEXT' | translate"></mat-card-title> -->
+   </mat-card-header>
+  <mat-card-content>
+    <p class="text-lg font-normal"[innerHTML]="cards.paragraph | translate"></p>
+  </mat-card-content>
+</mat-card>
+
+
+<!-- <div *ngFor="let item of cardsContent.defaultOptions">
+  {{item.title | translate}}
+</div> -->

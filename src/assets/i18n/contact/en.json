@@ -1,0 +1,18 @@
+{
+  "HEADER_TEXT": "",
+  "DESCRIPTION": {
+    "TITLE": "Contact",
+    "TEXT": ""
+  },
+  "ADDRESS_1": {
+    "EVOLUCIONA": "Evoluciona España",
+    "ATENTION": "(attention: Mon - Fri from 9am -2pm)",
+    "STREET_NUMBER_STATE_COUNTRY": "Guillen de Castro Street 104. Pta 2. 46003 Valencia, Spain"
+  },
+  "ADDRESS_2": {
+    "EVOLUCIONA": "Evoluciona Chile",
+    "ATENTION": "(attention: Mon - Fri from 9am -2pm)",
+    "STREET_NUMBER_STATE_COUNTRY": "Compañía de Jesús Street 1390, 22nd floor, Office 2205, Santiago de Chile"
+  },
+  "PHONE": "Phone"
+}

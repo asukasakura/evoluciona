@@ -1,0 +1,17 @@
+{
+  "HEADER_TEXT": "",
+  "DESCRIPTION": {
+    "TITLE": "Traffic Monitoring Front End",
+    "TEXT": "It is a Monitoring System, which works as a real-time view of the state of operation of a highway. It allows to permanently know the state of operation of the route, its alarms, the road equipment such as cameras, antennas, switches and the toll transactions that occur."
+  },
+  "REDUCED_SIZE_THAT_FACILITATES_ITS_IMPLEMENTATION_IN_ANY_INFRASTRUCTURE": "<b>REDUCED SIZE</b> that facilitates its implementation in any infrastructure.",
+  "UNIQUE_INTERFACE_FOCUSED_ON_COMMON_FUNCTIONS": "<b>UNIQUE INTERFACE</b> focused on common functions.",
+  "MULTIPLE_LANGUAGES_LIKE_ENGLISH_SPANISH_PORTUGUESE_AND_GERMAN":"<b>MULTIPLE LANGUAGES</b> like English, Spanish, Portuguese and German.",
+  "BASED_ON_COMMON_PLATFORMS_GOOGLE_MATERIAL_JAVA_TOMCAT_MARIADB_WHICH_DO_NOT_REQUIRE_LICENSING":"<b>BASED ON COMMON PLATFORMS</b> Google Material, Java, Tomcat, MariaDB, which do not require licensing.",
+  "USES_OPEN_DATA_ENCODING_SCHEMES_JSON_THAT_FACILITATES_INTERACTION_WITH_OTHER_SYSTEMS_AND_HUMAN_UNDERSTANDING":"<b>USES OPEN DATA ENCODING SCHEMES (JSON)</b> that facilitates interaction with other systems and human understanding.",
+  "ADAPTABILITY_BASED_ON_CUSTOMER_REQUESTS_REGARDING_COMMON_CHARACTERISTICS":"<b>ADAPTABILITY</b> based on customer requests regarding common characteristics.",
+  "KNOW_ITS_CHARACTERISTICS": "Know its characteristics",
+  "TMFE_CONCENTRATES_IN_A_SINGLE_INTERFACE_ELEMENTS_SUCH_AS" : "TMFE concentrates in a single interface elements such as:",
+  "ALARMS_EG_NETXMS": "<li>Alarms (eg NetXMS).</li> <li>Hierarchical view of the State of Objects (gantries, cameras, antennas and switches).</li> <li>Transactions and images.</li> <li>Common performance indicators, such as Transactions, TAG Reads, OCR Reliability and Image Captures.</li>",
+  "CONTACT_US": "Contact us"
+}

@@ -1,0 +1,93 @@
+<app-wrap-hero 
+  [imagebackground]="'./assets/images/its-hero.jpg'"
+  [horizontalAlign]="'left'"
+  [minHeight]="' '"
+  [fontSize]="'text-4xl md:text-[4rem]'"
+  [leading]="'md:leading-none'">
+</app-wrap-hero>
+<app-wrap-description
+  id="about-us"
+  [gridCols]="gridCols"
+  [spanCol1]="spanCol1"
+  [spanCol2]="spanCol2"
+  [startCol2]="startCol2"
+  appScrollSection="one">
+</app-wrap-description>
+
+
+<div class="container-fluid">
+  <section class="container px-4 lg:px-10 max-w-[96rem] py-12">
+    <div class="flex justify-center mb-10">
+      <h2 class="flex text-gray text-3xl text-center title_border relative pb-3">
+        {{ 'OUR_SPECIALIZATION_IN_ITS.TITLE' | translate}}
+      </h2>
+    </div>
+    <app-wrap-cards [dataCards]="dataCards" [nCards]="nCards" [titlePosition]="'top'"></app-wrap-cards>
+  </section>
+</div>
+
+<div class="container-fluid">
+  <section class="container px-4 lg:px-10 max-w-[96rem] py-12">
+    <div class="flex justify-center mb-10">
+      <h2 class="flex text-gray text-3xl text-center title_border relative pb-3">
+        {{ 'OUR_SPECIALIZATION_IN_ITS_2.TITLE' | translate}}
+      </h2>
+    </div>
+    <p>{{ 'OUR_SPECIALIZATION_IN_ITS_2.DESCRIPTION' | translate}}</p>
+    <app-wrap-cards [dataCards]="dataCards2" [nCards]="nCards" [titlePosition]="'top'"></app-wrap-cards>
+  </section>
+</div>
+
+<div class="container-fluid">
+  <section class="container px-4 lg:px-6 max-w-[96rem] py-12">
+    <div class="flex justify-center mb-32">
+      <h2 class="flex text-gray text-3xl text-center title_border relative pb-3">
+        {{ 'ITS_SOFTWARE_DEVELOPED.TITLE' | translate}}
+      </h2>
+    </div>
+    <app-wrap-large-card [dataLargeCards]="dataLargeCards"></app-wrap-large-card>
+  </section>
+</div>
+
+<div class="container-fluid">
+  <section class="container px-4 lg:px-10 max-w-[96rem] py-12">
+    <div class="flex justify-center mb-10">
+      <h2 class="flex text-gray text-3xl text-center title_border relative pb-3">
+        {{ 'MORE_ITS_SERVICES_AND_PRODUCTS' | translate}}
+      </h2>
+    </div>
+    <!-- {{ playerState$ | async }} -->
+    <div class="video-container_video">
+      <img src="./assets/images/ITS_video_media.jpg" alt="" [ngClass]="[!videoPlay && !videoPause ? 'show' : 'hide', 'fallback-video']">
+      <vg-player (onPlayerReady)="onPlayerReady($event)">
+        <vg-overlay-play vgFor="itsVideo"></vg-overlay-play>
+
+        <vg-controls [vgAutohide]="true" [vgAutohideTime]="1">
+          <vg-play-pause></vg-play-pause>
+          <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+          <vg-scrub-bar style="pointer-events: none;"></vg-scrub-bar>
+          <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+          <vg-track-selector class="track-selector"></vg-track-selector>
+          <vg-mute></vg-mute>
+          <vg-volume></vg-volume>
+          <vg-fullscreen></vg-fullscreen>
+        </vg-controls>
+
+        <video [vgMedia]="$any(media)" #media id="itsVideo" preload="auto">
+            <source src="./assets/video/ITS_video_media.mp4" type="video/mp4">
+            <source src="./assets/video/ITS_video_media.ogv" type="video/ogv">
+            <source src="./assets/video/ITS_video_media.webm" type="video/webm">
+
+            <track kind="subtitles" label="English" src="./assets/video/subtitles/ITS_en.vtt" srclang="en" default>
+        </video>
+      </vg-player>
+    </div>
+
+  </section>
+</div>
+
+<!-- <div class="grid md:grid-cols-4 my-10 mb-24 mx-4 lg:mx-10">
+  <div class="md:col-start-2 md:col-span-2">
+    <app-call-to-action></app-call-to-action>
+  </div>
+</div> -->

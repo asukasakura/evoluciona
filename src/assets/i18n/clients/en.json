@@ -1,0 +1,58 @@
+{
+  "HEADER_TEXT": "CLIENTS AND<br> SUCCESS STORIES",
+  "DESCRIPTION": {
+    "TITLE": "Clients",
+    "TEXT": "Our priority at Evoluciona is to establish long-term strategic alliances with our clients. Our objective is to provide through our services substantial improvements in your operation, which translate into the optimal functioning of your areas, an efficient and effective technological transformation and organizational growth and the achievement of your organizational objectives."
+  },
+  "SEPARATOR_TITLE": "Success Stories",
+  "PROJECT_MANAGEMENT":{
+    "TITLE": "PROJECT MANAGEMENT",
+    "CARD1": {
+      "TITLE": "RUTA 68 - CHILE",
+      "TEXT": "Project management for the implementation of six MLFF Toll collection points for Route 68, within the framework of the \"Chile Sin Barreras\" initiative (Q-Free / Autopista Central)."
+    },
+    "CARD2": {
+      "TITLE": "VESPUCIO NORTE - CHILE",
+      "TEXT": "Renovation of sixteen electronic toll gates in their \"roll-out\" phase."
+    },
+    "CARD3": {
+      "TITLE": "CAPUFE - MÉXICO",
+      "TEXT": "Implementation of the ITS traffic management system in the national control center."
+    }
+  },
+  "DEVELOPMENTS": 
+  { 
+    "TITLE": "DEVELOPMENTS",
+    "CARD1": {
+      "TITLE": "RUTA 68 - CHILE",
+      "TEXT": "Image Validation System. As part of the measurement and SLA process, Evoluciona developed an image classification and KPI calculation system."
+    },
+    "CARD2": {
+      "TITLE": "Q-FREE PORTUGAL",
+      "TEXT": "“Front End” monitoring system. Derived from the monitoring App, concentrates Alarms, Transactions, Dashboard and KPIs in a single interface."
+    },
+    "CARD3": {
+      "TITLE": "VALLES DE BÍO-BÍO",
+      "TEXT": "Digital signature of transactions as required by the ST4 standard of the MOP."
+    },
+    "CARD4": {
+      "TITLE": "TÚNEL SAN CRISTÓBAL",
+      "TEXT": "Tunnel Data Collection System."
+    }
+  },
+  "COMMERCIAL_SUPPORT": {
+    "TITLE": "COMMERCIAL SUPPORT",
+    "CARD1": {
+      "TITLE": "Q-FREE PORTUGAL AUTOPISTA A28",
+      "TEXT": "Preparation of a commercial technical proposal for the renewal service of 8 MLFF collection points Route A28, Vialibre Portugal."
+    },
+    "CARD2": {
+      "TITLE": "Q-FREE CHILE AUTOPISTA NOGALES PUCHUNCAVÍ",
+      "TEXT": "Preparation of technical proposal of the Traffic Management System."
+    },
+    "CARD3": {
+      "TITLE": "Q-FREE PORTUGAL AUTOPISTA A22 ALGARVE",
+      "TEXT": "Preparation of a commercial technical proposal for the renewal service of 20 MLFF collection points Route A22, Vialibre Portugal."
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<div *ngIf="mode == 'video'">
+  <video autoplay="" id="heroVideo" loop="" muted="" [poster]="imagebackground" class="">
+    <source *ngFor="let format of ['mp4', 'webm', 'ogv']" [src]="videobackground + '.' + format" type="video/{{format}}" />
+  </video>
+  <img alt="poster image mobile" class="poster img-fluid mx-auto md:hidden" [src]="imagebackground" />
+</div>
+<div *ngIf="mode == 'image'">
+  <img alt="poster image" [ngClass]="['poster object-cover w-full mx-auto', minHeight ? minHeight : 'h-80']" [src]="imagebackground" />
+</div>
+<div [ngClass]="['container max-w-[96rem] absolute top-0 left-0 right-0 ml-auto mr-auto h-full']">
+  <div [ngClass]="[horizontalAlign == 'left' ? 'left-8' : 'right-8' , 'absolute top-1/2 transform -translate-y-1/2 md:w-1/2 text-lg md:text-4xl font-bold']">
+    <h2 *ngIf="headTitle" [ngClass]="[fontSize ? fontSize : 'text-2xl md:text-4xl' , leading ? leading : 'md:leading-10' , 'text-white font-medium']" [innerHTML]="headTitle | translate"></h2>
+    <h3 *ngIf="!isChildRoute && !headText" [ngClass]="[fontSize ? fontSize : 'text-2xl md:text-3xl' , leading ? leading : 'md:leading-10' , 'text-white font-medium']" [innerHTML]="'HEADER_TEXT' | translate"></h3>
+    <h3 *ngIf="headText" [ngClass]="[fontSize ? fontSize : 'text-2xl md:text-3xl' , leading ? leading : 'md:leading-10' , 'text-white font-medium']" [innerHTML]="headText | translate"></h3>
+    <h3 *ngIf="isChildRoute && !headText" [ngClass]="[fontSize ? fontSize : 'text-2xl md:text-3xl' , leading ? leading : 'md:leading-10' , 'text-white font-medium']" [innerHTML]="currentRouteName + '.HEADER_TEXT' | translate"></h3>
+  </div>
+</div>

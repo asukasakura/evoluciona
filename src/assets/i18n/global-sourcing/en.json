@@ -1,0 +1,62 @@
+{
+  "HEADER_TITLE": "PEOPLE<br> AT YOUR SERVICE",
+  "HEADER_TEXT": "",
+  "DESCRIPTION": {
+    "TITLE": "Global Sourcing",
+    "TEXT": "The success of an organization depends largely on the capabilities and commitment of its workforce. The execution of projects requires more and more personnel with proven skills that guarantee quality and commitment to results. Sometimes, it is necessary to strengthen the work team, for this Evoluciona proposes global business outsourcing, in-person or remote, as an effective strategy to promote the consolidation of the organization's projects."
+  },
+  "WHAT_IS_GLOBAL_PEOPLE_SOURCING": {
+    "TITLE": "What is Global People Sourcing?",
+    "TEXT": "One of the main obstacles that some economies face is the lack of professionals in the field of technology, which translates into a problem when companies want to carry out technological strategies to enhance their operations. In Chile alone, in the field of technology, it is estimated that we have a deficit of professionals in the area of 25% to 40%. In this context, Global Sourcing is a strategy that carries out an intensive search and selection of the human talent that companies require, both locally and globally, at competitive prices and with a high quality standard."
+  },
+  "WHY_DO_GLOBAL_SOURCING_WITH_US": {
+    "TITLE": "Why do Global Sourcing with us?",
+    "CARDS": {
+      "CARD1": {
+        "TITLE": "PSYCHOLABOR REPORT",
+        "TEXT" : "We carry out an independent psycho-labor report prior to all our engineers."
+      },
+      "CARD2": {
+        "TITLE": "TECHNICAL SKILLS",
+        "TEXT" : "We guarantee the technical skills of each of those selected."
+      },
+      "CARD3": {
+        "TITLE": "PERMANENT TECHNICAL SUPPORT",
+        "TEXT" : "We provide permanent technical support to both the resource and the client."
+      },
+      "CARD4": {
+        "TITLE": "STICKED TO THE LEGISLATION",
+        "TEXT" : "We strictly adhere to national labor legislation."
+      },
+      "CARD5": {
+        "TITLE": "PERMANENT MONITORING",
+        "TEXT" : "We permanently monitor selected personnel and their performance."
+      },
+      "CARD6": {
+        "TITLE": "LABOR ABSORPTION",
+        "TEXT" : "Without complications, nor any cost in case of eventual absorption of the resource by the client."
+      },
+      "CARD7": {
+        "TITLE": "GLOBAL SOURCING",
+        "TEXT" : "We make it possible to hire trained personnel from different locations around the world."
+      }
+    }
+  },
+  "ADDITIONALLY": {
+    "TITLE": "Additionally",
+    "CARDS": {
+      "CARD1": {
+        "TITLE": "SELECTION",
+        "TEXT" : "We carry out an exhaustive search and timely selection of professionals."
+      },
+      "CARD2": {
+        "TITLE": "SAVING",
+        "TEXT" : "Excellent cost/benefit ratio."
+      },
+      "CARD3": {
+        "TITLE": "PROFESSIONALISM",
+        "TEXT" : "We apply a prior interview to the resource, endorsed by an expert psychologist."
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+<app-wrap-hero class=""
+  [imagebackground]="'./assets/images/clients-hero.jpg'"
+  [horizontalAlign]="'left'"
+  [fontSize]="'text-4xl md:text-[4rem]'"
+  [leading]="'md:leading-[4.2rem]'"
+  [minHeight]="' '">
+</app-wrap-hero>
+<app-wrap-description [gridCols]="gridCols" [spanCol1]="spanCol1" [spanCol2]="spanCol2" [startCol2]="startCol2">
+</app-wrap-description>
+
+<div class="container max-w-[96rem] my-12">
+  <div class="grid grid-cols-2 md:grid-cols-5 gap-4 justify-items-center">
+    <img 
+      *ngFor="let cliente of clientes"
+      class="w-full aspect-square"
+      [src]="cliente.image"
+      [alt]="cliente.name"
+      [title]="cliente.name"
+    />
+  </div>
+</div>
+
+<div class="container-full bg-primary px-10">
+  <div [ngClass]="gridCols" class="description grid gap-10 place-content-start place-items-center container max-w-[96rem]">
+    <div [ngClass]="spanCol1" class="place-self-start self-center">
+      <h2 [innerHTML]="'SEPARATOR_TITLE' | translate" class="text-2xl md:text-4xl font-medium"></h2>
+    </div>
+  </div>
+</div>
+
+<app-wrap-hero class="contact-hero"
+  [imagebackground]="'./assets/images/succsess-history-hero.jpg'"
+  [headText]="' '">
+</app-wrap-hero>
+
+<div class="container-fluid my-12">
+  <section
+    *ngFor="let section of successStories; let i = index"
+    class="container px-4 lg:px-10 max-w-[96rem] py-12">
+    
+    <div class="flex justify-center mb-10">
+      <h2 class="flex text-gray text-3xl text-center title_border relative capitalize font-medium pb-3">
+        {{ section.title | translate}}
+      </h2>
+    </div>
+    <div class="flex flex-row flex-wrap w-full">
+      <div
+        *ngFor="let card of section.cards"
+        class="flex flex-col md:w-1/2 mb-8">
+        <div class="flex flex-row text-gray">
+          <div class="flex flex-col w-1/3">
+            <img src="{{card.image}}" alt="{{card.image}}" />
+          </div>
+          <div class="flex flex-col w-2/3 pl-4 pr-6">
+            <h6 class="title_border_top relative text-md font-medium">{{card.title | translate}}</h6>
+            <p class="text-md leading-tight">{{card.text | translate}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</div>

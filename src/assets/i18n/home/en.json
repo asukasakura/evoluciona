@@ -1,0 +1,50 @@
+{
+  "HEADER_TITLE": "FROM CHILE AND SPAIN",
+  "HEADER_TEXT": "We design and develop simple and practical solutions, focused on the real needs of our clients, with a comprehensive and global perspective.",
+  "DESCRIPTION": {
+    "TITLE": "About Us",
+    "TEXT": "Evoluciona is a company with 20 years of experience, we seek to generate value for our clients through business engineering, technology, innovation and the search for people with the knowledge and experience necessary for our projects. We are characterized by an attitude of service and responsibility, on a path of continuous improvement of rigor and quality, both in the private and public world."
+  },
+  "INTRODUCTION_ABOUT_US": "Evoluciona is made up of a network of more than 40 professionals in several countries and from different specialties, such as industrial, computer and commercial engineers, psychologists, audiovisuals, journalists, lawyers, technicians, among others; which allows us to form multidisciplinary teams and cells to address their needs and initiatives.",
+  "WE_PROVIDE": "<span class='font-medium'>WE PROVIDE</span> advice in the diagnosis and solution of business problems, in the development of ventures and in the design of strategic plans.",
+  "WE_PROMOTE": "<span class='font-medium'>WE PROMOTE</span> our clients' foray into the implementation of innovative functional technological platforms.",
+  "WE_SUPPORT": "<span class='font-medium'>WE SUPPORT</span> the expansion of companies in terms of effective business strategies that allow the achievement of specific goals.",
+  "WE_INVITE_YOU_TO_LEARN_MORE_ABOUT_OUR_SERVICES": "We invite you to learn more about our services",
+  "OUR_SERVICES": {
+    "CARD1":{
+      "TITLE": "ITS",
+      "TEXT": "Evoluciona is a company with more than 15 years of experience in Intelligent Transportation Systems on different highways in Europe and America.<br> Our specialization extends from the conceptualization and commercial formulation of technological products and services, to the establishment of requirements, management , bidding and acquisition or design and construction, along with the maintenance of solutions that help improve the operation of highways."
+    },
+    "CARD2":{
+      "TITLE": "SOURCING GLOBAL",
+      "TEXT": "The success of an organization depends largely on the capabilities and commitment of its workforce. The execution of projects requires more and more personnel with proven skills that guarantee quality and commitment to results.<br> Sometimes, it is necessary to strengthen the work team, for this Evoluciona proposes global business outsourcing, in-person or remote, as an effective strategy to promote the consolidation of the organization's projects."
+    },
+    "CARD3":{
+      "TITLE": "DEVELOPMENT & INNOVATION",
+      "TEXT": "We evaluate the technological options that allow us to promote our clients' innovation and their presence on digital platforms.<br> We develop adaptable, practical and comprehensive application projects for innovative companies and organizations, which understand the pace of new technologies and the importance of technology in their daily activity and in their growth."
+    }
+  },
+  "OUR_PARTNERS": {
+    "TITLE": "Nuestros socios",
+    "PARTNERS": {
+      "PARTNER1": {
+        "NAME": "Juan Leon Oros",
+        "POSITION": "Business & Development Manager at Evoluciona",
+        "TEXT": "During 20 years of experience Juan León has participated in different engineering disciplines: From conceptualization & sales to design, development, implementation and maintenance related to technological solutions. In the last 10 years the major effort has been dedicated to business development in Transportation Intelligent Solutions (ITS) and Electronic Toll Collection Systems (ETC)."
+      },
+      "PARTNER2": {
+        "NAME": "Manuel Vergara Trincado",
+        "POSITION": "Business Management",
+        "TEXT": "Experienced Managing Director with a demonstrated history of working in the management consulting industry. Skilled in Persona, Business Planning, Business Process Design, Entrepreneurship, and Balanced Scorecard. Strong business development professional with a PDE focused in Administración from ESE Business School."
+      },
+      "PARTNER3": {
+        "NAME": "Jorge Vasquez Araya",
+        "POSITION": "Senior Project Coordinator and Engineer",
+        "TEXT": "Computer and Information Technology Engineer from the Universidad Mayor. He has worked mainly implementing solutions for the improvement and optimization of companies' operational processes. He has recently worked as a consultant and specialist in IT Service Management solutions, developing architecture definitions and leading work teams in evolutionary inventory development services and support for CRM platforms."
+      }
+    }
+  },
+  "PREVIEW_VIDEO": "We are an open window to the future. Learn a little more about our proposal for business growth.",
+  "CONTACT_US": "Contact us",
+  "OUR_EXPERIENCE_AND_SUCCESS_STORIES": "Our experience and Success stories"
+}

@@ -1,0 +1,71 @@
+<app-wrap-hero
+  [videobackground]="'./assets/video/prodcts-hero-video'"
+  [imagebackground]="'./assets/images/poster-products-hero.jpg'"
+  [mode]="'video'">
+</app-wrap-hero>
+<app-wrap-description [gridCols]="gridCols" [spanCol1]="spanCol1" [spanCol2]="spanCol2" [startCol2]="startCol2">
+</app-wrap-description>
+<app-wrap-cards [dataCards]="dataCards" [nCards]="nCards">
+</app-wrap-cards>
+
+<div class="container-fluid bg-extra-light-gray">
+  <section class="container px-4 lg:px-10 max-w-[96rem] py-12">
+    <div class="flex justify-center mb-10">
+      <h2 class="font-bold text-gray text-3xl text-center title_border relative flex pb-3">
+        {{'KNOW_ITS_CHARACTERISTICS' | translate}}
+      </h2>
+    </div>
+    <div class="mb-10 two-colums">
+      <p>{{'TMFE_CONCENTRATES_IN_A_SINGLE_INTERFACE_ELEMENTS_SUCH_AS' | translate}}</p>
+      <ul class="list-disc pl-4" [innerHTML]="'ALARMS_EG_NETXMS' | translate"></ul>
+    </div>
+    <img src="./assets/images/TMFE_capturas.JPG" alt="">
+  </section>
+</div>
+
+<div class="container-fluid">
+  <section class="container px-4 lg:px-10 max-w-[96rem] py-12">
+    <div class="flex justify-center mb-10">
+      <h2 class="hidden md:flex text-gray text-3xl text-center title_border relative pb-3">
+        <span class="font-bold whitespace-nowrap">VIDEO TMFE</span>&nbsp;Traffic Monitoring Front End
+      </h2>
+      <h2 class="flex md:hidden text-gray text-3xl text-center title_border relative pb-3">
+        VIDEO TMFE Traffic Monitoring Front End
+      </h2>
+    </div>
+    <!-- {{ playerState$ | async }} -->
+    <div class="video-container">
+      <img src="./assets/images/TMFE_video_media.jpg" alt="" [ngClass]="[!videoPlay && !videoPause ? 'show' : 'hide', 'fallback-video']">
+      <vg-player (onPlayerReady)="onPlayerReady($event)">
+        <vg-overlay-play vgFor="tmfeVideo"></vg-overlay-play>
+
+        <vg-controls [vgAutohide]="true" [vgAutohideTime]="1">
+          <vg-play-pause></vg-play-pause>
+          <!-- <vg-playback-button></vg-playback-button> -->
+          <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+          <vg-scrub-bar style="pointer-events: none;"></vg-scrub-bar>
+          <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+          <vg-track-selector></vg-track-selector>
+          <vg-mute></vg-mute>
+          <vg-volume></vg-volume>
+          <vg-fullscreen></vg-fullscreen>
+        </vg-controls>
+
+        <video [vgMedia]="$any(media)" #media id="tmfeVideo" preload="auto">
+            <source src="./assets/video/TMFE_video_media.mp4" type="video/mp4">
+            <source src="./assets/video/TMFE_video_media.ogv" type="video/ogv">
+            <source src="./assets/video/TMFE_video_media.webm" type="video/webm">
+
+            <track kind="subtitles" label="English" src="./assets/video/subtitles/TMFE_en.vtt" srclang="en" default>
+        </video>
+      </vg-player>
+    </div>
+
+  </section>
+</div>
+
+<div class="grid md:grid-cols-4 my-10 mb-24 mx-4 lg:mx-10">
+  <div class="md:col-start-2 md:col-span-2">
+    <app-call-to-action></app-call-to-action>
+  </div>
+</div>
