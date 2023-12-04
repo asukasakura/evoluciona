@@ -29,22 +29,23 @@
     "PARTNERS": {
       "PARTNER1": {
         "NAME": "Juan Leon Oros",
-        "POSITION": "Business & Development Manager at Evoluciona",
+        "POSITION": "Business & Development CTO",
         "TEXT": "Durante 20 años de experiencia Juan León ha participado en diferentes disciplinas de la ingeniería: Desde la conceptualización y venta hasta el diseño, desarrollo, implementación y mantenimiento relacionados con soluciones tecnológicas. En los últimos 10 años el mayor esfuerzo se ha dedicado al desarrollo de negocio en Soluciones Inteligentes de Transporte (ITS) y Sistemas de Cobro Electrónico de Peaje (ETC)."
       },
       "PARTNER2": {
         "NAME": "Manuel Vergara Trincado",
-        "POSITION": "Dirección Empresarial",
-        "TEXT": "Director General experimentado con un historial demostrado de trabajo en la industria de la consultoría de gestión. Experto en personalidad, planificación empresarial, diseño de procesos empresariales, emprendimiento y cuadro de mando integral. Fuerte profesional en desarrollo de negocios con PDE con enfoque en Administración de ESE Business School."
+        "POSITION": "Business & Development CEO",
+        "TEXT": "Mi motivación es agregar valor a las organizaciones a través de un estudio sistemático de sus recursos, del entorno y de sus propias metas, para a través de la ingeniería, innovación y valores, llevarlos a desafiar sus límites, apoyando los procesos de transformación necesarios para alcanzar el éxito."
       },
       "PARTNER3": {
         "NAME": "Jorge Vasquez Araya",
-        "POSITION": "Coordinador e Ingeniero de Proyectos Senior",
-        "TEXT": "Ingeniero en computación e Informática de la Universidad Mayor. Se ha desempeñado principalmente implementando soluciones para la mejora y optimización de los procesos operacionales de las empresas. Recientemente ha ejercido labores de consultor y especialista en soluciones de Gestión de Servicios TI, elaborando definiciones de arquitectura y liderando equipos de trabajo en servicios de desarrollo evolutivo de inventarios y soporte a plataformas CRM."
+        "POSITION": "Business & Development CFO & COO",
+        "TEXT": "Evoluciona para mí, representa la oportunidad de incidir positivamente en la sociedad a través de un trato intachable con nuestros trabajadores y clientes, por lo que un desempeño intachable es imprescindible."
       }
     }
   },
-  "PREVIEW_VIDEO": "Somos una ventana abierta al futuro. Conoce un poco más de nuestra propuesta para el crecimiento empresarial.",
+  "VIEW_PROFILE": "Ver perfil en Linkedin",
+  "PREVIEW_VIDEO": "Conoce un poco más de nuestra propuesta para el crecimiento empresarial.",
   "CONTACT_US": "Contacta con nosotros",
   "OUR_EXPERIENCE_AND_SUCCESS_STORIES": "Nuestra experiencia y Casos de éxito"
 }

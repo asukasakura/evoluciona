@@ -32,7 +32,7 @@ export class DevelopmentInnovationPageComponent implements OnInit {
     this.businessEngineeringCards = [
       {
         title: 'BUSINESS_ENGINEERING.CARDS.CARD1.TITLE',
-        image: './assets/images/icons/development-innovation/modelo-negocios.svg',
+        image: './assets/images/icons/development-innovation/strategic-plans.svg',
         paragraph: 'BUSINESS_ENGINEERING.CARDS.CARD1.TEXT'
       },
       {
@@ -42,7 +42,7 @@ export class DevelopmentInnovationPageComponent implements OnInit {
       },
       {
         title: 'BUSINESS_ENGINEERING.CARDS.CARD3.TITLE',
-        image: './assets/images/icons/development-innovation/diseno-procesos.svg',
+        image: './assets/images/icons/development-innovation/process-architecture.svg',
         paragraph: 'BUSINESS_ENGINEERING.CARDS.CARD3.TEXT'
       },
       {

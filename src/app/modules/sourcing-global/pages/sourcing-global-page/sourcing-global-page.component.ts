@@ -52,7 +52,7 @@ export class SourcingGlobalPageComponent implements OnInit {
       },
       {
         title: 'WHY_DO_GLOBAL_SOURCING_WITH_US.CARDS.CARD5.TITLE',
-        image: './assets/images/icons/global-sourcing/absorcion-laboral.svg',
+        image: './assets/images/icons/global-sourcing/monitoreo_permanente.svg',
         paragraph: 'WHY_DO_GLOBAL_SOURCING_WITH_US.CARDS.CARD5.TEXT'
       },
       {
@@ -62,7 +62,7 @@ export class SourcingGlobalPageComponent implements OnInit {
       },
       {
         title: 'WHY_DO_GLOBAL_SOURCING_WITH_US.CARDS.CARD7.TITLE',
-        image: './assets/images/icons/global-sourcing/absorcion-laboral.svg',
+        image: './assets/images/icons/global-sourcing/global-sourcing.svg',
         paragraph: 'WHY_DO_GLOBAL_SOURCING_WITH_US.CARDS.CARD7.TEXT'
       },
     ]

@@ -107,12 +107,14 @@ export class InitPageComponent implements OnInit, OnDestroy {
         position: 'OUR_PARTNERS.PARTNERS.PARTNER1.POSITION',
         text: 'OUR_PARTNERS.PARTNERS.PARTNER1.TEXT',
         image: './assets/images/socios/juan-leon-oros.png',
+        in_profile: 'https://www.linkedin.com/in/juan-leon-oros-b1992830/',
       },
       {
         name: 'OUR_PARTNERS.PARTNERS.PARTNER2.NAME',
         position: 'OUR_PARTNERS.PARTNERS.PARTNER2.POSITION',
         text: 'OUR_PARTNERS.PARTNERS.PARTNER2.TEXT',
         image: './assets/images/socios/manuel-vergara-trincado.png',
+        in_profile: 'https://www.linkedin.com/in/manuelrodrigovergara/',
       },
       {
         name: 'OUR_PARTNERS.PARTNERS.PARTNER3.NAME',

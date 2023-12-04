@@ -67,7 +67,10 @@
             <img [src]="partner.image" class="h-24 lg:h-32 w-24 lg:w-32" [alt]="partner.name" />
           </div>
           <div class="grow">
-            <h4 class="text-2xl font-medium">{{ partner.name | translate }}</h4>
+            <a *ngIf="partner.in_profile" href="{{ partner.in_profile }}" target="_blank" rel="noopener noreferrer" title="{{ 'VIEW_PROFILE' | translate }}" class="link-name">
+              <h4 class="text-2xl font-medium">{{ partner.name | translate }}</h4>
+            </a>
+            <h4 *ngIf="!partner.in_profile" class="text-2xl font-medium">{{ partner.name | translate }}</h4>
             <p class="font-light text-medium-gray">{{ partner.position | translate}}</p>
           </div>
         </div>

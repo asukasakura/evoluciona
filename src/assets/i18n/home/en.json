@@ -29,22 +29,23 @@
     "PARTNERS": {
       "PARTNER1": {
         "NAME": "Juan Leon Oros",
-        "POSITION": "Business & Development Manager at Evoluciona",
+        "POSITION": "Business & Development CTO",
         "TEXT": "During 20 years of experience Juan León has participated in different engineering disciplines: From conceptualization & sales to design, development, implementation and maintenance related to technological solutions. In the last 10 years the major effort has been dedicated to business development in Transportation Intelligent Solutions (ITS) and Electronic Toll Collection Systems (ETC)."
       },
       "PARTNER2": {
         "NAME": "Manuel Vergara Trincado",
-        "POSITION": "Business Management",
-        "TEXT": "Experienced Managing Director with a demonstrated history of working in the management consulting industry. Skilled in Persona, Business Planning, Business Process Design, Entrepreneurship, and Balanced Scorecard. Strong business development professional with a PDE focused in Administración from ESE Business School."
+        "POSITION": "Business & Development CEO",
+        "TEXT": "My motivation is to add value to organizations through a systematic study of their resources, the environment and their own goals, to through engineering, innovation and values, lead them to challenge their limits, supporting the transformation processes necessary to reach success."
       },
       "PARTNER3": {
         "NAME": "Jorge Vasquez Araya",
-        "POSITION": "Senior Project Coordinator and Engineer",
-        "TEXT": "Computer and Information Technology Engineer from the Universidad Mayor. He has worked mainly implementing solutions for the improvement and optimization of companies' operational processes. He has recently worked as a consultant and specialist in IT Service Management solutions, developing architecture definitions and leading work teams in evolutionary inventory development services and support for CRM platforms."
+        "POSITION": "Business & Development CFO & COO",
+        "TEXT": "Evoluciona for me, it represents the opportunity to have a positive impact on society through impeccable treatment with our workers and clients, so impeccable performance is essential."
       }
     }
   },
-  "PREVIEW_VIDEO": "We are an open window to the future. Learn a little more about our proposal for business growth.",
+  "VIEW_PROFILE": "View profile on Linkedin",
+  "PREVIEW_VIDEO": "Learn a little more about our proposal for business growth.",
   "CONTACT_US": "Contact us",
   "OUR_EXPERIENCE_AND_SUCCESS_STORIES": "Our experience and Success stories"
 }
