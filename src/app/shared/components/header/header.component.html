@@ -33,17 +33,22 @@
         [attr.data-target]="'dropdown' + item.key"
         *ngFor="let item of mainMenu.defaultOptions | keyvalue"
         >
-        <span [innerHTML]="item.value.name | translate"></span>
-          <!-- {{item.value.name | translate}} -->
-            <!-- Dropdown Structure -->
-            <ul *ngIf="item.value.childrens" [attr.id]="'dropdown' + item.key" class='dropdown-content'>
-              <li *ngFor="let child of item.value.childrens">
-                <a [routerLink]="child.router" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{ exact: true }">
-                  <span class="menu-initials">{{child.initials}}</span>
-                  {{child.name | translate}}
-                </a>
-              </li>
-            </ul>
+          <div *ngIf="item.value.router">
+            <span [innerHTML]="item.value.name | translate"></span>
+            <!-- {{item.value.name | translate}} -->
+              <!-- Dropdown Structure -->
+              <ul *ngIf="item.value.childrens" [attr.id]="'dropdown' + item.key" class='dropdown-content'>
+                <li *ngFor="let child of item.value.childrens">
+                  <a [routerLink]="child.router" routerLinkActive="router-link-active" [routerLinkActiveOptions]="{ exact: true }">
+                    <span class="menu-initials">{{child.initials}}</span>
+                    {{child.name | translate}}
+                  </a>
+                </li>
+              </ul>
+          </div>
+          <div *ngIf="item.value.link">
+            <a [href]="item.value.link" target="_blank">{{item.value.name | translate}}</a>
+          </div>
         </li>
       </ul>
     </div>
@@ -59,11 +64,14 @@
       [routerLink]="item.value.router"
       routerLinkActive="router-link-active"
       [routerLinkActiveOptions]="{ exact: true }"
-      *ngIf="!item.value.childrens"
+      *ngIf="!item.value.childrens && !item.value.link"
       (click)="cerrarSidenav()"
       >
       {{item.value.name | translate}}
     </span>
+    <div *ngIf="item.value.link">
+      <a [href]="item.value.link" target="_blank">{{item.value.name | translate}}</a>
+    </div>
     
     <ul *ngIf="item.value.childrens" class="collapsible">
       <li>

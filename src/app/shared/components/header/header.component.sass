@@ -15,6 +15,8 @@ nav
     span
       line-height: 120%
       display: inline-flex
+    &:empty
+      display: none
     &.router-link-active
       &::after
         content: ''
@@ -45,6 +47,12 @@ nav
       //   background: var(--orange-color)
   .sidenav-trigger
     padding: 4px 0
+  ul a
+    @apply text-primary
+    font-size: inherit
+    padding: 0
+    &:hover
+      background: transparent
 ::ng-deep
   app-header
     mat-icon.mat-icon

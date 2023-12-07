@@ -29,18 +29,18 @@
     "PARTNERS": {
       "PARTNER1": {
         "NAME": "Juan Leon Oros",
-        "POSITION": "Business & Development CTO",
-        "TEXT": "Durante 20 años de experiencia Juan León ha participado en diferentes disciplinas de la ingeniería: Desde la conceptualización y venta hasta el diseño, desarrollo, implementación y mantenimiento relacionados con soluciones tecnológicas. En los últimos 10 años el mayor esfuerzo se ha dedicado al desarrollo de negocio en Soluciones Inteligentes de Transporte (ITS) y Sistemas de Cobro Electrónico de Peaje (ETC)."
+        "POSITION": "CTO / Director de Tecnología",
+        "TEXT": "Durante 20 años de experiencia he participado en diferentes disciplinas de la ingeniería, desde la conceptualización y venta hasta el diseño, desarrollo, implementación y mantenimiento de soluciones tecnológicas. En los últimos 10 años nuestro esfuerzo se ha concentrado en el desarrollo de Soluciones Inteligentes de Transporte (ITS) y Sistemas de Cobro Electrónico de Peaje (ETC)."
       },
       "PARTNER2": {
         "NAME": "Manuel Vergara Trincado",
-        "POSITION": "Business & Development CEO",
+        "POSITION": "CEO / Director Ejecutivo",
         "TEXT": "Mi motivación es agregar valor a las organizaciones a través de un estudio sistemático de sus recursos, del entorno y de sus propias metas, para a través de la ingeniería, innovación y valores, llevarlos a desafiar sus límites, apoyando los procesos de transformación necesarios para alcanzar el éxito."
       },
       "PARTNER3": {
         "NAME": "Jorge Vasquez Araya",
-        "POSITION": "Business & Development CFO & COO",
-        "TEXT": "Evoluciona para mí, representa la oportunidad de incidir positivamente en la sociedad a través de un trato intachable con nuestros trabajadores y clientes, por lo que un desempeño intachable es imprescindible."
+        "POSITION": "COO / Director de Operaciones",
+        "TEXT": "Mi trabajo es coordinar la operación de las empresas en Chile y España, cuidando siempre un trato intachable y de largo plazo con nuestros clientes, trabajadores y proveedores.  Mi motivación es que podamos incidir positivamente en la sociedad a través de soluciones de ingeniería, procesos y tecnología."
       }
     }
   },

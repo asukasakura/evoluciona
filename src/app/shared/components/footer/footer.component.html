@@ -5,7 +5,10 @@
         routerLinkActive="router-link-active"
         [routerLinkActiveOptions]="{ exact: true }"
         *ngFor="let item of mainMenu.defaultOptions">
-        <span [innerHTML]="item.name | translate"></span>
+        <span *ngIf="!item.link" [innerHTML]="item.name | translate"></span>
+        <div *ngIf="item.link">
+          <a [href]="item.link" target="_blank">{{item.name | translate}}</a>
+        </div>
       </li>
     </ul>
   </div>

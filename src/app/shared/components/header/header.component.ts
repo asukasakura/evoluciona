@@ -162,7 +162,8 @@ export class HeaderComponent implements OnInit {
       },
       {
         name: 'NEWS',
-        router: ['/', 'community']
+        // router: ['/', 'community']
+        link: 'https://www.linkedin.com/company/evoluciona-limitada/posts/?feedView=all'
       },
       {
         name: 'CONTACT',

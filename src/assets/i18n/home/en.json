@@ -29,18 +29,18 @@
     "PARTNERS": {
       "PARTNER1": {
         "NAME": "Juan Leon Oros",
-        "POSITION": "Business & Development CTO",
-        "TEXT": "During 20 years of experience Juan León has participated in different engineering disciplines: From conceptualization & sales to design, development, implementation and maintenance related to technological solutions. In the last 10 years the major effort has been dedicated to business development in Transportation Intelligent Solutions (ITS) and Electronic Toll Collection Systems (ETC)."
+        "POSITION": "CTO / Chief Technology Officer",
+        "TEXT": "For 20 years of experience I have participated in different engineering disciplines, from conceptualization and sales to the design, development, implementation and maintenance of technological solutions. In the last 10 years our efforts have focused on the development of Intelligent Transportation Solutions (ITS) and Electronic Toll Collection Systems (ETC)."
       },
       "PARTNER2": {
         "NAME": "Manuel Vergara Trincado",
-        "POSITION": "Business & Development CEO",
+        "POSITION": "CEO / Executive Director",
         "TEXT": "My motivation is to add value to organizations through a systematic study of their resources, the environment and their own goals, to through engineering, innovation and values, lead them to challenge their limits, supporting the transformation processes necessary to reach success."
       },
       "PARTNER3": {
         "NAME": "Jorge Vasquez Araya",
-        "POSITION": "Business & Development CFO & COO",
-        "TEXT": "Evoluciona for me, it represents the opportunity to have a positive impact on society through impeccable treatment with our workers and clients, so impeccable performance is essential."
+        "POSITION": "COO / Director of Operations",
+        "TEXT": "My job is to coordinate the operation of companies in Chile and Spain, always ensuring impeccable and long-term treatment with our clients, workers and suppliers. My motivation is that we can have a positive impact on society through engineering, process and technology solutions."
       }
     }
   },
