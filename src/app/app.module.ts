@@ -15,7 +15,6 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { MaterialModule } from '@shared/material.module';
 
-
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -25,7 +24,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     ScrollAnchorDirective,
     ScrollSectionDirective,
-    ScrollManagerDirective
+    ScrollManagerDirective,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,26 @@
+<app-wrap-hero class=""
+  [imagebackground]="'./assets/images/news-hero.jpg'"
+  [horizontalAlign]="'left'"
+  [fontSize]="'text-4xl md:text-[4rem]'"
+  [headText]="'NOTICIAS'"
+  [minHeight]="' '">
+</app-wrap-hero>
+<app-wrap-description 
+  [staticTitle]="'NOTICIAS'"
+  [staticDescription]="''"
+  [gridCols]="gridCols"
+  [spanCol1]="spanCol1"
+  [spanCol2]="spanCol2"
+  [startCol2]="startCol2">
+</app-wrap-description>
+
+<div class="container max-w-[96rem] my-12">
+  <ul class="grid grid-cols-2 gap-8">
+    <li *ngFor="let item of [1,2,3]" class="card">
+      <div>titulo</div>
+      <div>bajada</div>
+      <div>imagen</div>
+      <div>enlace</div>
+    </li>
+  </ul>
+</div>

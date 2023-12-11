@@ -20,6 +20,8 @@ export class DescriptionComponent implements OnInit {
   @Input() spanCol1 : string = ''
   @Input() spanCol2 : string = ''
   @Input() startCol2 : string = ''
+  @Input() staticTitle : string = ''
+  @Input() staticDescription : string = ''
 
   constructor(
     private translate: TranslateService, 

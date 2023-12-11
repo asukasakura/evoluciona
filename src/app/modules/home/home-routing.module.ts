@@ -27,6 +27,10 @@ const routes: Routes = [
     loadChildren: () => import(`@modules/sourcing-global/sourcing-global.module`).then(m => m.SourcingGlobalModule)
   },
   {
+    path: 'news',
+    loadChildren: () => import(`@modules/news/news.module`).then(m => m.NewsModule)
+  },
+  {
     path: 'contact',
     loadChildren: () => import(`@modules/contact/contact.module`).then(m => m.ContactModule)
   },

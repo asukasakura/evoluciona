@@ -1,12 +1,14 @@
 <div class="container-full bg-primary px-10">
   <div [ngClass]="gridCols" class="description grid gap-10 place-content-start place-items-center container max-w-[96rem]">
     <div [ngClass]="spanCol1" class="place-self-start self-center">
-      <h2 *ngIf="!isChildRoute" [innerHTML]="'DESCRIPTION.TITLE' | translate" class="text-2xl md:text-4xl font-medium"></h2>
-      <h2 *ngIf="isChildRoute" [innerHTML]="currentRouteName + '.DESCRIPTION.TITLE' | translate" class="text-2xl md:text-4xl font-medium"></h2>
+      <h2 *ngIf="staticTitle" [innerHTML]="staticTitle" class="text-2xl md:text-4xl font-medium"></h2>
+      <h2 *ngIf="!isChildRoute && !staticTitle" [innerHTML]="'DESCRIPTION.TITLE' | translate" class="text-2xl md:text-4xl font-medium"></h2>
+      <h2 *ngIf="isChildRoute && !staticTitle" [innerHTML]="currentRouteName + '.DESCRIPTION.TITLE' | translate" class="text-2xl md:text-4xl font-medium"></h2>
     </div>
     <div [ngClass]="[spanCol2, startCol2]">
-      <p *ngIf="!isChildRoute" class="texl-lg md:text-xl" [innerHTML]="'DESCRIPTION.TEXT' | translate"></p>
-      <p *ngIf="isChildRoute" class="texl-lg md:text-xl" [innerHTML]="currentRouteName + '.DESCRIPTION.TEXT' | translate"></p>
+      <p *ngIf="staticDescription" class="texl-lg md:text-xl" [innerHTML]="staticDescription"></p>
+      <p *ngIf="!isChildRoute && staticDescription !== ''" class="texl-lg md:text-xl" [innerHTML]="'DESCRIPTION.TEXT' | translate"></p>
+      <p *ngIf="isChildRoute && staticDescription !== ''" class="texl-lg md:text-xl" [innerHTML]="currentRouteName + '.DESCRIPTION.TEXT' | translate"></p>
     </div>
   </div>
 </div>
