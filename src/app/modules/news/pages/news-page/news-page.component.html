@@ -15,12 +15,27 @@
 </app-wrap-description>
 
 <div class="container max-w-[96rem] my-12">
-  <ul class="grid grid-cols-2 gap-8">
-    <li *ngFor="let item of [1,2,3]" class="card">
-      <div>titulo</div>
-      <div>bajada</div>
-      <div>imagen</div>
-      <div>enlace</div>
-    </li>
-  </ul>
+  <div class="wrap_news">
+    <div *ngFor="let news of mockNews" class="news">
+      <div class="news_category">{{ news.category }}</div>
+      <div class="news_header">
+        <div class="news_title">
+          <a href="{{ news.link }}">{{ news.title }}</a>
+        </div>
+        <div class="news_date">{{ news.date }}</div>
+      </div>
+      <div 
+        [ngClass]="[news.image ? 'md:grid-cols-2' : 'grid-cols-1','news_body grid gap-4']"
+        *ngIf="news.description || news.image">
+        <div class="news_thumbnail" *ngIf="news.image">
+          <a href="{{ news.link }}">
+            <img src="{{ news.image }}" class="object-cover" alt="">
+          </a>
+        </div>
+        <div class="news_extract" *ngIf="news.description">
+          <a href="{{ news.link }}">{{ news.description }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

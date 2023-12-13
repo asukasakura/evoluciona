@@ -1,3 +1,4 @@
+import { newArray } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -12,11 +13,38 @@ export class NewsPageComponent implements OnInit {
   spanCol1 = 'md:col-span-2'
   spanCol2 = 'md:col-span-3'
   startCol2 = 'md:col-start-4'
-  headText: any
+  
+  mockNews: Array<any> = []
   
   constructor() { }
 
   ngOnInit(): void {
+    this.mockNews = [
+      {
+        category: 'TECNOLOGIA',
+        title: 'Una aplicación movil que podría cambiar la forma en que se realizan todos los tramites de tu ciudad',
+        description: 'Esta nueva aplicación permite acceder a toda la información de las comunas desde un smartphone; ofrece múltiples opciones para acceder a los trámites y servicios municipales y a toda la información de la comunidad con tan solo un toque de pantalla.',
+        image: './assets/images/ITS_video_media.jpg',
+        date: '2021-12-12',
+        link: 'https:www.google.com',
+      },
+      {
+        category: 'NEGOCIOS',
+        title: 'Juan manda una vez más a sus clientes a revisar sus ideas base',
+        description: 'lorem ipsum dolor sit amet cdsdcs lorem ipsum dolor sit amet cdsdcslorem ipsum dolor sit amet cdsdcslorem ipsum dolor sit amet cdsdcs',
+        image: '',
+        date: '2021-12-12',
+        link: '',
+      },
+      {
+        category: 'NOVEDADES',
+        title: 'Núestro talento al día, Papí cocina hace otra de las suyas',
+        description: '',
+        image: '',
+        date: '2021-12-12',
+        link: '',
+      },
+    ]
   }
 
 }
