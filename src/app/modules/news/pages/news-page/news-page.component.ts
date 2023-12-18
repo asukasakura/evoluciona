@@ -57,13 +57,21 @@ export class NewsPageComponent implements OnInit {
         news => {
 
           if(news){
+            let imageUrl = "";
+
             for(let story of news.data){
               
+              if(story.attributes.Imagen.data)
+                imageUrl = Env.imageUrl + story.attributes.Imagen.data[0].attributes.url;
+              else
+                imageUrl = "";
+              
+
               let storyObject = {
                 category: story.attributes.Categoria.data.attributes.Nombre,
                 title: story.attributes.Titulo,
                 description: story.attributes.Descripcion,
-                image: Env.imageUrl + story.attributes.Imagen.data[0].attributes.url,
+                image: imageUrl,
                 date: story.attributes.Fecha,
                 link: story.attributes.Link,
               };
