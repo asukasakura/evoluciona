@@ -6,7 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { AutorizationInterceptorService } from './core/interceptors/autorization.service';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ScrollAnchorDirective } from './directives/scroll-anchor.directive';
 import { ScrollSectionDirective } from './directives/scroll-section.directive';
 import { ScrollManagerDirective } from './directives/scroll-manager.directive';
@@ -43,7 +44,12 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   providers: [
     PlayerStateService,
-    {provide: LocationStrategy, useClass: HashLocationStrategy}
+    {provide: LocationStrategy, useClass: HashLocationStrategy},
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AutorizationInterceptorService,
+      multi: true
+    },
   ],
   bootstrap: [AppComponent]
 })

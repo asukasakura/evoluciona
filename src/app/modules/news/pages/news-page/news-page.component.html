@@ -22,7 +22,7 @@
         <div class="news_title">
           <a href="{{ news.link }}">{{ news.title }}</a>
         </div>
-        <div class="news_date">{{ news.date }}</div>
+        <div class="news_date">{{ news.date | date:'medium'}}</div>
       </div>
       <div 
         [ngClass]="[news.image ? 'md:grid-cols-2' : 'grid-cols-1','news_body grid gap-4']"

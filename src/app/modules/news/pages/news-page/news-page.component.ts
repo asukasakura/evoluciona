@@ -1,5 +1,8 @@
 import { newArray } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
+import { NewsService } from 'src/app/shared/services/news.service';
+import { environment as Env } from '@env/environment';
+
 
 @Component({
   selector: 'app-news-page',
@@ -16,9 +19,12 @@ export class NewsPageComponent implements OnInit {
   
   mockNews: Array<any> = []
   
-  constructor() { }
+  constructor(
+    private newsService: NewsService
+  ) { }
 
   ngOnInit(): void {
+/*
     this.mockNews = [
       {
         category: 'TECNOLOGIA',
@@ -44,7 +50,35 @@ export class NewsPageComponent implements OnInit {
         date: '2021-12-12',
         link: '',
       },
-    ]
+    ];
+*/
+
+    this.newsService.get().subscribe(
+        news => {
+
+          if(news){
+            for(let story of news.data){
+              
+              let storyObject = {
+                category: story.attributes.Categoria.data.attributes.Nombre,
+                title: story.attributes.Titulo,
+                description: story.attributes.Descripcion,
+                image: Env.imageUrl + story.attributes.Imagen.data[0].attributes.url,
+                date: story.attributes.Fecha,
+                link: story.attributes.Link,
+              };
+
+              this.mockNews.push(storyObject);
+
+            }
+          }
+          
+        },
+        error => {          
+          console.error(error);
+        }
+      );
+
   }
 
 }
