@@ -1,0 +1,22 @@
+.wrap_news
+  column-count: 2
+  column-gap: 4rem
+  @media screen and (max-width: 768px)
+    column-count: 1
+.news
+  border-bottom: 1px solid #858585
+  margin-bottom: 1.5rem
+  padding-bottom: 1.5rem
+  @media screen and (max-width: 768px)
+    padding: 2rem
+  &_category
+    @apply text-primary
+    font-size: 1rem
+    margin-bottom: 1rem
+  &_header
+    @apply flex flex-col items-start mb-3
+  &_title
+    @apply text-2xl font-medium
+  &_date
+    @apply text-lg
+    color: #858585

@@ -31,7 +31,11 @@
       ],
       "@assets/*": [
         "src/assets/*"
+      ],
+      "@env/*": [
+        "src/environments/*"
       ]
+
     },
     "lib": [
       "es2020",

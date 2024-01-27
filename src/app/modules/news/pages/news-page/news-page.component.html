@@ -1,0 +1,41 @@
+<app-wrap-hero class=""
+  [imagebackground]="'./assets/images/news-hero.jpg'"
+  [horizontalAlign]="'left'"
+  [fontSize]="'text-4xl md:text-[4rem]'"
+  [headText]="'NOTICIAS'"
+  [minHeight]="' '">
+</app-wrap-hero>
+<app-wrap-description 
+  [staticTitle]="'NOTICIAS'"
+  [staticDescription]="''"
+  [gridCols]="gridCols"
+  [spanCol1]="spanCol1"
+  [spanCol2]="spanCol2"
+  [startCol2]="startCol2">
+</app-wrap-description>
+
+<div class="container max-w-[96rem] my-12">
+  <div class="wrap_news">
+    <div *ngFor="let news of mockNews" class="news">
+      <div class="news_category">{{ news.category }}</div>
+      <div class="news_header">
+        <div class="news_title">
+          <a href="{{ news.link }}">{{ news.title }}</a>
+        </div>
+        <div class="news_date">{{ news.date | date:'medium'}}</div>
+      </div>
+      <div 
+        [ngClass]="[news.image ? 'md:grid-cols-2' : 'grid-cols-1','news_body grid gap-4']"
+        *ngIf="news.description || news.image">
+        <div class="news_thumbnail" *ngIf="news.image">
+          <a href="{{ news.link }}">
+            <img src="{{ news.image }}" class="object-cover" alt="">
+          </a>
+        </div>
+        <div class="news_extract" *ngIf="news.description">
+          <a href="{{ news.link }}">{{ news.description }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

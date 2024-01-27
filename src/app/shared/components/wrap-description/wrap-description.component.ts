@@ -10,6 +10,8 @@ export class WrapDescriptionComponent implements OnInit {
 
   @Input() descriptionTitle? : string = ''
   @Input() descriptionText? : string = ''
+  @Input() staticTitle : string = ''
+  @Input() staticDescription : string = ''
   @Input() gridCols : string = '1'
   @Input() spanCol1 : string = 'span-1'
   @Input() spanCol2 : string = 'span-1'

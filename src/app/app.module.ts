@@ -6,7 +6,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { AutorizationInterceptorService } from './core/interceptors/autorization.service';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ScrollAnchorDirective } from './directives/scroll-anchor.directive';
 import { ScrollSectionDirective } from './directives/scroll-section.directive';
 import { ScrollManagerDirective } from './directives/scroll-manager.directive';
@@ -14,7 +15,6 @@ import { PlayerStateService } from '@shared/services/player-state.service';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { MaterialModule } from '@shared/material.module';
-
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -25,7 +25,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     ScrollAnchorDirective,
     ScrollSectionDirective,
-    ScrollManagerDirective
+    ScrollManagerDirective,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +44,12 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   providers: [
     PlayerStateService,
-    {provide: LocationStrategy, useClass: HashLocationStrategy}
+    {provide: LocationStrategy, useClass: HashLocationStrategy},
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AutorizationInterceptorService,
+      multi: true
+    },
   ],
   bootstrap: [AppComponent]
 })
