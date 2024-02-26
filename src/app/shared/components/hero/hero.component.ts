@@ -30,7 +30,10 @@ export class HeroComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router
     ) {
-    translate.setDefaultLang('en');
+      let lang = localStorage.getItem('currentLang') || 'en';
+      translate.setDefaultLang(lang);
+      translate.use(lang);
+      
 
     // Suscríbete a los eventos de navegación para verificar cuando cambia la ruta.
     this.router.events

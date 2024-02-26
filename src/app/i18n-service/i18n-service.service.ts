@@ -12,8 +12,17 @@ export class I18nServiceService {
   constructor(private translate: TranslateService) { }
 
   changeLocale(locale: string){
+    
     this.translate.use(locale);
     this.localeEvent.next(locale);
+
+    localStorage.setItem('currentLang', locale);
+    
+    if(this.translate.currentLang){
+      this.translate.setDefaultLang(this.translate.currentLang);
+    } 
+
+
   }
 
 }

@@ -39,7 +39,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       },
       isolate: true,
-    }),
+      defaultLanguage: 'en'
+    }),    
     MaterialModule
   ],
   providers: [

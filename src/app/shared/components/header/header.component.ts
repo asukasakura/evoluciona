@@ -45,7 +45,7 @@ export class HeaderComponent implements OnInit {
      = { defaultOptions: [], accessLink: [] 
   }
   
-
+  lang = 'en';
   selectDiv = false;
   
   toggleDiv() {
@@ -64,7 +64,14 @@ export class HeaderComponent implements OnInit {
     private i18nService: I18nServiceService,
     private router: Router
     ) {
-    translate.setDefaultLang('en');
+
+
+      this.lang = localStorage.getItem('currentLang') || 'en';
+      translate.setDefaultLang(this.lang);
+      translate.use(this.lang);
+      console.log('contructor sourcing - setDefaultLang: ' + this.lang);
+
+    //translate.setDefaultLang('en');
 
     router.events.subscribe((val) => {
       if (val instanceof NavigationEnd) {

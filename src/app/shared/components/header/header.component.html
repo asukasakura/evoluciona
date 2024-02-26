@@ -2,7 +2,7 @@
   <div class="container px-4 lg:px-10 max-w-[96rem] grid grid-cols-2 sm:grid-cols-3 items-center">
     <div class="sm:col-start-2 sm:col-span-1 sm:place-self-center">
         <div class="select-idioma">
-          <select #locale (change)="changeLocale(locale.value)" class="bg-primary material_select">
+          <select #locale (change)="changeLocale(locale.value)" [value]='lang' class="bg-primary material_select">
             <option value="en">English</option>
             <option value="es">Español</option>
           </select>
