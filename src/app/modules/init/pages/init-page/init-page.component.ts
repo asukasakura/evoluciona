@@ -61,7 +61,6 @@ export class InitPageComponent implements OnInit, OnDestroy {
       let lang = localStorage.getItem('currentLang') || 'en';
       translate.setDefaultLang(lang);
       translate.use(lang);
-      console.log('contructor sourcing - setDefaultLang: ' + lang);
 
   }
   ngOnDestroy(): void {

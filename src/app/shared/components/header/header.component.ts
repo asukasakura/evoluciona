@@ -69,7 +69,6 @@ export class HeaderComponent implements OnInit {
       this.lang = localStorage.getItem('currentLang') || 'en';
       translate.setDefaultLang(this.lang);
       translate.use(this.lang);
-      console.log('contructor sourcing - setDefaultLang: ' + this.lang);
 
     //translate.setDefaultLang('en');
 

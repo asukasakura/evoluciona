@@ -17,7 +17,6 @@ export class HomePageComponent implements OnInit {
       let lang = localStorage.getItem('currentLang') || 'en';
       translate.setDefaultLang(lang);
       translate.use(lang);
-      console.log('home const lang: ' + lang);
   }
 
   ngOnInit(): void {
@@ -25,10 +24,7 @@ export class HomePageComponent implements OnInit {
     let lang = localStorage.getItem('currentLang') || 'en';
     this.translate.setDefaultLang(lang);
 
-    console.log('home init lang: ' + lang);
-   
     this.i18nService.localeEvent.subscribe(locale => {
-      console.log('home subscribe... locale: ' + locale);
       this.translate.use(locale);
     });
 
