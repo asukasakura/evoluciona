@@ -11,14 +11,14 @@
   [headTitle]="'HEADER_TITLE'">
 </app-wrap-hero> -->
 <div class="container-full relative">
-  <div class="image-container">
-    <img src="./assets/images/home-hero.jpg" class="active poster object-cover w-full" />
-    <img src="./assets/images/home-hero-2.jpg" class="poster object-cover w-full" />
+  <div class="image-container" id="slider-header">
+    <img src="./assets/images/home-hero.jpg" class="slider-image active poster object-cover w-full" />
+    <img src="./assets/images/home-hero-2.jpg" class="slider-image poster object-cover w-full" />
   </div>
-  <div [ngClass]="['container max-w-[96rem] absolute top-0 left-0 right-0 ml-auto mr-auto h-full']">
-    <div [ngClass]="['absolute top-1/2 transform -translate-y-1/2 md:w-1/2 text-lg md:text-4xl font-bold']">
-      <h2 [ngClass]="['text-2xl md:text-4xl md:leading-10 text-white font-medium']" [innerHTML]="'HEADER_TITLE' | translate"></h2>
-      <h3 [ngClass]="['text-2xl md:text-3xl md:leading-10 text-white font-medium']" [innerHTML]="'HEADER_TEXT' | translate"></h3>
+  <div [ngClass]="['slider-text container max-w-[96rem] absolute top-0 left-0 right-0 ml-auto mr-auto h-full']">
+    <div [ngClass]="['left-8 absolute top-1/2 transform -translate-y-1/2 md:w-1/2 text-lg md:text-4xl font-bold']">
+      <h2 [ngClass]="['text-xl md:text-3xl lg:text-4xl md:leading-10 text-white font-medium']" [innerHTML]="'HEADER_TITLE' | translate"></h2>
+      <h3 [ngClass]="['text-xl md:text-2xl lg:text-3xl leading-8 lg:leading-10 text-white font-medium']" [innerHTML]="'HEADER_TEXT' | translate"></h3>
     </div>
   </div>
 </div>
@@ -60,11 +60,11 @@
       </h2>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 md:gap-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 md:gap-8">
       <div class="mb-8" *ngFor="let partner of ourPartners">
         <div class="flex flex-row">
-          <div class="w-36 md:w-72 xl:w-64">
-            <img [src]="partner.image" class="h-24 lg:h-32 w-24 lg:w-32" [alt]="partner.name" />
+          <div class="w-auto pr-4">
+            <img [src]="partner.image" class="aspect-w-1 aspect-h-1 max-w-[100px] md:max-w-[140px]" [alt]="partner.name" />
           </div>
           <div class="grow">
             <a *ngIf="partner.in_profile" href="{{ partner.in_profile }}" target="_blank" rel="noopener noreferrer" title="{{ 'VIEW_PROFILE' | translate }}" class="link-name">

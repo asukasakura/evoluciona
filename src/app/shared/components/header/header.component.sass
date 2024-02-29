@@ -94,9 +94,22 @@ nav
 nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i
   height: 70px
   line-height: 70px
-  @media only screen and (min-width: 768px)
+  @media only screen and (min-width: 1244px)
     height: 120px
     line-height: 120px
+nav 
+  @media only screen and (max-width: 1244px)
+    a.sidenav-trigger
+        display: block
+    .brand-logo
+      left: 50%
+      transform: translateX(-50%)
+      img
+        height: 5rem
 
 #mobile-menu
   @apply bg-primary
+
+.header-menu
+  @media screen and ( max-width: 1245px )
+    display: none

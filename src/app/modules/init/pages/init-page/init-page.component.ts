@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, OnDestroy } from '@angular/core';
+import { Component, Input, OnInit, OnDestroy, ElementRef, HostListener } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { I18nServiceService } from 'src/app/i18n-service/i18n-service.service';
 
@@ -54,7 +54,8 @@ export class InitPageComponent implements OnInit, OnDestroy {
   constructor(
     private translate: TranslateService, 
     private i18nService: I18nServiceService,
-    private playerState: PlayerStateService
+    private playerState: PlayerStateService,
+    private elRef: ElementRef
     ) {
     //translate.setDefaultLang('en');
 
@@ -73,7 +74,8 @@ export class InitPageComponent implements OnInit, OnDestroy {
 
     this.images = document.querySelectorAll('.image-container img');
     this.startImageTransition();
-    
+    this.ajustarAlturaElemento();
+
     this.dataCards = [
       {
         image: './assets/images/icons/home/brindamos.svg',
@@ -128,6 +130,7 @@ export class InitPageComponent implements OnInit, OnDestroy {
         image: './assets/images/socios/jorge-vasquez-araya.png',
       },
     ]
+    
   }
 
   startImageTransition(): void {
@@ -149,5 +152,23 @@ export class InitPageComponent implements OnInit, OnDestroy {
         nextSibling.classList.add('active');
       }
     }
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    this.ajustarAlturaElemento();
+  }
+
+  ajustarAlturaElemento() {
+    const slider: HTMLElement = this.elRef.nativeElement.querySelector('#slider-header');
+    const alturaVentana = window.innerHeight;
+    const nuevaAltura = alturaVentana * 0.6;
+    slider.style.height = `${nuevaAltura}px`;
+    
+    // Obtener todas las imágenes dentro del elemento
+    const imagenes: NodeListOf<HTMLImageElement> = slider.querySelectorAll('.slider-image');
+    imagenes.forEach(imagen => {
+      imagen.style.height = `${nuevaAltura}px`;
+    });
   }
 }
