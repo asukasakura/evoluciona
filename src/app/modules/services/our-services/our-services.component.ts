@@ -52,7 +52,10 @@ export class OurServicesComponent implements OnInit {
     private translate: TranslateService, 
     private i18nService: I18nServiceService,
   ) {
-    translate.setDefaultLang('en');
+      let lang = localStorage.getItem('currentLang') || 'en';
+      translate.setDefaultLang(lang);
+      translate.use(lang);
+      
    }
 
   ngOnInit(): void {

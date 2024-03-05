@@ -45,7 +45,77 @@
         {{ 'ITS_SOFTWARE_DEVELOPED.TITLE' | translate}}
       </h2>
     </div>
-    <app-wrap-large-card [dataLargeCards]="dataLargeCards"></app-wrap-large-card>
+    <!-- <app-wrap-large-card [dataLargeCards]="dataLargeCards"></app-wrap-large-card> -->
+    <div *ngFor="let card of dataLargeCards">
+      <div class="flex flex-row flex-wrap mb-12">
+        <div class="flex flex-col w-fit md:w-2/3 md:pr-5">
+          <h4 [innerHTML]="card.title | translate" class="flex text-gray text-xl text-center title_border_top relative pb-3 font-medium"></h4>
+          <p [innerHTML]="card.text | translate"></p>
+        </div>
+        <div class="flex flex-col w-fit md:w-1/3 md:pl-5">
+          <img *ngIf="card.image && !card.video_mp4_en && !card.video_mp4_es" [src]="card.image" />
+          
+          <div class="video-container_video" *ngIf="translate.currentLang == 'en' && card.video_mp4_en">
+            <img [src]="card.image" (click)="toggleVideo(card.id_en)" alt="" [ngClass]="{'show': isVideoCoverVisible(card.id_en), 'hide': isVideoPlaying(card.id_en) || isVideoPaused(card.id_en) }" class="fallback-video">
+            <vg-player (onPlayerReady)="onPlayerReady($event, card.id_en)">
+              <vg-overlay-play [vgFor]="card.id_en"></vg-overlay-play>
+      
+              <!-- Controles para el video en inglés -->
+              <vg-controls [vgAutohide]="true" [vgAutohideTime]="5">
+                <vg-play-pause [vgFor]="card.id_en"></vg-play-pause>
+                <vg-time-display [vgFor]="card.id_en" vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+                <vg-scrub-bar [vgFor]="card.id_en" style="pointer-events: none;"></vg-scrub-bar>
+                <vg-time-display [vgFor]="card.id_en" vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+                <vg-track-selector [vgFor]="card.id_en" class="track-selector"></vg-track-selector>
+                <vg-mute [vgFor]="card.id_en"></vg-mute>
+                <vg-volume [vgFor]="card.id_en"></vg-volume>
+                <vg-fullscreen></vg-fullscreen>
+              </vg-controls>
+      
+              <video [vgMedia]="$any(media)" #media [id]="card.id_en" preload="auto">
+                <source [src]="card.video_mp4_en" type="video/mp4">
+                <source [src]="card.video_ogv_en" type="video/ogv">
+                <source [src]="card.video_webm_en" type="video/webm">
+      
+                <track kind="subtitles" label="English" [src]="card.subtitle_en" srclang="en">
+                <track kind="subtitles" label="Spanish" [src]="card.subtitle_es" srclang="es">
+              </video>
+            </vg-player>
+          </div>
+          <div *ngIf="translate.currentLang == 'en' && !card.video_mp4_en && !card.image">Video no encontrado</div>
+          
+          <div class="video-container_video" *ngIf="translate.currentLang == 'es' && card.video_mp4_es">
+            <img [src]="card.image" (click)="toggleVideo(card.id_es)" alt="" [ngClass]="{'show': isVideoCoverVisible(card.id_es), 'hide': isVideoPlaying(card.id_es) || isVideoPaused(card.id_es) }" class="fallback-video">
+            <vg-player (onPlayerReady)="onPlayerReady($event, card.id_es)">
+              <vg-overlay-play [vgFor]="card.id_es"></vg-overlay-play>
+      
+              <!-- Controles para el video en inglés -->
+              <vg-controls [vgAutohide]="true" [vgAutohideTime]="5">
+                <vg-play-pause [vgFor]="card.id_es"></vg-play-pause>
+                <vg-time-display [vgFor]="card.id_es" vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+                <vg-scrub-bar [vgFor]="card.id_es" style="pointer-events: none;"></vg-scrub-bar>
+                <vg-time-display [vgFor]="card.id_es" vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+                <vg-track-selector [vgFor]="card.id_es" class="track-selector"></vg-track-selector>
+                <vg-mute [vgFor]="card.id_es"></vg-mute>
+                <vg-volume [vgFor]="card.id_es"></vg-volume>
+                <vg-fullscreen></vg-fullscreen>
+              </vg-controls>
+      
+              <video [vgMedia]="$any(media)" #media [id]="card.id_es" preload="auto">
+                <source [src]="card.video_mp4_es" type="video/mp4">
+                <source [src]="card.video_ogv_es" type="video/ogv">
+                <source [src]="card.video_webm_es" type="video/webm">
+      
+                <track kind="subtitles" label="English" [src]="card.subtitle_en" srclang="en">
+                <track kind="subtitles" label="Spanish" [src]="card.subtitle_es" srclang="es">
+              </video>
+            </vg-player>
+          </div>
+          <div *ngIf="translate.currentLang == 'es' && !card.video_mp4_es && !card.image">Video no encontrado</div>
+
+        </div>
+      </div>
+    </div>
   </section>
 </div>
 
@@ -56,32 +126,75 @@
         {{ 'MORE_ITS_SERVICES_AND_PRODUCTS' | translate}}
       </h2>
     </div>
+
+    <!-- <div *ngIf="translate.currentLang == 'en'">
+      <div class="video-container">
+        <iframe class="video-youtube" width="560" height="315" src="https://www.youtube.com/embed/vd5awm8Ph4g?si=ZYyfwig0V6rDfGIO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div *ngIf="translate.currentLang == 'es'">
+      <div class="video-container">
+        <iframe class="video-youtube" width="560" height="315" src="https://www.youtube.com/embed/nfsKsuESAns?si=kn9N_4hmhcbUTCAu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div> -->
+
     <!-- {{ playerState$ | async }} -->
-    <div class="video-container_video">
-      <img src="./assets/images/ITS_video_media.jpg" alt="" [ngClass]="[!videoPlay && !videoPause ? 'show' : 'hide', 'fallback-video']">
-      <vg-player (onPlayerReady)="onPlayerReady($event)">
-        <vg-overlay-play vgFor="itsVideo"></vg-overlay-play>
-
-        <vg-controls [vgAutohide]="true" [vgAutohideTime]="1">
-          <vg-play-pause></vg-play-pause>
-          <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
-          <vg-scrub-bar style="pointer-events: none;"></vg-scrub-bar>
-          <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
-          <vg-track-selector class="track-selector"></vg-track-selector>
-          <vg-mute></vg-mute>
-          <vg-volume></vg-volume>
-          <vg-fullscreen></vg-fullscreen>
+    <div class="video-container_video" *ngIf="translate.currentLang == 'en'">
+      <img src="./assets/images/ITS_video_media.jpg" (click)="toggleVideo('card.id_en')" alt="" [ngClass]="{'show': isVideoCoverVisible('card.id_en'), 'hide': isVideoPlaying('card.id_en') || isVideoPaused('card.id_en') }" class="fallback-video" >
+      <vg-player (onPlayerReady)="onPlayerReady($event, 'card.id_en')">
+        <vg-overlay-play vgFor="card.id_en"></vg-overlay-play>
+    
+        <!-- Controles para el video en inglés -->
+        <vg-controls [vgAutohide]="true" [vgAutohideTime]="5">
+          <vg-play-pause vgFor="card.id_en"></vg-play-pause>
+          <vg-time-display vgFor="card.id_en" vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+          <vg-scrub-bar vgFor="card.id_en" style="pointer-events: none;"></vg-scrub-bar>
+          <vg-time-display vgFor="card.id_en" vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+          <vg-track-selector vgFor="card.id_en" class="track-selector"></vg-track-selector>
+          <vg-mute vgFor="card.id_en"></vg-mute>
+          <vg-volume vgFor="card.id_en"></vg-volume>
+          <vg-fullscreen vgFor="card.id_en"></vg-fullscreen>
         </vg-controls>
-
-        <video [vgMedia]="$any(media)" #media id="itsVideo" preload="auto">
-            <source src="./assets/video/ITS_video_media.mp4" type="video/mp4">
-            <source src="./assets/video/ITS_video_media.ogv" type="video/ogv">
-            <source src="./assets/video/ITS_video_media.webm" type="video/webm">
-
-            <track kind="subtitles" label="English" src="./assets/video/subtitles/ITS_en.vtt" srclang="en" default>
+    
+        <video [vgMedia]="$any(media)" #media id="card.id_en" preload="auto">
+            <source src="./assets/video/its/ITS_en.mp4" type="video/mp4">
+            <source src="./assets/video/its/ITS_en.ogv" type="video/ogv">
+            <source src="./assets/video/its/ITS_en.webm" type="video/webm">
+    
+            <track kind="subtitles" label="English" src="./assets/video/its/subtitles/its_en_sub_en.vtt" srclang="en">
+            <track kind="subtitles" label="Spanish" src="./assets/video/its/subtitles/its_en_sub_es.vtt" srclang="es">
         </video>
       </vg-player>
     </div>
+    
+    <div class="video-container_video" *ngIf="translate.currentLang == 'es'">
+      <img src="./assets/images/ITS_video_media.jpg" (click)="toggleVideo('itsEsVideo')" alt="" [ngClass]="{'show': isVideoCoverVisible('itsEsVideo'), 'hide': isVideoPlaying('itsEsVideo') || isVideoPaused('itsEsVideo') }">
+      <vg-player (onPlayerReady)="onPlayerReady($event, 'itsEsVideo')">
+        <vg-overlay-play vgFor="itsEsVideo"></vg-overlay-play>
+    
+        <!-- Controles para el video en español -->
+        <vg-controls [vgAutohide]="true" [vgAutohideTime]="5">
+          <vg-play-pause vgFor="itsEsVideo"></vg-play-pause>
+          <vg-time-display vgFor="itsEsVideo" vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+          <vg-scrub-bar vgFor="itsEsVideo" style="pointer-events: none;"></vg-scrub-bar>
+          <vg-time-display vgFor="itsEsVideo" vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+          <vg-track-selector vgFor="itsEsVideo" class="track-selector"></vg-track-selector>
+          <vg-mute vgFor="itsEsVideo"></vg-mute>
+          <vg-volume vgFor="itsEsVideo"></vg-volume>
+          <vg-fullscreen vgFor="itsEsVideo"></vg-fullscreen>
+        </vg-controls>
+    
+        <video [vgMedia]="$any(media)" #media id="itsEsVideo" preload="auto">
+            <source src="./assets/video/its/ITS_es.mp4" type="video/mp4">
+            <source src="./assets/video/its/ITS_es.ogv" type="video/ogv">
+            <source src="./assets/video/its/ITS_es.webm" type="video/webm">
+    
+            <track kind="subtitles" label="English" src="./assets/video/its/subtitles/its_es_sub_en.vtt" srclang="en">
+            <track kind="subtitles" label="Spanish" src="./assets/video/its/subtitles/its_es_sub_es.vtt" srclang="es">
+        </video>
+      </vg-player>
+    </div>
+    
 
   </section>
 </div>

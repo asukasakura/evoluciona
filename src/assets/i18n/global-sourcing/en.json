@@ -58,5 +58,8 @@
         "TEXT" : "We apply a prior interview to the resource, endorsed by an expert psychologist."
       }
     }
+  },
+  "PREVIEW_VIDEO": {
+    "TITLE": "Know more about us"
   }
 }

@@ -31,7 +31,13 @@
             "inlineStyleLanguage": "sass",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "/assets",
+                "exclude": ["src/assets/video/**"]
+              }
             ],
             "styles": [
               "node_modules/materialize-css/dist/css/materialize.css",
@@ -104,7 +110,8 @@
             "inlineStyleLanguage": "sass",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "exclude": ["exclude/**"]
             ],
             "styles": [
               "src/styles.sass"

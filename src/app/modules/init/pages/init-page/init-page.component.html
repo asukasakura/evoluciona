@@ -11,14 +11,14 @@
   [headTitle]="'HEADER_TITLE'">
 </app-wrap-hero> -->
 <div class="container-full relative">
-  <div class="image-container">
-    <img src="./assets/images/home-hero.jpg" class="active poster object-cover w-full" />
-    <img src="./assets/images/home-hero-2.jpg" class="poster object-cover w-full" />
+  <div class="image-container" id="slider-header">
+    <img src="./assets/images/home-hero.jpg" class="slider-image active poster object-cover w-full" />
+    <img src="./assets/images/home-hero-2.jpg" class="slider-image poster object-cover w-full" />
   </div>
-  <div [ngClass]="['container max-w-[96rem] absolute top-0 left-0 right-0 ml-auto mr-auto h-full']">
-    <div [ngClass]="['absolute top-1/2 transform -translate-y-1/2 md:w-1/2 text-lg md:text-4xl font-bold']">
-      <h2 [ngClass]="['text-2xl md:text-4xl md:leading-10 text-white font-medium']" [innerHTML]="'HEADER_TITLE' | translate"></h2>
-      <h3 [ngClass]="['text-2xl md:text-3xl md:leading-10 text-white font-medium']" [innerHTML]="'HEADER_TEXT' | translate"></h3>
+  <div [ngClass]="['slider-text container max-w-[96rem] absolute top-0 left-0 right-0 ml-auto mr-auto h-full']">
+    <div [ngClass]="['left-8 absolute top-1/2 transform -translate-y-1/2 md:w-1/2 text-lg md:text-4xl font-bold']">
+      <h2 [ngClass]="['text-xl md:text-3xl lg:text-4xl md:leading-10 text-white font-medium']" [innerHTML]="'HEADER_TITLE' | translate"></h2>
+      <h3 [ngClass]="['text-xl md:text-2xl lg:text-3xl leading-8 lg:leading-10 text-white font-medium']" [innerHTML]="'HEADER_TEXT' | translate"></h3>
     </div>
   </div>
 </div>
@@ -60,11 +60,11 @@
       </h2>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 md:gap-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 md:gap-8">
       <div class="mb-8" *ngFor="let partner of ourPartners">
         <div class="flex flex-row">
-          <div class="w-36 md:w-72 xl:w-64">
-            <img [src]="partner.image" class="h-24 lg:h-32 w-24 lg:w-32" [alt]="partner.name" />
+          <div class="w-auto pr-4">
+            <img [src]="partner.image" class="aspect-w-1 aspect-h-1 max-w-[100px] md:max-w-[140px]" [alt]="partner.name" />
           </div>
           <div class="grow">
             <a *ngIf="partner.in_profile" href="{{ partner.in_profile }}" target="_blank" rel="noopener noreferrer" title="{{ 'VIEW_PROFILE' | translate }}" class="link-name">
@@ -90,14 +90,25 @@
     <div class="mx-auto mb-16 max-w-[80rem]">
       <h4 class="text-center font-medium text-3xl">{{ 'PREVIEW_VIDEO' | translate }}</h4>
     </div>
-
+    
+    <!-- <div *ngIf="translate.currentLang == 'en'">
+      <div class="video-container">
+        <iframe class="video-youtube" width="560" height="315" src="https://www.youtube.com/embed/3UPu8VYtvlU?si=F_mz_LAN0o26UPVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div *ngIf="translate.currentLang == 'es'">
+      <div class="video-container">
+        <iframe class="video-youtube" width="560" height="315" src="https://www.youtube.com/embed/luneHiiD1zY?si=B_Exoke7pzpq3sDN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div> -->
+    
     <!-- {{ playerState$ | async }} -->
-    <div class="video-container_video">
-      <!-- <img src="./assets/images/home-video-cover.jpg" alt="" [ngClass]="[!videoPlay && !videoPause ? 'show' : 'hide', 'fallback-video']"> -->
+    <div class="video-container_video mb-10" *ngIf="translate.currentLang == 'en'">
+      <img src="./assets/images/nosotros-video-cover.png" alt="" [ngClass]="[!videoPlay && !videoPause ? 'show' : 'hide', 'fallback-video']">
       <vg-player (onPlayerReady)="onPlayerReady($event)">
-        <vg-overlay-play vgFor="itsVideo"></vg-overlay-play>
+        <vg-overlay-play vgFor="homeEnVideo"></vg-overlay-play>
 
-        <vg-controls [vgAutohide]="true" [vgAutohideTime]="1">
+        <vg-controls vgFor="homeEnVideo" [vgAutohide]="true" [vgAutohideTime]="5">
           <vg-play-pause></vg-play-pause>
           <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
           <vg-scrub-bar style="pointer-events: none;"></vg-scrub-bar>
@@ -108,13 +119,40 @@
           <vg-fullscreen></vg-fullscreen>
         </vg-controls>
 
-        <video [vgMedia]="$any(media)" #media id="itsVideo" preload="auto">
-            <source src="./assets/video/evoluciona-empresas-2023.mp4" type="video/mp4">
-            <source src="./assets/video/evoluciona-empresas-2023.ogv" type="video/ogv">
-            <source src="./assets/video/evoluciona-empresas-2023.webm" type="video/webm">
+        <video [vgMedia]="$any(media)" #media id="homeEnVideo" preload="auto">
+            <source src="./assets/video/nosotros/nosotros_en.mp4" type="video/mp4">
+            <source src="./assets/video/nosotros/nosotros_en.ogv" type="video/ogv">
+            <source src="./assets/video/nosotros/nosotros_en.webm" type="video/webm">
 
-            <track kind="subtitles" label="English" src="./assets/video/subtitles/evoluciona_empresas_2023_EN.vtt" srclang="en" default>
-            <track kind="subtitles" label="Spanish" src="./assets/video/subtitles/evoluciona_empresas_2023_ES.vtt" srclang="es">
+            <track kind="subtitles" label="English" src="./assets/video/nosotros/subtitles/nosotros_en_sub_ingles.vtt" srclang="en">
+            <track kind="subtitles" label="Spanish" src="./assets/video/nosotros/subtitles/nosotros_en_sub_espanol.vtt" srclang="es">
+        </video>
+      </vg-player>
+    </div>
+
+    <div class="video-container_video mb-10" *ngIf="translate.currentLang == 'es'">
+      <img src="./assets/images/home-video-cover.png" alt="" [ngClass]="[!videoPlay && !videoPause ? 'show' : 'hide', 'fallback-video']">
+      <vg-player (onPlayerReady)="onPlayerReady($event)">
+        <vg-overlay-play vgFor="homeEsVideo"></vg-overlay-play>
+        
+        <vg-controls vgFor="homeEsVideo" [vgAutohide]="true" [vgAutohideTime]="5">
+          <vg-play-pause></vg-play-pause>
+          <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+          <vg-scrub-bar style="pointer-events: none;"></vg-scrub-bar>
+          <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+          <vg-track-selector class="track-selector"></vg-track-selector>
+          <vg-mute></vg-mute>
+          <vg-volume></vg-volume>
+          <vg-fullscreen></vg-fullscreen>
+        </vg-controls>
+
+        <video [vgMedia]="$any(media)" #media id="homeEsVideo" preload="auto">
+            <source src="./assets/video/nosotros/nosotros_es.mp4" type="video/mp4">
+            <source src="./assets/video/nosotros/nosotros_es.ogv" type="video/ogv">
+            <source src="./assets/video/nosotros/nosotros_es.webm" type="video/webm">
+
+            <track kind="subtitles" label="English" src="./assets/video/nosotros/subtitles/nosotros_es_sub_ingles.vtt" srclang="en">
+            <track kind="subtitles" label="Spanish" src="./assets/video/nosotros/subtitles/nosotros_es_sub_espanol.vtt" srclang="es">
         </video>
       </vg-player>
     </div>

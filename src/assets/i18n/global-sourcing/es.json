@@ -58,5 +58,8 @@
         "TEXT" : "Aplicamos al recurso una entrevista previa, avalada por un psicólogo experto."
       }
     }
+  },
+  "PREVIEW_VIDEO": {
+    "TITLE": "Conoce un poco más"
   }
 }

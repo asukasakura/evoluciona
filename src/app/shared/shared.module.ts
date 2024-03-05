@@ -51,6 +51,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient]
       },
       isolate: true,
+      extend: true
     }),
   ],
   exports: [

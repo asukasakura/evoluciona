@@ -13,8 +13,11 @@ export class AppComponent {
     translate: TranslateService,
     private i18nService: I18nServiceService
   ) {
-    translate.setDefaultLang('en');
-    translate.use('en');
+    
+    let lang = localStorage.getItem('currentLang') || 'en';
+    translate.setDefaultLang(lang);
+    translate.use(lang);
+    this.changeLocale(lang);
   }
 
   changeLocale(locale: string) {

@@ -14,11 +14,19 @@ export class HomePageComponent implements OnInit {
     private translate: TranslateService, 
     private i18nService: I18nServiceService
     ) {
-    translate.setDefaultLang('en');
+      let lang = localStorage.getItem('currentLang') || 'en';
+      translate.setDefaultLang(lang);
+      translate.use(lang);
   }
 
   ngOnInit(): void {
-    this.i18nService.localeEvent.subscribe(locale => this.translate.use(locale));
+
+    let lang = localStorage.getItem('currentLang') || 'en';
+    this.translate.setDefaultLang(lang);
+
+    this.i18nService.localeEvent.subscribe(locale => {
+      this.translate.use(locale);
+    });
 
   }
 

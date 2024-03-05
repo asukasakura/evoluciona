@@ -68,7 +68,10 @@ export class OurProductsComponent implements OnInit {
     private i18nService: I18nServiceService,
     private playerState: PlayerStateService
     ) {
-      translate.setDefaultLang('en');
+      let lang = localStorage.getItem('currentLang') || 'en';
+      translate.setDefaultLang(lang);
+      translate.use(lang);
+      
     }
     
     ngOnInit(): void {

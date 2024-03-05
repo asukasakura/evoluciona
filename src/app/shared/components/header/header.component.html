@@ -2,7 +2,7 @@
   <div class="container px-4 lg:px-10 max-w-[96rem] grid grid-cols-2 sm:grid-cols-3 items-center">
     <div class="sm:col-start-2 sm:col-span-1 sm:place-self-center">
         <div class="select-idioma">
-          <select #locale (change)="changeLocale(locale.value)" class="bg-primary material_select">
+          <select #locale (change)="changeLocale(locale.value)" [value]='lang' class="bg-primary material_select">
             <option value="en">English</option>
             <option value="es">Español</option>
           </select>
@@ -18,12 +18,13 @@
   <div class="container px-4 lg:px-10 max-w-[96rem] header">
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo">
-        <img class="h-20 md:h-auto object-contain w-full" src="./assets/images/new_globaltech_logo_color.svg" alt="" srcset="">
+        <img class="h-16 md:h-20 lg:h-auto object-contain w-full" src="./assets/images/new_globaltech_logo_color.svg" alt="" srcset="">
       </a>
       <a href="#" data-target="mobile-menu" class="sidenav-trigger text-primary">
         <mat-icon>menu</mat-icon>
       </a>
-      <ul class="right hide-on-med-and-down">
+      <!-- <ul class="right hide-on-med-and-down"> -->
+      <ul class="right header-menu">
         <li 
         class="text-primary"
         [routerLink]="item.value.router"
