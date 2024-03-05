@@ -16,7 +16,7 @@
 </app-wrap-description>
 
 <div class="container-fluid">
-  <section class="container px-4 lg:px-6 max-w-[96rem] py-28">
+  <section class="container px-4 lg:px-6 max-w-[96rem] pt-28 pb-10">
     <div class="flex justify-center mb-12">
       <h2 class="flex text-gray text-3xl text-center title_border relative pb-3">
         {{ 'WHAT_IS_GLOBAL_PEOPLE_SOURCING.TITLE' | translate}}
@@ -50,5 +50,45 @@
       [titlePosition]="'top'"
       [imageSize]="'w-full'"
     ></app-wrap-cards>
+  </section>
+</div>
+
+
+<div class="container-fluid">
+  <section class="container px-4 lg:px-6 max-w-[96rem] py-12">
+    <div class="flex justify-center mb-10">
+      <h2 class="flex text-gray text-3xl text-center title_border relative pb-3">
+        {{ 'PREVIEW_VIDEO.TITLE' | translate}}
+      </h2>
+    </div>
+    
+    <!-- {{ playerState$ | async }} -->
+    <div class="video-container_video mb-10">
+      <img src="./assets/images/home-video-cover.png" alt="" [ngClass]="[!videoPlay && !videoPause ? 'show' : 'hide', 'fallback-video']">
+      <vg-player (onPlayerReady)="onPlayerReady($event)">
+        <vg-overlay-play vgFor="globalEsVideo"></vg-overlay-play>
+        
+        <vg-controls [vgAutohide]="true" [vgAutohideTime]="5">
+          <vg-play-pause vgFor="globalEsVideo"></vg-play-pause>
+          <vg-time-display vgFor="globalEsVideo" vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+          <vg-scrub-bar vgFor="globalEsVideo" style="pointer-events: none;"></vg-scrub-bar>
+          <vg-time-display vgFor="globalEsVideo" vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+          <vg-track-selector vgFor="globalEsVideo" class="track-selector"></vg-track-selector>
+          <vg-mute vgFor="globalEsVideo"></vg-mute>
+          <vg-volume vgFor="globalEsVideo"></vg-volume>
+          <vg-fullscreen vgFor="globalEsVideo"></vg-fullscreen>
+        </vg-controls>
+
+        <video [vgMedia]="$any(media)" #media id="globalEsVideo" preload="auto">
+            <source src="./assets/video/global/global-sourcing_es.mp4" type="video/mp4">
+            <source src="./assets/video/global/global-sourcing_es.ogv" type="video/ogv">
+            <source src="./assets/video/global/global-sourcing_es.webm" type="video/webm">
+
+            <track kind="subtitles" label="English" src="./assets/video/global/subtitles/global_sourcing_es_sub_ingles.vtt" srclang="en">
+            <track kind="subtitles" label="Spanish" src="./assets/video/global/subtitles/global-sourcing_es_sub_espanol.vtt" srclang="es">
+        </video>
+      </vg-player>
+    </div>
+
   </section>
 </div>

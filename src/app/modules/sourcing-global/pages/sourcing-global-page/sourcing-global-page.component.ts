@@ -1,14 +1,17 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, OnDestroy } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { I18nServiceService } from 'src/app/i18n-service/i18n-service.service';
 
+import { VgApiService } from '@videogular/ngx-videogular/core';
+import { PlayerStateService } from '@shared/services/player-state.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-sourcing-global-page',
   templateUrl: './sourcing-global-page.component.html',
   styleUrls: ['./sourcing-global-page.component.sass']
 })
-export class SourcingGlobalPageComponent implements OnInit {
+export class SourcingGlobalPageComponent implements OnInit, OnDestroy {
 
   nCards = 'grid-cols-1 md:grid-cols-3'
   gridCols = 'grid-cols-1 md:grid-cols-6'
@@ -16,12 +19,19 @@ export class SourcingGlobalPageComponent implements OnInit {
   spanCol2 = 'md:col-span-4'
   startCol2 = 'md:col-start-3'
 
+  intervalId: any;
+  videoPlay: boolean | undefined
+  videoPause: boolean | undefined
+  api!: VgApiService;
+  playerState$!: Observable<string>;
+
   @Input() globalSourcingCards: Array<any> = []
   @Input() additionallyCards: Array<any> = []
 
   constructor(
-    private translate: TranslateService, 
+    public translate: TranslateService, 
     private i18nService: I18nServiceService,
+    private playerState: PlayerStateService,
   ) {
     
       let lang = localStorage.getItem('currentLang') || 'en';
@@ -29,9 +39,28 @@ export class SourcingGlobalPageComponent implements OnInit {
       translate.use(lang);
   }
 
+  onPlayerReady(api: VgApiService) {
+    this.api = api;
+    this.api.getDefaultMedia().subscriptions.play.subscribe(
+      (event) => {
+        this.playerState.updatePlayerState('play');
+        this.videoPlay = true
+        this.videoPause = false
+      }
+    );
+    this.api.getDefaultMedia().subscriptions.pause.subscribe(
+        (event) => {
+          this.playerState.updatePlayerState('pause');
+          this.videoPause = true
+          this.videoPlay = false
+        }
+    );
+  }
+
   ngOnInit(): void {
     this.i18nService.localeEvent.subscribe(locale => this.translate.use(locale)); 
-    
+    this.playerState$ = this.playerState.state$;
+
     this.globalSourcingCards = [
       {
         title: 'WHY_DO_GLOBAL_SOURCING_WITH_US.CARDS.CARD1.TITLE',
@@ -88,5 +117,8 @@ export class SourcingGlobalPageComponent implements OnInit {
       },
     ]
   }
-
+  
+  ngOnDestroy(): void {
+    clearInterval(this.intervalId);
+  }
 }

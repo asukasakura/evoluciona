@@ -52,7 +52,7 @@ export class InitPageComponent implements OnInit, OnDestroy {
 
 
   constructor(
-    private translate: TranslateService, 
+    public translate: TranslateService, 
     private i18nService: I18nServiceService,
     private playerState: PlayerStateService,
     private elRef: ElementRef
@@ -62,7 +62,7 @@ export class InitPageComponent implements OnInit, OnDestroy {
       let lang = localStorage.getItem('currentLang') || 'en';
       translate.setDefaultLang(lang);
       translate.use(lang);
-
+      
   }
   ngOnDestroy(): void {
     clearInterval(this.intervalId);
@@ -136,7 +136,7 @@ export class InitPageComponent implements OnInit, OnDestroy {
   startImageTransition(): void {
     this.intervalId = setInterval(() => {
       this.nextImage();
-    }, 10000); // Cambia la imagen cada 3 segundos (ajusta según sea necesario)
+    }, 10000); // 10 segundos
   }
 
   nextImage(): void {
@@ -171,4 +171,5 @@ export class InitPageComponent implements OnInit, OnDestroy {
       imagen.style.height = `${nuevaAltura}px`;
     });
   }
+  
 }

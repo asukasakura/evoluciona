@@ -20,8 +20,9 @@ export class ItsTransportationSystemsComponent implements OnInit {
   spanCol2 = 'md:col-span-4'
   startCol2 = 'md:col-start-3'
 
-  videoPlay: boolean | undefined
-  videoPause: boolean | undefined
+  videoStates: { [key: string]: { playing: boolean, paused: boolean } } = {};
+  videoPlay: Record<string, boolean> = {};
+  videoPause: Record<string, boolean> = {};
   api!: VgApiService;
   playerState$!: Observable<string>;
   
@@ -29,27 +30,43 @@ export class ItsTransportationSystemsComponent implements OnInit {
   @Input() dataCards2: Array<any> = []
   @Input() dataLargeCards: Array<any> = []
 
-  onPlayerReady(api: VgApiService) {
-    this.api = api;
-    this.api.getDefaultMedia().subscriptions.play.subscribe(
+  onPlayerReady(api: VgApiService, videoId: string) {
+    this.videoStates[videoId] = { playing: false, paused: false };
+
+    api.getDefaultMedia().subscriptions.play.subscribe(
       (event) => {
-        this.playerState.updatePlayerState('play');
-        this.videoPlay = true
-        this.videoPause = false
+        this.videoStates[videoId].playing = true;
+        this.videoStates[videoId].paused = false;
       }
-  );
-  this.api.getDefaultMedia().subscriptions.pause.subscribe(
+    );
+
+    api.getDefaultMedia().subscriptions.pause.subscribe(
       (event) => {
-        this.playerState.updatePlayerState('pause');
-        this.videoPause = true
-        this.videoPlay = false
+        this.videoStates[videoId].playing = false;
+        this.videoStates[videoId].paused = true;
       }
-  );
+    );
   }
 
+  toggleVideo(videoId: string) {
+    this.videoPlay[videoId] = !this.videoPlay[videoId];
+    this.videoPause[videoId] = !this.videoPause[videoId];
+  }
+
+  isVideoPlaying(videoId: string): boolean {
+    return this.videoStates[videoId] && this.videoStates[videoId].playing;
+  }
+
+  isVideoPaused(videoId: string): boolean {
+    return this.videoStates[videoId] && this.videoStates[videoId].paused;
+  }
+
+  isVideoCoverVisible(videoId: string): boolean {
+    return !this.isVideoPlaying(videoId) && !this.isVideoPaused(videoId);
+  }
 
   constructor(
-    private translate: TranslateService, 
+    public translate: TranslateService, 
     private i18nService: I18nServiceService,
     private playerState: PlayerStateService
     ) {
@@ -104,16 +121,44 @@ export class ItsTransportationSystemsComponent implements OnInit {
         title: 'ITS_SOFTWARE_DEVELOPED.CARDS.CARD1.TITLE',
         text: 'ITS_SOFTWARE_DEVELOPED.CARDS.CARD1.TEXT',
         image: './assets/images/its/tmfe.jpg',
+        id_en: 'itsTmfeEn',
+        id_es: 'itsTmfeEs',
+        video_mp4_en: './assets/video/tmfe/TMFE_en.mp4',
+        video_ogv_en: './assets/video/tmfe/TMFE_en.ogv',
+        video_webm_en: './assets/video/tmfe/TMFE_en.webm',
+        video_mp4_es: './assets/video/tmfe/TMFE_es.mp4',
+        video_ogv_es: './assets/video/tmfe/TMFE_es.ogv',
+        video_webm_es: './assets/video/tmfe/TMFE_es.webm',
+        subtitle_en: './assets/video/tmfe/subtitles/tmfe_es_sub_en.vtt',
+        subtitle_es: './assets/video/tmfe/subtitles/tmfe_es_sub_es.vtt'
       },
       {
         title: 'ITS_SOFTWARE_DEVELOPED.CARDS.CARD2.TITLE',
         text: 'ITS_SOFTWARE_DEVELOPED.CARDS.CARD2.TEXT',
         image: './assets/images/its/intrada-synergy.jpg',
+        id_en: 'itsOboEn',
+        id_es: 'itsOboEs',
+        // video_mp4_en: './assets/video/tmfe/TMFE_en.mp4',
+        // video_ogv_en: './assets/video/tmfe/TMFE_en.ogv',
+        // video_webm_en: './assets/video/tmfe/TMFE_en.webm',
+        // video_mp4_es: './assets/video/tmfe/TMFE_es.mp4',
+        // video_ogv_es: './assets/video/tmfe/TMFE_es.ogv',
+        // video_webm_es: './assets/video/tmfe/TMFE_es.webm',
+        // subtitle_en: './assets/video/cbo/subtitles/cbo_es_sub_en.vtt',
+        // subtitle_es: './assets/video/cbo/subtitles/cbo_es_sub_es.vtt'
       },
       {
         title: 'ITS_SOFTWARE_DEVELOPED.CARDS.CARD3.TITLE',
         text: 'ITS_SOFTWARE_DEVELOPED.CARDS.CARD3.TEXT',
         image: './assets/images/its/comercial-back-office.jpg',
+        id_en: 'itsCboEn',
+        id_es: 'itsCboEs',
+        video_mp4_en: './assets/video/cbo/CBO_es.mp4',
+        video_ogv_en: './assets/video/cbo/CBO_es.ogv',
+        video_webm_en: './assets/video/cbo/CBO_es.webm',
+        video_mp4_es: './assets/video/cbo/CBO_es.mp4',
+        video_ogv_es: './assets/video/cbo/CBO_es.ogv',
+        video_webm_es: './assets/video/cbo/CBO_es.webm'
       },
     ]
   }
