@@ -30,41 +30,6 @@ export class ItsTransportationSystemsComponent implements OnInit {
   @Input() dataCards2: Array<any> = []
   @Input() dataLargeCards: Array<any> = []
 
-  onPlayerReady(api: VgApiService, videoId: string) {
-    this.videoStates[videoId] = { playing: false, paused: false };
-
-    api.getDefaultMedia().subscriptions.play.subscribe(
-      (event) => {
-        this.videoStates[videoId].playing = true;
-        this.videoStates[videoId].paused = false;
-      }
-    );
-
-    api.getDefaultMedia().subscriptions.pause.subscribe(
-      (event) => {
-        this.videoStates[videoId].playing = false;
-        this.videoStates[videoId].paused = true;
-      }
-    );
-  }
-
-  toggleVideo(videoId: string) {
-    this.videoPlay[videoId] = !this.videoPlay[videoId];
-    this.videoPause[videoId] = !this.videoPause[videoId];
-  }
-
-  isVideoPlaying(videoId: string): boolean {
-    return this.videoStates[videoId] && this.videoStates[videoId].playing;
-  }
-
-  isVideoPaused(videoId: string): boolean {
-    return this.videoStates[videoId] && this.videoStates[videoId].paused;
-  }
-
-  isVideoCoverVisible(videoId: string): boolean {
-    return !this.isVideoPlaying(videoId) && !this.isVideoPaused(videoId);
-  }
-
   constructor(
     public translate: TranslateService, 
     private i18nService: I18nServiceService,
@@ -73,7 +38,6 @@ export class ItsTransportationSystemsComponent implements OnInit {
       let lang = localStorage.getItem('currentLang') || 'en';
       translate.setDefaultLang(lang);
       translate.use(lang);
-      
   }
 
   ngOnInit(): void {
@@ -135,17 +99,17 @@ export class ItsTransportationSystemsComponent implements OnInit {
       {
         title: 'ITS_SOFTWARE_DEVELOPED.CARDS.CARD2.TITLE',
         text: 'ITS_SOFTWARE_DEVELOPED.CARDS.CARD2.TEXT',
-        image: './assets/images/its/intrada-synergy.jpg',
+        image: './assets/images/its/OBO.jpg',
         id_en: 'itsOboEn',
         id_es: 'itsOboEs',
-        // video_mp4_en: './assets/video/tmfe/TMFE_en.mp4',
-        // video_ogv_en: './assets/video/tmfe/TMFE_en.ogv',
-        // video_webm_en: './assets/video/tmfe/TMFE_en.webm',
-        // video_mp4_es: './assets/video/tmfe/TMFE_es.mp4',
-        // video_ogv_es: './assets/video/tmfe/TMFE_es.ogv',
-        // video_webm_es: './assets/video/tmfe/TMFE_es.webm',
-        // subtitle_en: './assets/video/cbo/subtitles/cbo_es_sub_en.vtt',
-        // subtitle_es: './assets/video/cbo/subtitles/cbo_es_sub_es.vtt'
+        video_mp4_en: './assets/video/obo/obo_en.mp4',
+        video_ogv_en: './assets/video/obo/obo_en.ogv',
+        video_webm_en: './assets/video/obo/obo_en.webm',
+        video_mp4_es: './assets/video/obo/obo_es.mp4',
+        video_ogv_es: './assets/video/obo/obo_es.ogv',
+        video_webm_es: './assets/video/obo/obo_es.webm',
+        subtitle_en: './assets/video/obo/subtitles/obo_es_sub_en.vtt',
+        subtitle_es: './assets/video/obo/subtitles/obo_es_sub_es.vtt'
       },
       {
         title: 'ITS_SOFTWARE_DEVELOPED.CARDS.CARD3.TITLE',
@@ -153,14 +117,51 @@ export class ItsTransportationSystemsComponent implements OnInit {
         image: './assets/images/its/comercial-back-office.jpg',
         id_en: 'itsCboEn',
         id_es: 'itsCboEs',
-        video_mp4_en: './assets/video/cbo/CBO_es.mp4',
-        video_ogv_en: './assets/video/cbo/CBO_es.ogv',
-        video_webm_en: './assets/video/cbo/CBO_es.webm',
-        video_mp4_es: './assets/video/cbo/CBO_es.mp4',
-        video_ogv_es: './assets/video/cbo/CBO_es.ogv',
-        video_webm_es: './assets/video/cbo/CBO_es.webm'
+        video_mp4_en: './assets/video/Cbo/cbo_en.mp4',
+        video_ogv_en: './assets/video/Cbo/cbo_en.ogv',
+        video_webm_en: './assets/video/Cbo/cbo_en.webm',
+        video_mp4_es: './assets/video/Cbo/cbo_es.mp4',
+        video_ogv_es: './assets/video/Cbo/cbo_es.ogv',
+        video_webm_es: './assets/video/Cbo/cbo_es.webm',
+        subtitle_en: './assets/video/Cbo/subtitles/cbo_es_sub_en.vtt',
+        subtitle_es: './assets/video/Cbo/subtitles/cbo_es_sub_es.vtt'
       },
     ]
+  }
+
+  onPlayerReady(api: VgApiService, videoId: string) {
+    this.videoStates[videoId] = { playing: false, paused: false };
+
+    api.getDefaultMedia().subscriptions.play.subscribe(
+      (event) => {
+        this.videoStates[videoId].playing = true;
+        this.videoStates[videoId].paused = false;
+      }
+    );
+
+    api.getDefaultMedia().subscriptions.pause.subscribe(
+      (event) => {
+        this.videoStates[videoId].playing = false;
+        this.videoStates[videoId].paused = true;
+      }
+    );
+  }
+
+  toggleVideo(videoId: string) {
+    this.videoPlay[videoId] = !this.videoPlay[videoId];
+    this.videoPause[videoId] = !this.videoPause[videoId];
+  }
+
+  isVideoPlaying(videoId: string): boolean {
+    return this.videoStates[videoId] && this.videoStates[videoId].playing;
+  }
+
+  isVideoPaused(videoId: string): boolean {
+    return this.videoStates[videoId] && this.videoStates[videoId].paused;
+  }
+
+  isVideoCoverVisible(videoId: string): boolean {
+    return !this.isVideoPlaying(videoId) && !this.isVideoPaused(videoId);
   }
 
 }

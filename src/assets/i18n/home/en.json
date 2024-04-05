@@ -25,7 +25,7 @@
     }
   },
   "OUR_PARTNERS": {
-    "TITLE": "Nuestros socios",
+    "TITLE": "Our partners",
     "PARTNERS": {
       "PARTNER1": {
         "NAME": "Juan Leon Oros",
@@ -39,7 +39,7 @@
       },
       "PARTNER3": {
         "NAME": "Jorge Vasquez Araya",
-        "POSITION": "COO / Director of Operations",
+        "POSITION": "COO / Chief Operating Officer",
         "TEXT": "My job is to coordinate the operation of companies in Chile and Spain, always taking care of a respectful, collaborative and long-term treatment with our clients, workers and suppliers. My motivation is that we can have a positive impact on society through engineering, process and technology solutions."
       }
     }

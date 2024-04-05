@@ -1,9 +1,9 @@
 <mat-card class="">
-  <div class="mb-4 lg:mb-10">
+  <div class="mb-3 lg:mb-6">
     <img 
       [src]="cards.image"
       alt="{{cards.title | translate}}"
-      [ngClass]="[imageSize ? imageSize : 'w-3/4 max-w-[150px] md:max-w-[200px]', 'block mx-auto']"
+      [ngClass]="[imageSize ? imageSize : 'w-3/4 max-w-[150px] md:max-w-[160px]', 'block mx-auto']"
     >
   </div>
   <mat-card-header>
@@ -11,7 +11,7 @@
     <!-- <mat-card-title class="text-lg font-bold" [innerHTML]="'HEADER_TEXT' | translate"></mat-card-title> -->
    </mat-card-header>
   <mat-card-content>
-    <p class="text-lg font-normal"[innerHTML]="cards.paragraph | translate"></p>
+    <p class="text-lg font-normal leading-6"[innerHTML]="cards.paragraph | translate"></p>
   </mat-card-content>
 </mat-card>
 

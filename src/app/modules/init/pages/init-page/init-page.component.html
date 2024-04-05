@@ -34,7 +34,7 @@
 
 <div class="container-fluid">
   <section class="container px-4 lg:px-6 max-w-[96rem] pt-32">
-    <p class="text-lg">{{ 'INTRODUCTION_ABOUT_US' | translate}}</p>
+    <p class="text-lg leading-6">{{ 'INTRODUCTION_ABOUT_US' | translate}}</p>
   </section>
 </div>
 
@@ -54,7 +54,7 @@
 
 <div class="container-fluid">
   <section class="container px-4 lg:px-6 max-w-[96rem] py-12">
-    <div class="flex justify-center mb-16">
+    <div class="flex justify-center mb-20 lg:mb-24">
       <h2 class="flex text-gray text-3xl text-center title_border relative pb-3">
         {{ 'OUR_PARTNERS.TITLE' | translate}}
       </h2>
@@ -64,9 +64,9 @@
       <div class="mb-8" *ngFor="let partner of ourPartners">
         <div class="flex flex-row">
           <div class="w-auto pr-4">
-            <img [src]="partner.image" class="aspect-w-1 aspect-h-1 max-w-[100px] md:max-w-[140px]" [alt]="partner.name" />
+            <img [src]="partner.image" class="aspect-w-1 aspect-h-1 max-w-[100px]" [alt]="partner.name" />
           </div>
-          <div class="grow">
+          <div class="grow self-center">
             <a *ngIf="partner.in_profile" href="{{ partner.in_profile }}" target="_blank" rel="noopener noreferrer" title="{{ 'VIEW_PROFILE' | translate }}" class="link-name">
               <h4 class="text-2xl font-medium">{{ partner.name | translate }}</h4>
             </a>
@@ -75,7 +75,7 @@
           </div>
         </div>
         <div class="mt-6">
-          <p>{{ partner.text | translate }}</p>
+          <p class="text-[1.1rem]">{{ partner.text | translate }}</p>
         </div>
       </div>
     </div>
@@ -131,7 +131,7 @@
     </div>
 
     <div class="video-container_video mb-10" *ngIf="translate.currentLang == 'es'">
-      <img src="./assets/images/home-video-cover.png" alt="" [ngClass]="[!videoPlay && !videoPause ? 'show' : 'hide', 'fallback-video']">
+      <img src="./assets/images/nosotros-video-cover.png" alt="" [ngClass]="[!videoPlay && !videoPause ? 'show' : 'hide', 'fallback-video']">
       <vg-player (onPlayerReady)="onPlayerReady($event)">
         <vg-overlay-play vgFor="homeEsVideo"></vg-overlay-play>
         

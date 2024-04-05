@@ -22,7 +22,7 @@
         {{ 'WHAT_IS_GLOBAL_PEOPLE_SOURCING.TITLE' | translate}}
       </h2>
     </div>
-    <p class="text-lg">{{ 'WHAT_IS_GLOBAL_PEOPLE_SOURCING.TEXT' | translate}}</p>
+    <p class="text-lg leading-6">{{ 'WHAT_IS_GLOBAL_PEOPLE_SOURCING.TEXT' | translate}}</p>
   </section>
 
   <section class="container px-4 lg:px-10 max-w-[96rem] py-12">
@@ -62,32 +62,33 @@
       </h2>
     </div>
     
-    <!-- {{ playerState$ | async }} -->
-    <div class="video-container_video mb-10">
-      <img src="./assets/images/home-video-cover.png" alt="" [ngClass]="[!videoPlay && !videoPause ? 'show' : 'hide', 'fallback-video']">
-      <vg-player (onPlayerReady)="onPlayerReady($event)">
-        <vg-overlay-play vgFor="globalEsVideo"></vg-overlay-play>
-        
-        <vg-controls [vgAutohide]="true" [vgAutohideTime]="5">
-          <vg-play-pause vgFor="globalEsVideo"></vg-play-pause>
-          <vg-time-display vgFor="globalEsVideo" vgProperty="current" vgFormat="mm:ss"></vg-time-display>
-          <vg-scrub-bar vgFor="globalEsVideo" style="pointer-events: none;"></vg-scrub-bar>
-          <vg-time-display vgFor="globalEsVideo" vgProperty="total" vgFormat="mm:ss"></vg-time-display>
-          <vg-track-selector vgFor="globalEsVideo" class="track-selector"></vg-track-selector>
-          <vg-mute vgFor="globalEsVideo"></vg-mute>
-          <vg-volume vgFor="globalEsVideo"></vg-volume>
-          <vg-fullscreen vgFor="globalEsVideo"></vg-fullscreen>
-        </vg-controls>
-
-        <video [vgMedia]="$any(media)" #media id="globalEsVideo" preload="auto">
-            <source src="./assets/video/global/global-sourcing_es.mp4" type="video/mp4">
-            <source src="./assets/video/global/global-sourcing_es.ogv" type="video/ogv">
-            <source src="./assets/video/global/global-sourcing_es.webm" type="video/webm">
-
-            <track kind="subtitles" label="English" src="./assets/video/global/subtitles/global_sourcing_es_sub_ingles.vtt" srclang="en">
-            <track kind="subtitles" label="Spanish" src="./assets/video/global/subtitles/global-sourcing_es_sub_espanol.vtt" srclang="es">
-        </video>
-      </vg-player>
+    <div *ngFor="let video of landingVideos">
+      <div class="video-container_video mb-10" *ngIf="translate.currentLang == video.lang">
+        <img [src]="video.cover" alt="" [ngClass]="[!videoPlay && !videoPause ? 'show' : 'hide', 'fallback-video']">
+        <vg-player (onPlayerReady)="onPlayerReady($event)">
+          <vg-overlay-play [vgFor]="video.id"></vg-overlay-play>
+          
+          <vg-controls [vgFor]="video.id" [vgAutohide]="true" [vgAutohideTime]="5">
+            <vg-play-pause></vg-play-pause>
+            <vg-time-display vgProperty="current" vgFormat="mm:ss"></vg-time-display>
+            <vg-scrub-bar style="pointer-events: none;"></vg-scrub-bar>
+            <vg-time-display vgProperty="total" vgFormat="mm:ss"></vg-time-display>
+            <vg-track-selector class="track-selector"></vg-track-selector>
+            <vg-mute></vg-mute>
+            <vg-volume></vg-volume>
+            <vg-fullscreen></vg-fullscreen>
+          </vg-controls>
+  
+          <video [vgMedia]="$any(media)" #media [id]="video.id" preload="auto">
+              <source [src]="video.videoMp4" type="video/mp4">
+              <source [src]="video.videoOgv" type="video/ogv">
+              <source [src]="video.videoWebm" type="video/webm">
+  
+              <track kind="subtitles" label="English" [src]="video.subtitlesEn" srclang="en">
+              <track kind="subtitles" label="Spanish" [src]="video.subtitlesEs" srclang="es">
+          </video>
+        </vg-player>
+      </div>
     </div>
 
   </section>

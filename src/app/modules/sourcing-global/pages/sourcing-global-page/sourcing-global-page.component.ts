@@ -20,6 +20,7 @@ export class SourcingGlobalPageComponent implements OnInit, OnDestroy {
   startCol2 = 'md:col-start-3'
 
   intervalId: any;
+  
   videoPlay: boolean | undefined
   videoPause: boolean | undefined
   api!: VgApiService;
@@ -27,6 +28,7 @@ export class SourcingGlobalPageComponent implements OnInit, OnDestroy {
 
   @Input() globalSourcingCards: Array<any> = []
   @Input() additionallyCards: Array<any> = []
+  @Input() landingVideos: Array<any> = []
 
   constructor(
     public translate: TranslateService, 
@@ -115,6 +117,29 @@ export class SourcingGlobalPageComponent implements OnInit, OnDestroy {
         image: './assets/images/global-sourcing/profesionalismo.jpg',
         paragraph: 'ADDITIONALLY.CARDS.CARD3.TEXT'
       },
+    ]
+
+    this.landingVideos = [
+      {
+        id: 'globalSourcingEs',
+        lang: 'es',
+        videoMp4: './assets/video/global/global-sourcing_es.mp4',
+        videoOgv: './assets/video/global/global-sourcing_es.ogv',
+        videoWebm: './assets/video/global/global-sourcing_es.webm',
+        subtitlesEn: './assets/video/global/subtitles/global-sourcing_es_sub_ingles.vtt',
+        subtitlesEs: './assets/video/global/subtitles/global-sourcing_es_sub_espanol.vtt',
+        cover: './assets/images/home-video-cover.png',
+      },
+      {
+        id: 'globalSourcingEn',
+        lang: 'en',
+        videoMp4: './assets/video/global/global-sourcing_en.mp4',
+        videoOgv: './assets/video/global/global-sourcing_en.ogv',
+        videoWebm: './assets/video/global/global-sourcing_en.webm',
+        subtitlesEn: './assets/video/global/subtitles/global-sourcing_es_sub_ingles.vtt',
+        subtitlesEs: './assets/video/global/subtitles/global-sourcing_es_sub_espanol.vtt',
+        cover: './assets/images/home-video-cover.png',
+      }
     ]
   }
   

@@ -35,8 +35,7 @@
               {
                 "glob": "**/*",
                 "input": "src/assets",
-                "output": "/assets",
-                "exclude": ["src/assets/video/**"]
+                "output": "/assets"
               }
             ],
             "styles": [
@@ -110,8 +109,7 @@
             "inlineStyleLanguage": "sass",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "exclude": ["exclude/**"]
+              "src/assets"
             ],
             "styles": [
               "src/styles.sass"

@@ -46,13 +46,14 @@
       </h2>
     </div>
     <!-- <app-wrap-large-card [dataLargeCards]="dataLargeCards"></app-wrap-large-card> -->
+    <!-- {{ dataLargeCards | json }} -->
     <div *ngFor="let card of dataLargeCards">
       <div class="flex flex-row flex-wrap mb-12">
         <div class="flex flex-col w-fit md:w-2/3 md:pr-5">
           <h4 [innerHTML]="card.title | translate" class="flex text-gray text-xl text-center title_border_top relative pb-3 font-medium"></h4>
           <p [innerHTML]="card.text | translate"></p>
         </div>
-        <div class="flex flex-col w-fit md:w-1/3 md:pl-5">
+        <div class="flex flex-col w-fit md:w-1/3 md:pl-5" [id]="card.id_en">
           <img *ngIf="card.image && !card.video_mp4_en && !card.video_mp4_es" [src]="card.image" />
           
           <div class="video-container_video" *ngIf="translate.currentLang == 'en' && card.video_mp4_en">
@@ -168,7 +169,7 @@
     </div>
     
     <div class="video-container_video" *ngIf="translate.currentLang == 'es'">
-      <img src="./assets/images/ITS_video_media.jpg" (click)="toggleVideo('itsEsVideo')" alt="" [ngClass]="{'show': isVideoCoverVisible('itsEsVideo'), 'hide': isVideoPlaying('itsEsVideo') || isVideoPaused('itsEsVideo') }">
+      <img src="./assets/images/ITS_video_media.jpg" (click)="toggleVideo('itsEsVideo')" alt="" [ngClass]="{'show': isVideoCoverVisible('itsEsVideo'), 'hide': isVideoPlaying('itsEsVideo') || isVideoPaused('itsEsVideo') }" class="fallback-video">
       <vg-player (onPlayerReady)="onPlayerReady($event, 'itsEsVideo')">
         <vg-overlay-play vgFor="itsEsVideo"></vg-overlay-play>
     
