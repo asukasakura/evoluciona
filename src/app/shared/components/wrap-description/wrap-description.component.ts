@@ -18,6 +18,7 @@ export class WrapDescriptionComponent implements OnInit {
   @Input() spanCol2 : string = 'span-1'
   @Input() startCol2 : string = 'col-start-2'
   @Input() dataCards : Array<CardModel> = []
+  @Input() paragraph? : string = ''
 
   constructor() { }
 

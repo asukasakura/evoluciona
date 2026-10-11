@@ -25,11 +25,11 @@ export class FooterComponent implements OnInit {
       },
       {
         name: 'MENU.TRANSFORMATION_AND_OPERATIONAL_EXCELLENCE',
-        router: ['/', '']
+        router: ['/', 'transformation-and-operational-excellence']
       },
       {
         name: 'MENU.INTELLIGENCE_OF_EXPERIENCE_AND_PERFORMANCE',
-        router: ['/', '']
+        router: ['/', 'experience-and-performance-intelligence']
       },
       {
         name: 'MENU.GLOBAL_SOURCING',

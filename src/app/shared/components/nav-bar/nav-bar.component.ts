@@ -15,7 +15,7 @@ export class NavBarComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     // INIT MATERIALIZE COMPONENTS
-    const dropdowns = document.querySelectorAll('.dropdown-trigger');
+    const dropdowns = document.querySelectorAll('app-nav-bar .dropdown-trigger');
     const instancesDrowpdown = M.Dropdown.init(dropdowns, {
       hover: true,
       coverTrigger: false,
@@ -87,11 +87,11 @@ export class NavBarComponent implements OnInit, AfterViewInit {
       },
       {
         name: 'MENU.TRANSFORMATION_AND_OPERATIONAL_EXCELLENCE',
-        router: ['/', '']
+        router: ['/', 'transformation-and-operational-excellence']
       },
       {
         name: 'MENU.INTELLIGENCE_OF_EXPERIENCE_AND_PERFORMANCE',
-        router: ['/', '']
+        router: ['/', 'experience-and-performance-intelligence']
       },
       {
         name: 'MENU.GLOBAL_SOURCING',

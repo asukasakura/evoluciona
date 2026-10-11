@@ -45,17 +45,22 @@ export class PoliceControllerAdapterComponent implements OnInit {
       {
         title: 'PCA.FEATURES.TITLE_1',
         text: 'PCA.FEATURES.TEXT_1',
-        image: './assets/images/products/pca/pca.png'
+        image: './assets/images/products/pca/feature-PCA-1.jpg'
       },
       {
         title: 'PCA.FEATURES.TITLE_2',
         text: 'PCA.FEATURES.TEXT_2',
-        image: './assets/images/products/pca/pca_tableros_police.png'
+        image: './assets/images/products/pca/feature-PCA-2.jpg'
       },
       {
         title: 'PCA.FEATURES.TITLE_3',
         text: 'PCA.FEATURES.TEXT_3',
-        image: './assets/images/products/pca/pca_app.png'
+        image: './assets/images/products/pca/feature-PCA-3.jpg'
+      },
+      {
+        title: 'PCA.FEATURES.TITLE_4',
+        text: 'PCA.FEATURES.TEXT_4',
+        image: './assets/images/products/pca/feature-PCA-4.jpg'
       }
     ]
   }

@@ -47,6 +47,16 @@ const routes: Routes = [
     data: { title: 'MESU2025.TITLE' }
   },
   {
+    path: 'transformation-and-operational-excellence',
+    loadChildren: () => import(`@modules/transformation-operational-excellence/transformation-operational-excellence.module`).then(m => m.TransformationOperationalExcellenceModule),
+    data: { title: 'TRANSFORMATION_OPERATIONAL_EXCELLENCE.TITLE' }
+  },
+  {
+    path: 'experience-and-performance-intelligence',
+    loadChildren: () => import(`@modules/experience-and-performance-intelligence/experience-and-performance-intelligence.module`).then(m => m.ExperienceAndPerformanceIntelligenceModule),
+    data: { title: 'EXPERIENCE_AND_PERFORMANCE_INTELLIGENCE.TITLE' }
+  },
+  {
     path: '**',
     redirectTo: '/'
   }

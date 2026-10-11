@@ -13,6 +13,7 @@ import { I18nServiceService } from '../../../i18n-service/i18n-service.service';
 export class DescriptionComponent implements OnInit {
   isChildRoute = false;
   currentRouteName!: string;
+  childDescriptionText = '';
 
   @Input() descriptionTitle? : string = ''
   @Input() descriptionText? : string = ''
@@ -23,6 +24,7 @@ export class DescriptionComponent implements OnInit {
   @Input() staticTitle : string = ''
   @Input() staticDescription : string = ''
   @Input() preTitle : string = ''
+  @Input() paragraph? : string = ''
 
   constructor(
     private translate: TranslateService, 
@@ -49,7 +51,20 @@ export class DescriptionComponent implements OnInit {
     this.checkIfChildRoute();
     this.route.url.subscribe(segments => {
       this.currentRouteName = segments.join('/');
+      this.updateChildDescription();
     }); 
+    this.translate.onLangChange.subscribe(() => this.updateChildDescription());
+  }
+
+  private updateChildDescription(): void {
+    if (!this.isChildRoute || !this.currentRouteName) {
+      this.childDescriptionText = '';
+      return;
+    }
+    const key = this.currentRouteName + '.DESCRIPTION.TEXT';
+    const value = this.translate.instant(key);
+    // ngx-translate devuelve la clave si no existe la traducción
+    this.childDescriptionText = value && value !== key && value.trim() !== '' ? value : '';
   }
 
   checkIfChildRoute() {
@@ -67,6 +82,8 @@ export class DescriptionComponent implements OnInit {
       this.isChildRoute = false;
       // Realiza las acciones que desees para otras rutas.
     }
+    
+    this.updateChildDescription();
   }
 
 }

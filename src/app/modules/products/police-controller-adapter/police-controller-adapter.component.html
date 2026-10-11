@@ -1,5 +1,17 @@
-<app-wrap-description id="pca" [gridCols]="gridCols" [spanCol1]="spanCol1" [preTitle]="'PCA'"
-  [staticTitle]="'Police Controller Adapter' | translate" appScrollSection="one">
+<app-wrap-hero class="contact-hero"
+  [imagebackground]="'./assets/images/products/pca/hero-pca.png'"
+  [horizontalAlign]="'left'"
+  [minHeight]="' '"
+  [headText]="' '">
+</app-wrap-hero>
+
+<app-wrap-description 
+  id="pca"
+  [gridCols]="gridCols" [spanCol1]="spanCol1"
+  [preTitle]="'PCA'"
+  [staticTitle]="'Police Controller Adapter' | translate"
+  [paragraph]="'PCA.PARAGRAPH' | translate"
+  appScrollSection="one">
 </app-wrap-description>
 
 <div class="container-fluid">
@@ -7,17 +19,22 @@
     <p class="text-xl md:text-[1.35rem] columns-1 md:columns-2 gap-8 leading-relaxed text-balance"
       [innerHTML]="'PCA.PARAGRAPH_1' | translate"></p>
   </section>
-  <app-wrap-hero class="contact-hero" [imagebackground]="'./assets/images/products/pca/hero-pca.png'" [headText]="' '">
+  <app-wrap-hero 
+    class="contact-hero"
+    [imagebackground]="'./assets/images/products/pca/pca_hero2.jpg'"
+    [headText]="' '"
+    [minHeight]="'h-96'">
   </app-wrap-hero>
 </div>
 
 <div class="container px-4 lg:px-10 max-w-[96rem]">
+  <h3 class="text-3xl md:text-4xl mt-10 md:mt-20 mb-4 font-semibold">{{ 'PCA.FEATURES_TITLE' | translate }}</h3>
   <div *ngFor="let feature of features; let i = index"
-    class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-[4rem] my-10 md:my-20 items-center">
+    class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-[4rem] mb-20 items-center">
     <div class="text-col" [ngClass]="{ 'md:order-2': i % 2 === 1 }">
-      <h3 class="text-2xl md:text-3xl font-bold">{{ feature.title | translate }}</h3>
+      <h3 class="text-2xl font-medium">{{ feature.title | translate }}</h3>
       <p [innerHTML]="feature.text | translate"
-        class="text-xl md:text-[1.35rem] pt-5 md:pt-8 md:leading-relaxed text-balance"></p>
+        class="text-xl md:text-[1.35rem] md:leading-relaxed text-balance"></p>
     </div>
     <div class="img-col" [ngClass]="{ 'md:order-1': i % 2 === 1 }">
       <img [src]="feature.image" alt="" class="w-[80%] h-auto object-contain block mx-auto" loading="lazy">
@@ -25,6 +42,18 @@
   </div>
 </div>
 
+<div class="container-fluid">
+  <app-wrap-hero 
+    class="contact-hero"
+    [imagebackground]="'./assets/images/products/pca/hero-pca.png'"
+    [headText]="' '"
+    [minHeight]="'h-96'">
+  </app-wrap-hero>
+  <section class="container px-4 lg:px-6 max-w-[96rem] py-10 md:py-28">
+    <div class="text-xl md:text-[1.35rem] columns-1 md:columns-2 gap-8 leading-relaxed text-balance"
+      [innerHTML]="'PCA.PARAGRAPH_2' | translate"></div>
+  </section>
+</div>
 
 <div class="container-fluid">
   <section class="container px-4 lg:px-10 max-w-[96rem] py-12">
@@ -65,7 +94,7 @@
 
     <!-- <div class="video-container_video aspect-[16/9] w-full" *ngIf="translate.currentLang == 'es'"> -->
     <div class="video-container_video aspect-[16/9] w-full">
-      <img src="./assets/images/ITS_video_media.jpg" (click)="toggleVideo('pcaEsVideo')" alt=""
+      <img src="./assets/images/products/pca/pca_video_media.png" (click)="toggleVideo('pcaEsVideo')" alt=""
         [ngClass]="{'show': isVideoCoverVisible('pcaEsVideo'), 'hide': isVideoPlaying('pcaEsVideo') || isVideoPaused('pcaEsVideo') }"
         class="fallback-video">
       <vg-player (onPlayerReady)="onPlayerReady($event, 'pcaEsVideo')">

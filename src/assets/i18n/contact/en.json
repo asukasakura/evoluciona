@@ -12,8 +12,13 @@
   },
   "ADDRESS_2": {
     "EVOLUCIONA": "Evoluciona Chile",
-    "ATENTION": "(attention: Mon - Fri from 9am -2pm)",
+    "ATENTION": "(attention: Mon - Fri from 9am -5pm)",
     "STREET_NUMBER_STATE_COUNTRY": "Compañía de Jesús Street 1390, 22nd floor, Office 2205, Santiago de Chile"
+  },
+  "ADDRESS_3": {
+    "EVOLUCIONA": "Evoluciona Perú",
+    "ATENTION": "(attention: Mon - Fri from 9am -5pm)",
+    "STREET_NUMBER_STATE_COUNTRY": "Av. Santo Toribio 143, San Isidro 15073, Perú, 2nd floor, Office 13"
   },
   "PHONE": "Phone"
 }

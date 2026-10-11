@@ -14,8 +14,9 @@ export class HeaderComponent implements OnInit {
 
   ngAfterViewInit(): void {
     const selects = document.querySelectorAll('.material_select');
-    M.FormSelect.init(selects);
-
+    M.FormSelect.init(selects, {
+      dropdownOptions: { hover: false }
+    });
   }
   
   lang = 'en';
@@ -33,7 +34,6 @@ export class HeaderComponent implements OnInit {
     this.i18nService.changeLocale(locale);   
   }
 
-  
   ngOnInit(): void {
     this.i18nService.localeEvent.subscribe(locale => this.translate.use(locale));
   }
