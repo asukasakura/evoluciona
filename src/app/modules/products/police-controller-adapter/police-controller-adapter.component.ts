@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { I18nServiceService } from 'src/app/i18n-service/i18n-service.service';
+import { I18nServiceService } from '../../../i18n-service/i18n-service.service';
 import { MatDialog } from '@angular/material/dialog';
 
 import { VgApiService } from '@videogular/ngx-videogular/core';
@@ -24,6 +24,11 @@ export class PoliceControllerAdapterComponent implements OnInit {
   api!: VgApiService;
   playerState$!: Observable<string>;
   features: { title: string; text: string; image: string; }[] = [];
+
+  whatsappNumber = '56997482043';
+  whatsappMessage =
+    '¡Hola! Me gustaría recibir más información sobre Police Controller Adapter (PCA) y conocer cómo podría implementarse en nuestra organización.';
+  whatsappUrl = `https://wa.me/${this.whatsappNumber}?text=${encodeURIComponent(this.whatsappMessage)}`;
 
   constructor(
     public dialog: MatDialog,

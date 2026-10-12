@@ -6,54 +6,62 @@ nav
     @media screen and ( min-width: 1023px )
       display: flex
       gap: 1rem
-  li
-    @apply py-0 text-white
-    cursor: pointer
-    font-weight: 400
-    font-size: 1.1rem
-    padding-bottom: 10px
-    display: flex
-    align-items: center
-    flex: 1
-    justify-content: center
-    div
+    li
+      @apply py-0 text-white
+      cursor: pointer
+      font-weight: 400
+      font-size: 1.1rem
+      padding-bottom: 10px
       display: flex
       align-items: center
-    span
-      line-height: 120%
-      display: inline-flex
-    &:empty
-      display: none
-    &.router-link-active
-      & > div
+      flex: 1
+      justify-content: center
+      div
         display: flex
         align-items: center
-        flex: 1
-        justify-content: center
-        height: 100% 
-        & > span
-          position: relative
-          height: 100%
-          align-items: center
-          &::after
-            content: ''
-            background: var(--orange-color)
-            height: 3px
-            display: block
-            position: absolute
-            bottom: -10px
-            left: 0
-            max-width: 70%
-            width: 65%
-            z-index: 1
-    &:focus-visible
-      outline: none
-    // &:last-child
-    //   justify-content: flex-end
+      span
+        line-height: 120%
+        display: inline-flex
+      &:first-child
+        flex: none
+        justify-content: flex-start
+        padding-right: 1rem
+      &:last-child
+        flex: none
+        justify-content: flex-end
+        padding-left: 1rem
+      &:empty
+        display: none
       &.router-link-active
-        &::after
-          left: initial
-          right: 0
+        & > div
+          display: flex
+          align-items: center
+          flex: 1
+          justify-content: center
+          height: 100% 
+          & > span
+            position: relative
+            height: 100%
+            align-items: center
+            &::after
+              content: ''
+              background: var(--orange-color)
+              height: 3px
+              display: block
+              position: absolute
+              bottom: -10px
+              left: 0
+              max-width: 70%
+              width: 65%
+              z-index: 1
+      &:focus-visible
+        outline: none
+      // &:last-child
+      //   justify-content: flex-end
+        &.router-link-active
+          &::after
+            left: initial
+            right: 0
   ul.dropdown-content
     .menu-initials
       font-weight: 700

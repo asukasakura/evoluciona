@@ -15,7 +15,7 @@ import { ProductPageComponent } from './product-page/product-page.component';
 import { SharedModule } from '@shared/shared.module';
 import { OurProductsComponent } from './our-products/our-products.component';
 import { TrafficMonitoringFrontEndComponent } from './traffic-monitoring-front-end/traffic-monitoring-front-end.component';
-import { PoliceControllerAdapterComponent } from './police-controller-adapter/police-controller-adapter.component';
+// import { PoliceControllerAdapterComponent } from './police-controller-adapter/police-controller-adapter.component';
 import { PcaFormComponent } from './police-controller-adapter/pca-form/pca-form.component';
 import { MatDialogModule } from "@angular/material/dialog";
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -33,7 +33,7 @@ export function productsHttpLoaderFactory(http: HttpClient) {
     ProductPageComponent,
     OurProductsComponent,
     TrafficMonitoringFrontEndComponent,
-    PoliceControllerAdapterComponent,
+    // PoliceControllerAdapterComponent,
     PcaFormComponent
   ],
   imports: [

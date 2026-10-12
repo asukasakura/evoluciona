@@ -37,7 +37,7 @@ export class FooterComponent implements OnInit {
       },
       {
         name: 'MENU.POLICE_CONTROLLER_ADAPTER',
-        router: ['products', 'pca']
+        router: ['/', 'pca']
       },
       {
         name: 'MENU.DEVELOPMENT_&_INNOVATION',

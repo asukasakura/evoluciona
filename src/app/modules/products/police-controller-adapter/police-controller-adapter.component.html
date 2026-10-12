@@ -11,6 +11,7 @@
   [preTitle]="'PCA'"
   [staticTitle]="'Police Controller Adapter' | translate"
   [paragraph]="'PCA.PARAGRAPH' | translate"
+  [staticDescription]="' '"
   appScrollSection="one">
 </app-wrap-description>
 
@@ -128,11 +129,25 @@
 
   </section>
 </div>
-
+<!-- 
 <div class="grid md:grid-cols-4 my-10 mb-24 mx-4 lg:mx-10">
   <div class="md:col-start-2 md:col-span-2">
     <app-call-to-action [text]="'PCA.DOWNLOAD_TECHNICAL_SHEET'" [svgIcon]="'icon-download'" [iconPosition]="'right'"
       (click)="openDialog()">
     </app-call-to-action>
   </div>
-</div>
+</div> -->
+
+<a
+  [href]="whatsappUrl"
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Consultar por Police Controller Adapter a través de WhatsApp"
+>
+  <img
+    src="assets/images/icons/rrss/whatsapp.svg"
+    alt="Consultar por Police Controller Adapter a través de WhatsApp"
+    aria-hidden="true"
+  />
+</a>

@@ -8,6 +8,11 @@ const routes: Routes = [
     data: { title: 'HOME.TITLE' }
   },
   {
+    path: 'pca',
+    loadChildren: () =>
+      import('@modules/products/police-controller-adapter/police-controller-adapter.module').then(m => m.PoliceControllerAdapterModule)
+  },
+  {
     path: 'products',
     loadChildren: () => import(`@modules/products/products.module`).then(m => m.ProductsModule),
     data: { title: 'PRODUCTS.TITLE' }

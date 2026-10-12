@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { OurProductsComponent } from './our-products/our-products.component';
 import { TrafficMonitoringFrontEndComponent } from './traffic-monitoring-front-end/traffic-monitoring-front-end.component';
-import { PoliceControllerAdapterComponent } from './police-controller-adapter/police-controller-adapter.component';
 
 const routes: Routes = [
   {
@@ -19,11 +18,6 @@ const routes: Routes = [
         path: 'traffic-monitoring-front-end',
         component: TrafficMonitoringFrontEndComponent,
         data: { title: 'PRODUCTS.TITLE' }
-      },
-      {
-        path: 'pca',
-        component: PoliceControllerAdapterComponent,
-        data: { title: 'PRODUCTS.PCA.TITLE' }
       },
       {
         path: '**',
