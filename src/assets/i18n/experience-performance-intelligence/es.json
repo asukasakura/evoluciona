@@ -1,0 +1,31 @@
+{
+  "TITLE": "Inteligencia de Experiencia y Desempeño",
+  "HEADER_TITLE": "INTELIGENCIA DE EXPERIENCIA Y DESEMPEÑO",
+  "HEADER_TEXT": "",
+  "DESCRIPTION": {
+    "TITLE": "Información que se transforma <br> en oportunidades",
+    "TEXT": "Como área especializada de Evoluciona en experiencia del cliente y del colaborador, trabajamos directamente con cada organización para diseñar mediciones y análisis ajusatados a su realidad. Integramos distintas fuentes de información, identificamos oportunidades concretas de mejora y entregamos recomendaciones que facilitan la toma de decisiones, con estricta confidencialidad de los datos y resultados."
+  },
+  "PARAGRAPH_1": "Ayudamos a organizaciones que necesitan transformar su operación sin perder velocidad ni foco en el negocio. Combinamos estrategia, excelencia operacional, prácticas ágiles y tecnología para convertir desafíos complejos en Planificación estratégica mejoras medibles. Nuestro modelo boutique asegura participación senior, soluciones diseñadas para cada contexto y acompañamiento cercano desde el diagnóstico hasta la instalación de capacidades.",
+  "SERVICES": {
+    "EXPERIENCE_FRICTION_MONITOR": {
+      "TITLE": "Monitor de experiencias y fricciones",
+      "P1": "Monitoreamos periódicamente la calidad del servicio para detectar fricciones antes de que se conviertan en problemas recurrentes. Identificamos dónde falla la experiencia, a qué usuarios afecta y qué mejoras conviene priorizar, entregando evidencia accionable para proteger los niveles de servicio y orientar decisiones oportunas."
+    },
+    "CLAIMS_CUSTOMER_INTELLIGENCE": {
+      "TITLE": "Inteligencia 360 de reclamos y voz del cliente",
+      "P1": "Integramos el análisis de tickets, llamadas, chats y comentarios con investigación de la experiencia presencial y escucha de reseñas, redes sociales y otros espacios externos donde los clientes expresan sus experiencias.",
+      "P2": "Con una mirada omnicanal, identificamos motivos de contacto, problemas recurrentes y brechas de continuidad entre canales físicos y digitales. Transformamos estos hallazgos en oportunidades de resolución y mejora, adaptadas a cada industria y orientadas a fortalecer la experiencia del cliente y el desempeño del servicio."
+    },
+    "EMPLOYEE_EXPERIENCE": {
+      "TITLE": "Experiencia del colaborador, clima laboral y engagement",
+      "P1": "Analizamos antecedentes internos y escuchamos a los colaboradores para comprender su experiencia, compromiso y satisfacción con las unidades de servicio de la empresa, así como la cultura organizacional y la coherencia entre sus valores y las prácticas cotidianas.",
+      "P2": "Creamos espacios seguros de opinión, con garantías de confidencialidad y respeto por cada participante. Transformamos los hallazgos en estrategias que promueven el bienestar y la satisfacción de los colaboradores, fortaleciendo las condiciones para un mejor desempeño de los equipos."
+    },
+    "MARKET_RESEARCH": {
+      "TITLE": "Estudios de mercado y validación de servicios",
+      "P1": "Acompañamos a emprendedores y empresas en el desarrollo de nuevas propuestas, complementando el prototipado con estudios de mercado y validación con personas reales. Evaluamos la comprensión, la facilidad para completar tareas, la preferencia y, cuando corresponde, la disposición a pagar.",
+      "P2": "Integramos benchmarking mediante cliente incógnito (mystery shopping) presencial, telefónico y digital con experiencias de usuarios reales para identificar estándares, brechas y oportunidades de diferenciación. Transformamos estos hallazgos en recomendaciones para ajustar la propuesta de valor y fundamentar las estimaciones de demanda, segmentos, precios y canales del plan comercial inicial."
+    }
+  }
+}

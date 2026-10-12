@@ -1,0 +1,31 @@
+{
+  "TITLE": "Experience and Performance Intelligence",
+  "HEADER_TITLE": "EXPERIENCE AND PERFORMANCE INTELLIGENCE",
+  "HEADER_TEXT": "",
+  "DESCRIPTION": {
+    "TITLE": "Information that turns <br> into opportunities",
+    "TEXT": "As a specialized area of Evoluciona in customer and employee experience, we work directly with each organization to design measurements and analyses tailored to their reality. We integrate different sources of information, identify concrete improvement opportunities, and provide recommendations that facilitate decision-making, with strict confidentiality of data and results."
+  },
+  "PARAGRAPH_1": "We help organizations that need to transform their operation without losing speed or focus on the business. We combine strategy, operational excellence, agile practices, and technology to turn complex challenges into measurable improvements. Our boutique model ensures senior participation, solutions designed for each context, and close support from diagnosis to capability installation.",
+  "SERVICES": {
+    "EXPERIENCE_FRICTION_MONITOR": {
+      "TITLE": "Experience and Friction Monitor",
+      "P1": "We periodically monitor service quality to detect frictions before they become recurring problems. We identify where the experience fails, which users are affected, and which improvements should be prioritized, providing actionable evidence to protect service levels and guide timely decisions."
+    },
+    "CLAIMS_CUSTOMER_INTELLIGENCE": {
+      "TITLE": "360° Claims and Customer Voice Intelligence",
+      "P1": "We integrate the analysis of tickets, calls, chats, and comments with research on the in-person experience and listening to reviews, social media, and other external spaces where customers express their experiences.",
+      "P2": "With an omnichannel perspective, we identify contact reasons, recurring problems, and continuity gaps between physical and digital channels. We transform these findings into resolution and improvement opportunities, adapted to each industry and aimed at strengthening the customer experience and service performance."
+    },
+    "EMPLOYEE_EXPERIENCE": {
+      "TITLE": "Employee Experience, Work Climate, and Engagement",
+      "P1": "We analyze internal background and listen to employees to understand their experience, commitment, and satisfaction with the company's service units, as well as the organizational culture and the coherence between its values and daily practices.",
+      "P2": "We create safe spaces for opinion, with guarantees of confidentiality and respect for each participant. We transform the findings into strategies that promote employee well-being and satisfaction, strengthening the conditions for better team performance."
+    },
+    "MARKET_RESEARCH": {
+      "TITLE": "Market Research and Service Validation",
+      "P1": "We support entrepreneurs and companies in developing new proposals, complementing prototyping with market research and validation with real people. We evaluate understanding, ease of task completion, preference, and, when applicable, willingness to pay.",
+      "P2": "We integrate benchmarking through in-person, telephone, and digital mystery shopping with real user experiences to identify standards, gaps, and differentiation opportunities. We transform these findings into recommendations to adjust the value proposition and substantiate demand, segment, pricing, and channel estimates for the initial commercial plan."
+    }
+  }
+}

@@ -1,1 +1,24 @@
-<p>experience-and-performance-intelligence works!</p>
+<app-wrap-hero class="toe-hero" [imagebackground]="'./assets/images/experience-performance-intelligence/hero-experience-performance-intelligence.jpg'"
+    [horizontalAlign]="'left'" [headTitle]="'HEADER_TITLE'" [minHeight]="'lg:min-h-[65vh]'"
+    [fontsClass]="'text-4xl md:text-[4rem] md:leading-none'">
+</app-wrap-hero>
+
+<app-wrap-description [staticTitle]="'DESCRIPTION.TITLE' | translate" [gridCols]="gridCols" [spanCol1]="spanCol1"
+    [spanCol2]="spanCol2" [startCol2]="startCol2" appScrollSection="one">
+</app-wrap-description>
+
+<div class="container-fluid">
+    <section class="container px-4 lg:px-6 max-w-[96rem] py-10 md:py-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+            <article *ngFor="let item of services" class="flex flex-col">
+                <h3 class="text-2xl md:text-3xl font-medium mb-6"
+                    [innerHTML]="'SERVICES.' + item.key + '.TITLE' | translate"></h3>
+                <img [src]="item.image" [alt]="'SERVICES.' + item.key + '.TITLE' | translate"
+                    class="w-full aspect-[16/9] object-cover mb-6" />
+                <p *ngFor="let p of ['P1', 'P2']" [hidden]="!hasText(item.key, p)"
+                    class="text-lg md:text-xl font-normal mb-4 text-balance"
+                    [innerHTML]="'SERVICES.' + item.key + '.' + p | translate"></p>
+            </article>
+        </div>
+    </section>
+</div>

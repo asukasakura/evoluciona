@@ -12,7 +12,7 @@ import { SharedModule } from '@shared/shared.module';
 import { MatIconModule } from "@angular/material/icon";
 
 export function homeHttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http, './assets/i18n/experience-and-performance-intelligence/', '.json');
+  return new TranslateHttpLoader(http, './assets/i18n/experience-performance-intelligence/', '.json');
 }
 
 @NgModule({
@@ -27,7 +27,8 @@ export function homeHttpLoaderFactory(http: HttpClient) {
         provide: TranslateLoader,
         useFactory: homeHttpLoaderFactory,
         deps: [HttpClient]
-      }
+      },
+      isolate: true
     }),
     SharedModule,
     MatIconModule
