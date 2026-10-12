@@ -3,7 +3,7 @@ import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
 import { TranslateService } from '@ngx-translate/core';
-import { I18nServiceService } from 'src/app/i18n-service/i18n-service.service';
+import { I18nServiceService } from '../../../i18n-service/i18n-service.service';
 
 @Component({
   selector: 'app-hero',
@@ -19,10 +19,16 @@ export class HeroComponent implements OnInit {
   @Input() videobackground? : string = ''
   @Input() imagebackground? : string = ''
   @Input() horizontalAlign?: 'left' | 'right' | '' = ''
+  @Input() minWidth? : string = 'md:w-1/2'
   @Input() mode: 'image' | 'video' = 'image'
   @Input() minHeight?: string = ''
-  @Input() fontSize?: string = ''
-  @Input() leading?: string = ''
+  @Input() fontsClass?: string = ''
+
+  private readonly defaultClass = 'text-2xl md:text-4xl md:leading-10';
+
+  get fontClass(): string {
+    return this.fontsClass || this.defaultClass;
+  }
 
   constructor(
     private translate: TranslateService, 

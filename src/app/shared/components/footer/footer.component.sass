@@ -1,9 +1,19 @@
-.navbar
-  li
-    @apply px-2 py-1
-    cursor: pointer
-    font-size: 1rem
 ::ng-deep
+  .navbar
+    li
+      @apply px-2 py-1
+      cursor: pointer
+      font-size: 1rem
+      a
+        display: inline-block
+        &.router-link-active
+          &::after
+            content: ''
+            display: block
+            height: 1px
+            background-color: #fff
+            margin-top: 4px
+            width: 20%
   app-footer
     br
       display: none

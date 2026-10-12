@@ -13,8 +13,8 @@ export class WrapHeroComponent implements OnInit {
   @Input() horizontalAlign?: 'left' | 'right' | '' = ''
   @Input() mode: 'image' | 'video' = 'image'
   @Input() minHeight?: string = ''
-  @Input() fontSize?: string = ''
-  @Input() leading?: string = ''
+  @Input() minWidth?: string = 'md:w-1/2'
+  @Input() fontsClass?: string = ''
 
   constructor() { }
 

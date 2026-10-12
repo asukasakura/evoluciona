@@ -1,1 +1,85 @@
-<p>transformation-operational-excellence works!</p>
+<app-wrap-hero class="toe-hero" [imagebackground]="'./assets/images/products/pca/hero-pca.png'"
+    [horizontalAlign]="'left'" [headTitle]="'HEADER_TITLE'" [minHeight]="'lg:min-h-[65vh]'" [minWidth]="'md:w-2/3'"
+    [fontsClass]="'text-4xl md:text-[4rem] md:leading-none'">
+</app-wrap-hero>
+
+<app-wrap-description [staticTitle]="'DESCRIPTION.TITLE' | translate" [gridCols]="gridCols" [spanCol1]="spanCol1"
+    [spanCol2]="spanCol2" [startCol2]="startCol2" appScrollSection="one">
+</app-wrap-description>
+
+<div class="container-fluid">
+    <section class="container px-4 lg:px-6 max-w-[96rem] py-10 md:py-28">
+        <p class="text-xl md:text-[1.35rem] columns-1 md:columns-2 gap-8 leading-relaxed text-balance"
+            [innerHTML]="'PARAGRAPH_1' | translate"></p>
+    </section>
+    <app-wrap-hero class="contact-hero"
+        [imagebackground]="'./assets/images/transformacion-excelencia/transformacion-excelencia-hero-1.jpg'"
+        [headText]="' '" [minHeight]="'h-96'">
+    </app-wrap-hero>
+
+    <section class="container px-4 lg:px-6 max-w-[96rem] py-10 md:py-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+            <article *ngFor="let item of services" class="flex flex-col">
+                <h3 class="text-2xl md:text-3xl font-medium mb-6"
+                    [innerHTML]="'SERVICES.' + item.key + '.TITLE' | translate"></h3>
+                <img [src]="item.image" [alt]="'SERVICES.' + item.key + '.TITLE' | translate"
+                    class="w-full aspect-[16/9] object-cover mb-6" />
+                <p *ngFor="let p of ['P1', 'P2']" [hidden]="!hasText(item.key, p)"
+                    class="text-lg md:text-xl font-normal mb-4 text-balance"
+                    [innerHTML]="'SERVICES.' + item.key + '.' + p | translate"></p>
+            </article>
+        </div>
+    </section>
+
+    <section class="container px-4 lg:px-6 max-w-[96rem]">
+        <div class="flex flex-col lg:flex-row gap-6 lg:gap-4">
+
+            <h3 class="text-2xl md:text-3xl font-bold text-[#0070c0] lg:[writing-mode:vertical-rl] lg:rotate-180 lg:text-center"
+                [innerHTML]="'APPROACH_MODEL.TITLE' | translate"></h3>
+
+            <div class="flex-1">
+                <ol class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-4">
+                    <li *ngFor="let step of approachSteps" class="flex flex-col">
+                        <div class="bg-[#0070c0] text-white font-semibold text-center text-lg py-3
+                                    lg:pr-6 lg:[clip-path:polygon(0_0,90%_0,100%_50%,90%_100%,0_100%,8%_50%)]">
+                            <span [innerHTML]="'APPROACH_MODEL.STEPS.' + step.key + '.TITLE' | translate"></span>
+                        </div>
+
+                        <img [src]="step.image" [alt]="'APPROACH_MODEL.STEPS.' + step.key + '.TITLE' | translate"
+                            class="h-32 md:h-40 w-auto aspect-auto mx-auto my-6" />
+
+                        <div class="text-xl md:text-lg font-normal lg:px-3">
+                            <p *ngFor="let p of ['P1', 'P2']" [hidden]="!hasApproachText(step.key, p)" class="mb-3"
+                                [innerHTML]="'APPROACH_MODEL.STEPS.' + step.key + '.' + p | translate"></p>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="flex flex-wrap items-center gap-6 mt-10 font-bold text-lg">
+                    <span class="flex items-center gap-3">
+                        <span class="w-6 h-6 rounded-full bg-[#f04e23]"></span>
+                        {{ 'APPROACH_MODEL.LEGEND.CLIENT' | translate }}
+                    </span>
+                    <span class="flex items-center gap-3">
+                        <span class="w-6 h-6 rounded-full bg-[#0070c0]"></span>
+                        {{ 'APPROACH_MODEL.LEGEND.EVOLUCIONA' | translate }}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container px-4 lg:px-6 max-w-[96rem] py-14 md:py-20">
+        <h2 class="text-2xl md:text-3xl font-medium mb-6" [innerHTML]="'HOW_WE_WORK.TITLE' | translate"></h2>
+        <p class="text-xl mb-8 md:mb-10" [innerHTML]="'HOW_WE_WORK.INTRO' | translate"></p>
+
+        <div class="text-xl md:text-[1.35rem] columns-1 md:columns-2 gap-8 leading-relaxed text-balance">
+            <ul class="list-disc pl-6 space-y-6">
+                <li [innerHTML]="'HOW_WE_WORK.STEPS.DIAGNOSIS' | translate"></li>
+                <li [innerHTML]="'HOW_WE_WORK.STEPS.PLAN' | translate"></li>
+                <li [innerHTML]="'HOW_WE_WORK.STEPS.FOLLOW_UP' | translate"></li>
+                <li [innerHTML]="'HOW_WE_WORK.STEPS.CLOSURE' | translate"></li>
+            </ul>
+        </div>
+    </section>
+</div>

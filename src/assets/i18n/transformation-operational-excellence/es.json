@@ -1,66 +1,68 @@
 {
-  "HEADER_TEXT": "Transformation and Operational Excellence",
+  "TITLE": "Transformación y Excelencia Operacional",
+  "HEADER_TITLE": "TRANSFORMACIÓN Y EXCELENCIA OPERACIONAL",
+  "HEADER_TEXT": "",
   "DESCRIPTION": {
-    "TITLE": "Transformation and Operational Excellence",
-    "TEXT": "Evoluciona es una empresa con más de 18 años de experiencia en Sistemas Inteligentes de Transporte en distintas autopistas de Europa y América. Nuestra especialización se extiende desde la conceptualización, formulación comercial de productos y servicios tecnológicos, hasta el establecimiento de requerimientos, dirección, adquisición/licitación, diseño, construcción y mantenimiento de soluciones que ayuden a mejorar las operaciones y la eficacia de los sistemas. En Evoluciona la experiencia nos permite diseñar soluciones simples, prácticas, pensando siempre en las necesidades reales de nuestros clientes."
+    "TITLE": "Transformamos desafíos <br> en mejoras concretas",
+    "TEXT": "Mejoramos procesos y la ejecución de los equipos con planificación estratégica, gestión del cambio, coaching ágil y automatización con IA."
   },
-  "OUR_SPECIALIZATION_IN_ITS": {
-    "TITLE": "Nuestra especialización en ITS",
-    "CARDS": {
-      "CARD1": {
-        "TITLE": "PEAJE ELECTRÓNICO",
-        "TEXT": "Hemos construido un sistema de peaje operacional y un sistema de peaje comercial."
+  "PARAGRAPH_1": "Ayudamos a organizaciones que necesitan transformar su operación sin perder velocidad ni foco en el negocio. Combinamos estrategia, excelencia operacional, prácticas ágiles y tecnología para convertir desafíos complejos en Planificación estratégica mejoras medibles. Nuestro modelo boutique asegura participación senior, soluciones diseñadas para cada contexto y acompañamiento cercano desde el diagnóstico hasta la instalación de capacidades.",
+  "SERVICES": {
+    "STRATEGIC_PLANNING": {
+      "TITLE": "Planificación estratégica",
+      "P1": "Traducimos la estrategia en decisiones ejecutables. Analizamos la industria, los clientes y las capacidades internas, e integramos esa evidencia con la visión de los líderes. Con este diagnóstico definimos un rumbo compartido y lo convertimos en prioridades, planes de acción, responsables e indicadores para gestionar avances y ajustar decisiones oportunamente."
+    },
+    "CHANGE_MANAGEMENT": {
+      "TITLE": "Gestión del cambio",
+      "P1": "Diseñamos las condiciones para que la transformación avance y se sostenga. Identificamos tensiones, saturación y desalineaciones que frenan la adopción de nuevas formas de trabajo, considerando la cultura, las prioridades del negocio y la experiencia de las personas.",
+      "P2": "Acompañamos a líderes y equipos en la creación de condiciones que hagan viable el cambio, alineando procesos, estructuras, incentivos y recursos con los objetivos de transformación. Promovemos la participación, el aprendizaje y un ritmo de implementación acorde con la capacidad de la organización."
+    },
+    "AGILE_COACHING": {
+      "TITLE": "Coaching ágil",
+      "P1": "Acompañamos a las organizaciones en la evolución de sus modelos de trabajo para mejorar su capacidad de ejecución y respuesta a los desafíos del negocio. Integramos estrategia, procesos, estructura y personas, adaptando las prácticas ágiles a cada contexto y priorizando iniciativas que aporten valor a los clientes y a la organización.",
+      "P2": "Nuestro acompañamiento combina diagnóstico, diseño e implementación de mejoras con el desarrollo de capacidades en líderes y equipos. Mediante coaching y aprendizaje en la práctica, fortalecemos la colaboración, facilitamos la resolución de obstáculos y desarrollamos autonomía para sostener la mejora continua. Definimos objetivos e indicadores junto al cliente para evaluar avances en eficiencia, tiempos de entrega, experiencia de clientes y cumplimiento de las metas del negocio."
+    },
+    "AI_AUTOMATION": {
+      "TITLE": "Automatización de procesos e inteligencia artificial",
+      "P1": "Ayudamos a las organizaciones a identificar y abordar tareas que pueden simplificarse mediante automatización e inteligencia artificial. Partimos del conocimiento de sus procesos y necesidades, priorizando aplicaciones concretas que permitan reducir trabajo manual, facilitar el acceso a información y apoyar la gestión cotidiana.",
+      "P2": "Implementamos soluciones de forma gradual, integrándolas con las herramientas disponibles y acompañando a los equipos en su uso. Incorporamos agentes de IA cuando aportan valor, con funciones delimitadas y supervisión humana. Evaluamos los resultados junto al cliente para ajustar las soluciones y ampliar su alcance según la experiencia obtenida."
+    }
+  },
+  "APPROACH_MODEL": {
+    "TITLE": "Modelo de abordaje",
+    "LEGEND": { "CLIENT": "Equipo Cliente", "EVOLUCIONA": "Equipo Evoluciona" },
+    "STEPS": {
+      "START": {
+        "TITLE": "Inicio",
+        "P1": "El equipo <strong class='text-[#0070c0]'>Evoluciona</strong> conduce facilitando las nuevas capacidades y el equipo <strong class='text-[#c00000]'>Cliente</strong> en la ejecución"
       },
-      "CARD2": {
-        "TITLE": "SISTEMAS CENTRALES DE PEAJE, MONITOREO, BACK OFFICE",
-        "TEXT": "Diseñamos sistemas centrales de peaje incluyendo monitoreo, Back Office Operativo y Back Office Comercial."
+      "DISCIPLINE": {
+        "TITLE": "Disciplina",
+        "P1": "El equipo <strong class='text-[#0070c0]'>Evoluciona</strong> los conduce junto al Líder, y el equipo <strong class='text-[#c00000]'>Cliente</strong> se compromete en seguir la nueva práctica"
       },
-      "CARD3": {
-        "TITLE": "ES CONTROL OPERATIVO ITS BACK OFFICE",
-        "TEXT": "Realizamos la especificación, ingeniería y gestión de proyectos de automatización ITS incluyendo, entre los más comunes, gestión de tráfico, SCADA, CCTV, postes SOS y Gestión de Incidentes."
+      "ADHERENCE": {
+        "TITLE": "Adherencia",
+        "P1": "El equipo <strong class='text-[#c00000]'>Cliente</strong> conduce y el equipo <strong class='text-[#0070c0]'>Evoluciona</strong> observa y corrige"
       },
-      "CARD4": {
-        "TITLE": "ASESORÍA EN PROYECTOS",
-        "TEXT": "Evaluamos diferentes soluciones en proyectos tecnológicos, considerando aspectos técnicos, capacidad de soporte, experiencia y el modelo de servicio que se adapta a cada caso."
+      "HABIT": {
+        "TITLE": "Hábito",
+        "P1": "El equipo <strong class='text-[#c00000]'>Cliente</strong> es autónomo, el equipo <strong class='text-[#0070c0]'>Evoluciona</strong> entrega <em>Feedback</em> e instala mejora continua"
+      },
+      "CULTURE": {
+        "TITLE": "Cultura",
+        "P1": "El equipo <strong class='text-[#c00000]'>Cliente</strong> se queda solo con la nueva cultura de trabajo.",
+        "P2": "El equipo <strong class='text-[#0070c0]'>Evoluciona</strong> da consejos y monitorea"
       }
     }
   },
-  "OUR_SPECIALIZATION_IN_ITS_2": {
-    "TITLE": "Nuestra especialización en ITS",
-    "DESCRIPTION": "Evoluciona, está conformada por una red de más de 40 profesionales en varios países y de distintas especialidades, como ingenieros industriales, informáticos y comerciales, psicólogos, audiovisuales, periodistas, abogados, técnicos, entre otros; lo que nos permite conformar equipos y células multidisciplinarias para abordar sus necesidades e iniciativas.",
-    "CARDS": {
-      "CARD1": {
-        "TEXT": "DESARROLLO DE COMPONENTES DE SOFTWARE PARA FABRICANTES E INTEGRADORES DE SOLUCIONES."
-      },
-      "CARD2": {
-        "TEXT": "DESARROLLOS Y ASESORÍAS PARA CONCESIONARIAS DE CARRETERAS."
-      },
-      "CARD3": {
-        "TEXT": "ASESORÍA PARA GOBIERNOS Y AUTORIDADES DE TRANSPORTE Y OBRAS PÚBLICAS."
-      }
+  "HOW_WE_WORK": {
+    "TITLE": "¿Cómo trabajamos?",
+    "INTRO": "Cada acompañamiento sigue un mismo estándar, cualquiera sea el marco de gestión —tradicional, ágil o agéntico— que mejor se ajuste al contexto:",
+    "STEPS": {
+      "DIAGNOSIS": "<b>Diagnóstico inicial:</b> revisamos la situación del área, sus desafíos, objetivos y obstáculos, y fijamos la línea base de los indicadores pertinentes.",
+      "PLAN": "<b>Plan de acompañamiento:</b> acordamos objetivos, acciones, entregables, plazos y responsables, y distinguimos los indicadores de mejora del área de nuestros propios compromisos.",
+      "FOLLOW_UP": "<b>Seguimiento:</b> revisamos avances cada quince días con el equipo y cada mes con el cliente, y escalamos de inmediato los obstáculos que comprometen el cumplimiento.",
+      "CLOSURE": "<b>Cierre y transferencia:</b> comparamos los resultados con la línea base, los validamos con el cliente y dejamos capacidades instaladas para sostener las mejoras."
     }
-  },
-  "ITS_SOFTWARE_DEVELOPED" : {
-    "TITLE": "Software ITS desarrollados",
-    "CARDS": {
-      "CARD1": {
-        "TITLE": "SOFTWARE TMFE: MONITOREO DE TRÁFICO FRONT-END",
-        "TEXT": "Este sistema proporciona una vista simplificada, permanente y actualizada del estado de operación de un sistema MLFF. Permite conocer permanentemente el estado de operación de los puntos de cobro de una ruta, las alarmas de los equipos viales como cámaras, antenas y las transacciones de peaje que se realizan."
-      },
-      "CARD2": {
-        "TITLE": "SOFTWARE OBO: BACK OFFICE OPERACIONAL",
-        "TEXT": "Este sistema concentra pasos de vehículos como transacciones electrónicas y los monetiza previa validación, generando registros cobrables o infraccionables y derivándolos al CBO."
-      },
-      "CARD3": {
-        "TITLE": "SOFTWARE CBO: BACK OFFICE COMERCIAL",
-        "TEXT": "Es un sistema de gestión comercial que permite: Gestión de contratos, facturación, cobranza, atención al cliente (CRM), Interfaz RNUT, Autoservicio Web, Infractores, Gestión de TAG (Inventario), Interfaz Contable (Contabilidad), Recursos Humanos (Turnos y Caja), Firma Digital e interacción con un sistema interoperable con otras autopistas de peaje."
-      },
-      "CARD4": {
-        "TITLE": "PCA: POLICE CONTROLLER ADAPTER",
-        "TEXT": "Nuestra solución Police Controller Adapter PCA-1.02B es una solución innovadora para el control de velocidad de camiones de carga. Ha sido diseñada para simplificar y mejorar la operación de las unidades móviles de control de velocidad policial utilizando radares DSRC, ofreciendo una solución que maximiza la calidad técnica sin sacrificar la facilidad de uso.",
-        "LINK_TEXT": "Conoce más sobre el PCA"
-      }
-    }
-  },
-  "MORE_ITS_SERVICES_AND_PRODUCTS": "Conoce más de nuestros servicios y productos ITS"
+  }
 }

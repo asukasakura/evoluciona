@@ -11,11 +11,9 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { SharedModule } from '@shared/shared.module';
 import { MatIconModule } from "@angular/material/icon";
 
-export function experienceAndPerformanceIntelligenceHttpLoaderFactory(http: HttpClient) {
+export function homeHttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/experience-and-performance-intelligence/', '.json');
 }
-
-
 
 @NgModule({
   declarations: [
@@ -27,7 +25,7 @@ export function experienceAndPerformanceIntelligenceHttpLoaderFactory(http: Http
     TranslateModule.forChild({
       loader: {
         provide: TranslateLoader,
-        useFactory: experienceAndPerformanceIntelligenceHttpLoaderFactory,
+        useFactory: homeHttpLoaderFactory,
         deps: [HttpClient]
       }
     }),

@@ -11,10 +11,9 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { SharedModule } from '@shared/shared.module';
 import { MatIconModule } from "@angular/material/icon";
 
-export function transformationOperationalExcellenceHttpLoaderFactory(http: HttpClient) {
+export function transformationOperationalHttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/transformation-operational-excellence/', '.json');
 }
-
 
 @NgModule({
   declarations: [
@@ -26,12 +25,13 @@ export function transformationOperationalExcellenceHttpLoaderFactory(http: HttpC
     TranslateModule.forChild({
       loader: {
         provide: TranslateLoader,
-        useFactory: transformationOperationalExcellenceHttpLoaderFactory,
+        useFactory: transformationOperationalHttpLoaderFactory,
         deps: [HttpClient]
-      }
+      },
+      isolate: true
     }),
     SharedModule,
-    MatIconModule
+    MatIconModule,
   ]
 })
 export class TransformationOperationalExcellenceModule { }

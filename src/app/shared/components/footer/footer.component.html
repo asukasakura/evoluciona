@@ -1,11 +1,14 @@
 <div class="grid grid-cols-1 md:grid-cols-3">
   <div>
     <ul class="navbar uppercase text-extra-light-gray text-center md:text-left">
-      <li [routerLink]="item.router"
-        routerLinkActive="router-link-active"
-        [routerLinkActiveOptions]="{ exact: true }"
-        *ngFor="let item of mainMenu.defaultOptions">
-        <span *ngIf="!item.link" [innerHTML]="item.name | translate"></span>
+      <li *ngFor="let item of mainMenu.defaultOptions">
+        <a 
+          *ngIf="!item.link"
+          [innerHTML]="item.name | translate"
+          [routerLink]="item.router"
+          routerLinkActive="router-link-active"
+          [routerLinkActiveOptions]="{ exact: true }">
+        </a>
         <div *ngIf="item.link">
           <a [href]="item.link" target="_blank">{{item.name | translate}}</a>
         </div>
